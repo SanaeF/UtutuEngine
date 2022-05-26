@@ -1,0 +1,70 @@
+別に関数を作ったりや条件式を書いたりするは必要ないが、
+弾幕の会話シーンで使う際は条件式のみ書くことになる。
+
+・SetEndTalk(flag)	:弾幕終了後に会話を行うかどうかを指定
+・isEndTalk()	:弾幕終了後の会話かどうかを取得
+
+・Scene(num)	:以下に呼ばれる関数をnum番目のシーンで行うことを指定する(※次のScene関数まで)
+例
+	Scene(0)--シーン番号0
+	
+	ここでキャラクターやテキストの指定を行う
+	Chara.create_ID(1)
+	Chara.spawn(id_(0), 0, 360, 1100)
+	Chara.eye(id_(0), 0)
+	Chara.mouth(id_(0), 1)
+	Massage.setBoxL()
+	SimpleMassage(
+	name_("ピンク髪の少女"),
+	"これから極秘任務を始めるよ?!",
+	"準備は出来ているかな...",
+	""
+	)
+
+	Scene(1)--シーン番号1
+
+・SummonBoss(ID)	:IDのボスを召喚する
+・PlayBGM(num)	:num番のBGMを再生する
+・SimpleMassage(name,text1,text2,text3)	:単純なセリフBoxを表示
+
+#クラス
+
+Massage	:セリフ関連のクラス
+・etBoxL()	:吹き出しの向きLeftを指定
+・setBoxR()	:吹き出しの向きRightを指定
+・set_et( id, x, y, size, text)	:id行目に文字列を出す
+・MiddleText(size, text)	:セリフboxの中央に文字を出す(未使用)
+・setName(text)			:セリフboxにキャラの名前
+・Text(text1,text2,text3)	:3行分の文字列を出す
+
+Chara	:立ち絵のアニメーション等を設定する関数
+・create_ID(id)	:立ち絵を追加する際は、idに最大+1を指定しなくてはいけない
+・spawn(id, chara, x, y)	:キャラクター立ち絵を召喚
+・hide(id)	:キャラクター立ち絵を非表示にする。(※spawnで再登場出来る)
+・Type(id, chara)	:idを使用してキャラクター立ち絵の種類を指定
+・setPos(id, x, y)	:idを使用してキャラクター立ち絵の座標を指定
+・eye(id, state)	:idを使用してキャラクター立ち絵のマバタキを含めた目の種類を指定
+・brow(id, state)	:idを使用してキャラクター立ち絵の眉毛の種類を指定
+・mouth(id, state)	:idを使用してキャラクター立ち絵の口パクを含めた口の種類を指定
+
+・Chara.img(id, brow, eye, mouth, is_back)
+
+Chara.img(tag( ), brow( ), eye( ), mouth( ), back( ))
+
+body...0:普通 1:ボロ姿 2:決めポーズ
+brow...0:普通 1:困り 2:怒り
+eye...0:通常 1:瞬き 2:閉じ目 3:笑顔の閉じ目
+mouth...0通常 1:口パク 2:開口 3:特殊な口
+
+
+表情エフェクト(アニメーション)
+Chara.spawnFacial(id, type, x, y)
+ACCENT:キャラが何かに気付きます
+HAPPY:キャラがウッキウキになります
+SWEAT:キャラが焦ります
+ANGRY:キャラがキレます
+BLACK:キャラが暗い気分になります
+STOP:エフェクトを停止します
+
+禁止単語 スクリプトが認識しません(半ギレ)
+「能」

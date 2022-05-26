@@ -1,0 +1,79 @@
+#クラス
+Shot	普通ショット
+Lazer	レーザーショット
+LazCr	曲線レーザーショット
+
+中身
+<弾の設定>
+・isFlag(num)	:num番目の弾が存在するかどうかを取得(有:true,無:false)
+・clear()	:手前の行で出した弾を消す
+・isRota()	:弾のテクスチャを回転させる(※Shotのみ)
+・isShine()	:弾を加算発光させる(※Shotのみ)
+・isBound()	:画面端で跳ね返るようにする
+・Shot.isHide()	:見た目を非表示にする
+・Shot.isNoDelete() :プレイヤーに当たっても消えない
+・Shot.isNotHide()  :見た目を表示する
+・Shot.isDelete()	:プレイヤーに当たったら消えるようになる
+※元に戻す場合はisの後にNotを書く
+
+Shot.Create(x, y, type, color, speed, angle, state)
+Lazer.Create(x, y, type, color, speed, angle, state)
+LazCr.Create(x, y, length, color, speed, angle, state)
+
+<座標>
+・setX(num) setY(num)	:手前の行で出した弾の座標を指定
+・getX(num) getY(num)	:num番目の弾の座標を取得
+
+<速度>
+・setSpeed(speed)	:手前の行で出した弾の速度を指定
+・addSpeed(speed)	:手前の行で出した弾の速度に加算
+・getSpeed(num)		:num番目の弾の速度を取得
+
+<角度>
+・setAngle(angle)	:手前の行で出した弾の角度を指定
+・addAngle(angle)	:手前の行で出した弾の角度に加算
+・getAngle(num)		:num番目の弾の角度を取得
+
+<サイズ>
+・setSize(size)		:手前の行で出した弾のサイズを指定
+・getSize(num)		:num番目の弾のサイズを取得
+
+<見た目>
+・setType(type)		:手前の行で出した弾の画像を指定
+・setColor(color)	:手前の行で出した弾の配色を指定
+・getType(type)		:num番目の弾の画像を取得
+・getColor(color)	:num番目の弾の配色を取得
+
+<ステータスID>
+・setState1(state)	:手前の行で出した弾に値を持たせる
+・setState2(state)	:手前の行で出した弾に値を持たせる(※予備)
+・getState1(state)	:num番目の弾に持たせた値を取得
+・getState2(state)	:num番目の弾に持たせた値を取得(※予備)
+
+<反射関連>
+・setBoundCount(num) :跳ね返った数を指定する
+・setBoundArea(num)  :跳ね返った場所(画面端)を指定する
+・getBoundCount(num) :跳ね返った回数を取得する
+・getBoundArea(num)  :跳ね返ったエリアを取得する
+AREA_LEFT = 1,
+AREA_RIGHT = 2,
+AREA_UP = 3,
+AREA_DOWN = 4
+
+<その他>
+・getCount(num)		:num番目の弾のカウントを取得
+
+Lazer.setMainType(type)
+Lazer.setMainColor(color)
+Lazer.setThick(size)
+Lazer.setLength(size)
+
+Lazer.setLengthAngle(angle)
+Lazer.getLengthAngle(angle)
+
+Lazer.setRota(t0,t1,angle)
+
+・アリスモード
+IS_ALICE_MODE
+
+ALICE_LEVEL

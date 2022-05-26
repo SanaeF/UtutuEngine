@@ -1,0 +1,809 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{326E565E-3B2E-45BF-BCCE-1C84C2D6C6AE}</ProjectGuid>
+    <RootNamespace>gl02</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>gl_11</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IncludePath>$(WindowsSDK_IncludePath);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\DxLib_VC\プロジェクトに追加すべきファイル_VC用;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(MSBuildProjectDirectory)\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionPath)\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionPath)\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+      <OutputFile>
+      </OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>F:\現風少女\gl_01\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>F:\現風少女\gl_01\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(MSBuildProjectDirectory)\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionPath)\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionPath)\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Application\Application\Application.cpp" />
+    <ClCompile Include="Source\Application\Application\LoadScene\LoadScene.cpp" />
+    <ClCompile Include="Source\Application\DebugLog\DebugLog.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\EndingScene\EndingScene.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\GameScene\EndingTalk\EndingTalk.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\GameScene\GameMode\DuelMode\DuelMode.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\GameScene\GameMode\SingleMode\SingleMode.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\GameScene\GameMode\StoryMode\StoryMode.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\GameScene\GameScene.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\GameScene\Pause\Pause.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\GameScene\SingleGameStats\SingleGameStats.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\GameScene\StageMap\StageMap.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\GameScene\TimeLine\Camp\Camp.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\GameScene\TimeLine\TimeLine.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\AliceSelect\AliceSelect.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponLore\WeaponLore.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect\WeaponSelect.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile\CharaProfile.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaSelect.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaSelectDuel\CharaSelectDuel.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Config\ConfigRoom.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\DressRoom\ClothText\ClothText.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\DressRoom\DressRoom.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Help\HelpRoom.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Music\MusicRoom.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Online\OnlineRoom.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\ReplayRoom\ReplayRoom.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\StageSelect\StageSelect.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\StorySelect\StorySelect.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Story\Story.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Title\Title.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\Scene\Scene.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\Scene\SelectYN\SelectYN.cpp" />
+    <ClCompile Include="Source\Application\GameMassage\GameMassage.cpp" />
+    <ClCompile Include="Source\Application\Key\Key.cpp" />
+    <ClCompile Include="Source\Application\Replayer\KeyCapture\KeyCapture.cpp" />
+    <ClCompile Include="Source\Application\Replayer\Replayer.cpp" />
+    <ClCompile Include="Source\Application\ScoreBoard\DuelScore\DuelScore.cpp" />
+    <ClCompile Include="Source\Application\ScoreBoard\ItemRoulette\ItemRoulette.cpp" />
+    <ClCompile Include="Source\Application\ScoreBoard\PlayerScore\PlayerScore.cpp" />
+    <ClCompile Include="Source\Application\ScoreBoard\ScoreBoard.cpp" />
+    <ClCompile Include="Source\Application\ScoreBoard\StartingCall\StartingCall.cpp" />
+    <ClCompile Include="Source\Application\ScoreBoard\SubTitle\SubTitle.cpp" />
+    <ClCompile Include="Source\Application\Server\DuelServer.cpp" />
+    <ClCompile Include="Source\Application\Sound\Sound.cpp" />
+    <ClCompile Include="Source\Collider\Collider.cpp" />
+    <ClCompile Include="Source\Collider\Square\HitSquare.cpp" />
+    <ClCompile Include="Source\CustomWeapon\CustomWeapon.cpp" />
+    <ClCompile Include="Source\EffectTools\ScreenFade\ScreenFade.cpp" />
+    <ClCompile Include="Source\EffectTools\Shake\Shake.cpp" />
+    <ClCompile Include="Source\Helper\Helper.cpp" />
+    <ClCompile Include="Source\library\AppManager\AppManager.cpp" />
+    <ClCompile Include="Source\library\FileManager\FileManager.cpp" />
+    <ClCompile Include="Source\library\Graphics\Graphics2D\Graphics2D.cpp" />
+    <ClCompile Include="Source\library\Graphics\Graphics3D\Graphics3D.cpp" />
+    <ClCompile Include="Source\library\Graphics\Movie\MovieDX.cpp" />
+    <ClCompile Include="Source\library\Graphics\String\StringDX.cpp" />
+    <ClCompile Include="Source\library\KeyInput\KeyInputDX.cpp" />
+    <ClCompile Include="Source\library\NetWork\NetWorkDx.cpp" />
+    <ClCompile Include="Source\library\Sound\SoundDX.cpp" />
+    <ClCompile Include="Source\Manager\BossManager\BossBonus\BossBonus.cpp" />
+    <ClCompile Include="Source\Manager\BossManager\BossBonus\BossItem\BossItem.cpp" />
+    <ClCompile Include="Source\Manager\BossManager\BossBonus\BossScore\BossScore.cpp" />
+    <ClCompile Include="Source\Manager\BossManager\BossHP\BossHP.cpp" />
+    <ClCompile Include="Source\Manager\BossManager\BossManager.cpp" />
+    <ClCompile Include="Source\Manager\BossManager\BossUI\BossUI.cpp" />
+    <ClCompile Include="Source\Manager\BossManager\MagicRingEffect\MagicRingEffect.cpp" />
+    <ClCompile Include="Source\Manager\BulletManager\BulletManager.cpp" />
+    <ClCompile Include="Source\Manager\CharaImgManager\CharaImgManager.cpp" />
+    <ClCompile Include="Source\Manager\CharaImgManager\FacialEffect\FacialEffect.cpp" />
+    <ClCompile Include="Source\Manager\CharaImgManager\TalkMotion\EyeBrowMotion\EyeBrowMotion.cpp" />
+    <ClCompile Include="Source\Manager\CharaImgManager\TalkMotion\EyeMotion\EyeMotion.cpp" />
+    <ClCompile Include="Source\Manager\CharaImgManager\TalkMotion\MouthMotion\MouthMotion.cpp" />
+    <ClCompile Include="Source\Manager\FrameManager\FrameManager.cpp" />
+    <ClCompile Include="Source\Manager\ItemManager\ItemManager.cpp" />
+    <ClCompile Include="Source\Manager\MinionManager\MinionManager.cpp" />
+    <ClCompile Include="Source\Manager\SaveDataManager\SaveDataManager.cpp" />
+    <ClCompile Include="Source\Manager\SceneManager\SceneManager.cpp" />
+    <ClCompile Include="Source\Manager\TalkSceneManager\TalkSceneManager.cpp" />
+    <ClCompile Include="Source\MassageHandle\MassageHandle.cpp" />
+    <ClCompile Include="Source\Object\BackGround\BackGround.cpp" />
+    <ClCompile Include="Source\Object\Boss\Boss.cpp" />
+    <ClCompile Include="Source\Object\Boss\BossMotion\BossMotion.cpp" />
+    <ClCompile Include="Source\Object\Bullet\GrazeEffect\GrazeEffect.cpp" />
+    <ClCompile Include="Source\Object\Bullet\lazer\Lazer_Info.cpp" />
+    <ClCompile Include="Source\object\Bullet\Shot\Shot_Info.cpp" />
+    <ClCompile Include="Source\Object\Bullet\TurnLazer\TurnLazer_Info.cpp" />
+    <ClCompile Include="Source\Object\EditPointer\EditPointer.cpp" />
+    <ClCompile Include="Source\Object\Effect\Effect.cpp" />
+    <ClCompile Include="Source\Object\Item\BitItem\BitItem.cpp" />
+    <ClCompile Include="Source\Object\Item\GhostItem\GhostItem.cpp" />
+    <ClCompile Include="Source\Object\Minion\Minion.cpp" />
+    <ClCompile Include="Source\Object\Minion\MinionMotion\MinionMotion.cpp" />
+    <ClCompile Include="Source\Object\Object\Object.cpp" />
+    <ClCompile Include="Source\Object\Object\Parameter\FadeIn\FadeIn.cpp" />
+    <ClCompile Include="Source\Object\Object\Parameter\Position\Position.cpp" />
+    <ClCompile Include="Source\Object\Player\Bom\Bom_Info.cpp" />
+    <ClCompile Include="Source\Object\Player\Item\ItemStack.cpp" />
+    <ClCompile Include="Source\Object\Player\mover\PlayerMover.cpp" />
+    <ClCompile Include="Source\Object\Player\Player.cpp" />
+    <ClCompile Include="Source\Object\Player\Shot\OptionManager..cpp" />
+    <ClCompile Include="Source\Object\Player\Shot\PlayerShot\PlayerShot.cpp" />
+    <ClCompile Include="Source\Object\Player\Shot\SideOption\SideOption.cpp" />
+    <ClCompile Include="Source\Resource\BulletImage\BulletImage.cpp" />
+    <ClCompile Include="Source\Resource\CharacterImage\CharacterImage.cpp" />
+    <ClCompile Include="Source\Resource\EnemyImage\EnemyImage.cpp" />
+    <ClCompile Include="Source\Resource\FacialEffectImage\FacialEffectImage.cpp" />
+    <ClCompile Include="Source\Resource\GUI\BossUIImage\BossUIImage.cpp" />
+    <ClCompile Include="Source\Resource\GUI\GameUIImage\GameUIImage.cpp" />
+    <ClCompile Include="Source\Resource\GUI\LoadUIImage\LoadUIImage.cpp" />
+    <ClCompile Include="Source\Resource\GUI\MenuUIImage\MenuUIImage.cpp" />
+    <ClCompile Include="Source\Resource\GUI\SelectUIImage\SelectUIImage.cpp" />
+    <ClCompile Include="Source\Resource\GUI\TextUIImage\TextUIImage.cpp" />
+    <ClCompile Include="Source\Resource\ItemImage\ItemImage.cpp" />
+    <ClCompile Include="Source\Resource\MapImage\MapImage.cpp" />
+    <ClCompile Include="Source\Resource\OnePictureImage\OnePictureImage.cpp" />
+    <ClCompile Include="Source\Resource\ParticleImage\ParicleImage.cpp" />
+    <ClCompile Include="Source\Resource\PlayerImage\PlayerImage.cpp" />
+    <ClCompile Include="Source\Resource\LoadManager.cpp" />
+    <ClCompile Include="Source\Resource\SaveData\SaveData.cpp" />
+    <ClCompile Include="Source\Resource\SoundData\SoundData.cpp" />
+    <ClCompile Include="Source\Script\BossBulletScript\BossBulletScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\BossScript\BossScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\BulletScript\Color\BulletColorScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\BulletScript\Lazer\LazerScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\BulletScript\Shot\ShotScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\BulletScript\TurnLazer\TurnLazerScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\BulletScript\Type\BulletTypeScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\EnemyImageScript\EnemyImageScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\HelperScript\HelperScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\MinionScript\MinionScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\PlayerScript\PlayerScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\ShakeScript\ShakeScript.cpp" />
+    <ClCompile Include="Source\Script\Manager\SoundScript\SoundScript.cpp" />
+    <ClCompile Include="Source\Script\ScriptLoader\ScriptLoader.cpp" />
+    <ClCompile Include="Source\Script\TalkScript\BoxScript\BoxScript.cpp" />
+    <ClCompile Include="Source\Script\TalkScript\ImgCharaScript\ImgCharaScript.cpp" />
+    <ClCompile Include="Source\Script\TalkScript\TalkScript.cpp" />
+    <ClCompile Include="Source\Script\TimeLineScript\TimeLineScript.cpp" />
+    <ClCompile Include="Source\SystemProp\AliceProp\AliceProp.cpp" />
+    <ClCompile Include="Source\SystemProp\GameSceneProp\GameSceneProp.cpp" />
+    <ClCompile Include="Source\Tools\TextInput\TextInputer.cpp" />
+    <ClCompile Include="Source\Tools\TimeFader\TimeFader.cpp" />
+    <ClCompile Include="Source\Tools\Transform\Transform.cpp" />
+    <ClCompile Include="Source\World\World.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Application\Application\Application.h" />
+    <ClInclude Include="Source\Application\Application\LoadScene\LoadScene.h" />
+    <ClInclude Include="Source\Application\DebugLog\DebugLog.h" />
+    <ClInclude Include="Source\Application\GameFlow\EndingScene\EndingScene.h" />
+    <ClInclude Include="Source\Application\GameFlow\GameScene\EndingTalk\EndingTalk.h" />
+    <ClInclude Include="Source\Application\GameFlow\GameScene\GameMode\DuelMode\DuelMode.h" />
+    <ClInclude Include="Source\Application\GameFlow\GameScene\GameMode\SingleMode\SingleMode.h" />
+    <ClInclude Include="Source\Application\GameFlow\GameScene\GameMode\StoryMode\StoryMode.h" />
+    <ClInclude Include="Source\Application\GameFlow\GameScene\GameScene.h" />
+    <ClInclude Include="Source\Application\GameFlow\GameScene\Pause\Pause.h" />
+    <ClInclude Include="Source\Application\GameFlow\GameScene\SingleGameStats\SingleGameStats.h" />
+    <ClInclude Include="Source\Application\GameFlow\GameScene\StageMap\StageMap.h" />
+    <ClInclude Include="Source\Application\GameFlow\GameScene\TimeLine\Camp\Camp.h" />
+    <ClInclude Include="Source\Application\GameFlow\GameScene\TimeLine\TimeLine.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\AliceSelect\AliceSelect.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponLore\WeaponLore.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect\WeaponSelect.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile\CharaProfile.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaSelect.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaSelectDuel\CharaSelectDuel.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Config\ConfigRoom.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\DressRoom\ClothText\ClothText.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\DressRoom\DressRoom.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Help\HelpRoom.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Music\MusicRoom.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Online\OnlineRoom.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\ReplayRoom\ReplayRoom.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\StageSelect\StageSelect.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\StorySelect\StorySelect.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Story\Story.h" />
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Title\Title.h" />
+    <ClInclude Include="Source\Application\GameFlow\Scene\Scene.h" />
+    <ClInclude Include="Source\Application\GameFlow\Scene\SelectYN\SelectYN.h" />
+    <ClInclude Include="Source\Application\GameMassage\GameMassage.h" />
+    <ClInclude Include="Source\Application\Key\Key.h" />
+    <ClInclude Include="Source\Application\Replayer\KeyCapture\KeyCapture.h" />
+    <ClInclude Include="Source\Application\Replayer\Replayer.h" />
+    <ClInclude Include="Source\Application\ScoreBoard\DuelScore\DuelScore.h" />
+    <ClInclude Include="Source\Application\ScoreBoard\ItemRoulette\ItemRoulette.h" />
+    <ClInclude Include="Source\Application\ScoreBoard\PlayerScore\PlayerScore.h" />
+    <ClInclude Include="Source\Application\ScoreBoard\ScoreBoard.h" />
+    <ClInclude Include="Source\Application\ScoreBoard\StartingCall\StartingCall.h" />
+    <ClInclude Include="Source\Application\ScoreBoard\SubTitle\SubTitle.h" />
+    <ClInclude Include="Source\Application\Server\DuelServer.h" />
+    <ClInclude Include="Source\Application\Sound\Sound.h" />
+    <ClInclude Include="Source\Collider\Collider.h" />
+    <ClInclude Include="Source\Collider\Square\HitSquare.h" />
+    <ClInclude Include="Source\CustomWeapon\CustomWeapon.h" />
+    <ClInclude Include="Source\EffectTools\ScreenFade\ScreenFade.h" />
+    <ClInclude Include="Source\EffectTools\Shake\Shake.h" />
+    <ClInclude Include="Source\Helper\Helper.h" />
+    <ClInclude Include="Source\library\AppManager\AppManager.h" />
+    <ClInclude Include="Source\library\FileManager\FileManager.h" />
+    <ClInclude Include="Source\library\Graphics\Graphics2D\Graphics2D.h" />
+    <ClInclude Include="Source\library\Graphics\Graphics3D\Graphics3D.h" />
+    <ClInclude Include="Source\library\Graphics\Movie\MovieDX.h" />
+    <ClInclude Include="Source\library\Graphics\String\StringDX.h" />
+    <ClInclude Include="Source\library\KeyInput\KeyInputDX.h" />
+    <ClInclude Include="Source\library\NetWork\NetWorkDx.h" />
+    <ClInclude Include="Source\library\Sound\SoundDX.h" />
+    <ClInclude Include="Source\Manager\BossManager\BossBonus\BossBonus.h" />
+    <ClInclude Include="Source\Manager\BossManager\BossBonus\BossItem\BossItem.h" />
+    <ClInclude Include="Source\Manager\BossManager\BossBonus\BossScore\BossScore.h" />
+    <ClInclude Include="Source\Manager\BossManager\BossHP\BossHP.h" />
+    <ClInclude Include="Source\Manager\BossManager\BossManager.h" />
+    <ClInclude Include="Source\Manager\BossManager\BossUI\BossUI.h" />
+    <ClInclude Include="Source\Manager\BossManager\MagicRingEffect\MagicRingEffect.h" />
+    <ClInclude Include="Source\Manager\BulletManager\BulletManager.h" />
+    <ClInclude Include="Source\Manager\CharaImgManager\CharaImgManager.h" />
+    <ClInclude Include="Source\Manager\CharaImgManager\FacialEffect\FacialEffect.h" />
+    <ClInclude Include="Source\Manager\CharaImgManager\TalkMotion\EyeBrowMotion\EyeBrowMotion.h" />
+    <ClInclude Include="Source\Manager\CharaImgManager\TalkMotion\EyeMotion\EyeMotion.h" />
+    <ClInclude Include="Source\Manager\CharaImgManager\TalkMotion\MouthMotion\MouthMotion.h" />
+    <ClInclude Include="Source\Manager\CharaImgManager\TalkMotion\TalkMotion.h" />
+    <ClInclude Include="Source\Manager\FrameManager\FrameManager.h" />
+    <ClInclude Include="Source\Manager\ItemManager\ItemManager.h" />
+    <ClInclude Include="Source\Manager\MinionManager\MinionManager.h" />
+    <ClInclude Include="Source\Manager\SaveDataManager\SaveDataManager.h" />
+    <ClInclude Include="Source\Manager\SceneManager\SceneManager.h" />
+    <ClInclude Include="Source\Manager\TalkSceneManager\TalkSceneManager.h" />
+    <ClInclude Include="Source\MassageHandle\MassageHandle.h" />
+    <ClInclude Include="Source\Object\BackGround\BackGround.h" />
+    <ClInclude Include="Source\Object\Boss\Boss.h" />
+    <ClInclude Include="Source\Object\Boss\BossMotion\BossMotion.h" />
+    <ClInclude Include="Source\Object\Bullet\GrazeEffect\GrazeEffect.h" />
+    <ClInclude Include="Source\Object\Bullet\lazer\Lazer_Info.h" />
+    <ClInclude Include="Source\object\Bullet\Shot\Shot_Info.h" />
+    <ClInclude Include="Source\Object\Bullet\TurnLazer\TurnLazer_Info.h" />
+    <ClInclude Include="Source\Object\EditPointer\EditPointer.h" />
+    <ClInclude Include="Source\Object\Effect\Effect.h" />
+    <ClInclude Include="Source\Object\Item\BitItem\BitItem.h" />
+    <ClInclude Include="Source\Object\Item\GhostItem\GhostItem.h" />
+    <ClInclude Include="Source\Object\Minion\Minion.h" />
+    <ClInclude Include="Source\Object\Minion\MinionMotion\MinionMotion.h" />
+    <ClInclude Include="Source\Object\Object\Object.h" />
+    <ClInclude Include="Source\Object\Object\Parameter\FadeIn\FadeIn.h" />
+    <ClInclude Include="Source\Object\Object\Parameter\Position\Position.h" />
+    <ClInclude Include="Source\Object\Player\Bom\Bom_Info.h" />
+    <ClInclude Include="Source\Object\Player\Data\CharaCustom.h" />
+    <ClInclude Include="Source\Object\Player\Data\PlayerData.h" />
+    <ClInclude Include="Source\Object\Player\Item\ItemStack.h" />
+    <ClInclude Include="Source\Object\Player\mover\PlayerMover.h" />
+    <ClInclude Include="Source\Object\Player\Player.h" />
+    <ClInclude Include="Source\Object\Player\Shot\OptionManager.h" />
+    <ClInclude Include="Source\Object\Player\Shot\PlayerShot\PlayerShot.h" />
+    <ClInclude Include="Source\Object\Player\Shot\SideOption\SideOption.h" />
+    <ClInclude Include="Source\Resource\BulletImage\BulletImage.h" />
+    <ClInclude Include="Source\Resource\CharacterImage\CharacterImage.h" />
+    <ClInclude Include="Source\Resource\EnemyImage\EnemyImage.h" />
+    <ClInclude Include="Source\Resource\FacialEffectImage\FacialEffectImage.h" />
+    <ClInclude Include="Source\Resource\GUI\BossUIImage\BossUIImage.h" />
+    <ClInclude Include="Source\Resource\GUI\GameUIImage\GameUIImage.h" />
+    <ClInclude Include="Source\Resource\GUI\LoadUIImage\LoadUIImage.h" />
+    <ClInclude Include="Source\Resource\GUI\MenuUIImage\MenuUIImage.h" />
+    <ClInclude Include="Source\Resource\GUI\SelectUIImage\SelectUIImage.h" />
+    <ClInclude Include="Source\Resource\GUI\TextUIImage\TextUIImage.h" />
+    <ClInclude Include="Source\Resource\ItemImage\ItemImage.h" />
+    <ClInclude Include="Source\Resource\MapImage\MapImage.h" />
+    <ClInclude Include="Source\Resource\OnePictureImage\OnePictureImage.h" />
+    <ClInclude Include="Source\Resource\ParticleImage\ParicleImage.h" />
+    <ClInclude Include="Source\Resource\PlayerImage\PlayerImage.h" />
+    <ClInclude Include="Source\Resource\LoadManager.h" />
+    <ClInclude Include="Source\Resource\SaveData\SaveData.h" />
+    <ClInclude Include="Source\Resource\SoundData\SoundData.h" />
+    <ClInclude Include="Source\Script\BossBulletScript\BossBulletScript.h" />
+    <ClInclude Include="Source\Script\Manager\BossScript\BossScript.h" />
+    <ClInclude Include="Source\Script\Manager\BulletScript\Color\BulletColorScript.h" />
+    <ClInclude Include="Source\Script\Manager\BulletScript\Lazer\LazerScript.h" />
+    <ClInclude Include="Source\Script\Manager\BulletScript\Shot\ShotScript.h" />
+    <ClInclude Include="Source\Script\Manager\BulletScript\TurnLazer\TurnLazerScript.h" />
+    <ClInclude Include="Source\Script\Manager\BulletScript\Type\BulletTypeScript.h" />
+    <ClInclude Include="Source\Script\Manager\EnemyImageScript\EnemyImageScript.h" />
+    <ClInclude Include="Source\Script\Manager\HelperScript\HelperScript.h" />
+    <ClInclude Include="Source\Script\Manager\MinionScript\MinionScript.h" />
+    <ClInclude Include="Source\Script\Manager\PlayerScript\PlayerScript.h" />
+    <ClInclude Include="Source\Script\Manager\ShakeScript\ShakeScript.h" />
+    <ClInclude Include="Source\Script\Manager\SoundScript\SoundScript.h" />
+    <ClInclude Include="Source\Script\ScriptLoader\ScriptLoader.h" />
+    <ClInclude Include="Source\Script\TalkScript\BoxScript\BoxScript.h" />
+    <ClInclude Include="Source\Script\TalkScript\ImgCharaScript\ImgCharaScript.h" />
+    <ClInclude Include="Source\Script\TalkScript\TalkScript.h" />
+    <ClInclude Include="Source\Script\TimeLineScript\TimeLineScript.h" />
+    <ClInclude Include="Source\SystemProp\AliceProp\AliceProp.h" />
+    <ClInclude Include="Source\SystemProp\AreaProp.h" />
+    <ClInclude Include="Source\SystemProp\GameSceneProp\GameSceneProp.h" />
+    <ClInclude Include="Source\SystemProp\GameStatsProp.h" />
+    <ClInclude Include="Source\SystemProp\SceneProp.h" />
+    <ClInclude Include="Source\Tools\TextInput\TextInputer.h" />
+    <ClInclude Include="Source\Tools\TimeFader\TimeFader.h" />
+    <ClInclude Include="Source\Tools\Transform\Transform.h" />
+    <ClInclude Include="Source\World\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dat\Script\Bullet\Boss0\at0.lua" />
+    <None Include="dat\Script\Bullet\Boss0\at1.lua" />
+    <None Include="dat\Script\Bullet\Boss0\at2.lua" />
+    <None Include="dat\Script\Bullet\Boss0\at3.lua" />
+    <None Include="dat\Script\Bullet\Boss0\at4.lua" />
+    <None Include="dat\Script\Bullet\Boss0\atN0.lua" />
+    <None Include="dat\Script\Bullet\Boss0\atN1.lua" />
+    <None Include="dat\Script\Bullet\Boss1\at0.lua" />
+    <None Include="dat\Script\Bullet\Boss1\at1.lua" />
+    <None Include="dat\Script\Bullet\Boss1\at2.lua" />
+    <None Include="dat\Script\Bullet\Boss1\at3.lua" />
+    <None Include="dat\Script\Bullet\Boss1\at4.lua" />
+    <None Include="dat\Script\Bullet\Boss1\at5.lua" />
+    <None Include="dat\Script\Bullet\Boss2\at0.lua" />
+    <None Include="dat\Script\Bullet\Boss2\at1.lua" />
+    <None Include="dat\Script\Bullet\Boss2\at2.lua" />
+    <None Include="dat\Script\Bullet\Boss2\at3.lua" />
+    <None Include="dat\Script\Bullet\Boss2\at4.lua" />
+    <None Include="dat\Script\Bullet\Boss2\at5.lua" />
+    <None Include="dat\Script\Bullet\Boss2\at6.lua" />
+    <None Include="dat\Script\Bullet\Boss2\atN0.lua" />
+    <None Include="dat\Script\Bullet\Boss3\at0.lua" />
+    <None Include="dat\Script\Bullet\Boss3\at1.lua" />
+    <None Include="dat\Script\Bullet\Boss3\at2.lua" />
+    <None Include="dat\Script\Bullet\Boss3\at3.lua" />
+    <None Include="dat\Script\Bullet\Boss3\at4.lua" />
+    <None Include="dat\Script\Bullet\Boss3\at5.lua" />
+    <None Include="dat\Script\Bullet\Boss3\at6.lua" />
+    <None Include="dat\Script\Bullet\Boss3\atN0.lua" />
+    <None Include="dat\Script\Bullet\Boss4\at0.lua" />
+    <None Include="dat\Script\Bullet\Boss4\at1.lua" />
+    <None Include="dat\Script\Bullet\Boss4\at2.lua" />
+    <None Include="dat\Script\Bullet\Boss4\at3.lua" />
+    <None Include="dat\Script\Bullet\Boss4\atN0.lua" />
+    <None Include="dat\Script\Bullet\Boss4\atN1.lua" />
+    <None Include="dat\Script\Bullet\Boss4\atN2.lua" />
+    <None Include="dat\Script\Bullet\Boss5\at0.lua" />
+    <None Include="dat\Script\Bullet\Boss5\at1.lua" />
+    <None Include="dat\Script\Bullet\Boss5\at2.lua" />
+    <None Include="dat\Script\Bullet\Boss5\at3.lua" />
+    <None Include="dat\Script\Bullet\Boss5\at4.lua" />
+    <None Include="dat\Script\Bullet\Boss5\at5.lua" />
+    <None Include="dat\Script\Bullet\Boss5\at6.lua" />
+    <None Include="dat\Script\Bullet\Boss5\at7.lua" />
+    <None Include="dat\Script\Bullet\Boss5\at8.lua" />
+    <None Include="dat\Script\Bullet\Boss5\at9.lua" />
+    <None Include="dat\Script\Bullet\Boss5\atN0.lua" />
+    <None Include="dat\Script\Bullet\Boss6\at0.lua" />
+    <None Include="dat\Script\Bullet\Boss6\at1.lua" />
+    <None Include="dat\Script\Bullet\Boss6\at2.lua" />
+    <None Include="dat\Script\Bullet\Boss6\at3.lua" />
+    <None Include="dat\Script\Bullet\Boss6\at4.lua" />
+    <None Include="dat\Script\Bullet\Boss6\at5.lua" />
+    <None Include="dat\Script\Bullet\Boss6\at6.lua" />
+    <None Include="dat\Script\Bullet\Boss7\at0.lua" />
+    <None Include="dat\Script\Bullet\Boss7\at1.lua" />
+    <None Include="dat\Script\Bullet\Boss7\at10.lua" />
+    <None Include="dat\Script\Bullet\Boss7\at2.lua" />
+    <None Include="dat\Script\Bullet\Boss7\at3.lua" />
+    <None Include="dat\Script\Bullet\Boss7\at4.lua" />
+    <None Include="dat\Script\Bullet\Boss7\at5.lua" />
+    <None Include="dat\Script\Bullet\Boss7\at6.lua" />
+    <None Include="dat\Script\Bullet\Boss7\at7.lua" />
+    <None Include="dat\Script\Bullet\Boss7\at8.lua" />
+    <None Include="dat\Script\Bullet\Boss7\at9.lua" />
+    <None Include="dat\Script\Bullet\Boss7\atN0.lua" />
+    <None Include="dat\Script\Bullet\Boss7\atN1.lua" />
+    <None Include="dat\Script\Bullet\BossPlayer\at0.lua" />
+    <None Include="dat\Script\Bullet\BossPlayer\at1.lua" />
+    <None Include="dat\Script\Bullet\BossPlayer\at2.lua" />
+    <None Include="dat\Script\Bullet\BossPlayer\at3.lua" />
+    <None Include="dat\Script\Bullet\BossPlayer\at4.lua" />
+    <None Include="dat\Script\Bullet\BossPlayer\at5.lua" />
+    <None Include="dat\Script\Bullet\BossPlayer\at6.lua" />
+    <None Include="dat\Script\Bullet\Library.lua" />
+    <None Include="dat\Script\Library\BossBullet\BossBullet.lua" />
+    <None Include="dat\Script\Library\Boss\BossSc.lua" />
+    <None Include="dat\Script\Library\Bullet\BulletLib.lua" />
+    <None Include="dat\Script\Library\Bullet\BulletProp\BossBulletEt\BulletEtSet.lua" />
+    <None Include="dat\Script\Library\Bullet\BulletProp\BossBulletEt\LazerEt.lua" />
+    <None Include="dat\Script\Library\Bullet\BulletProp\BossBulletEt\ShotEt.lua" />
+    <None Include="dat\Script\Library\Bullet\BulletProp\BossBulletEt\TLazerEt.lua" />
+    <None Include="dat\Script\Library\Bullet\BulletProp\BulletColor.lua" />
+    <None Include="dat\Script\Library\Bullet\BulletProp\BulletImage.lua" />
+    <None Include="dat\Script\Library\Bullet\BulletProp\LazerSc.lua" />
+    <None Include="dat\Script\Library\Bullet\BulletProp\ShotSc.lua" />
+    <None Include="dat\Script\Library\Bullet\BulletProp\TurnLazerSc.lua" />
+    <None Include="dat\Script\Library\EnemyImage.lua" />
+    <None Include="dat\Script\Library\Helper.lua" />
+    <None Include="dat\Script\Library\ItemList.lua" />
+    <None Include="dat\Script\Library\Minion\MinionSc.lua" />
+    <None Include="dat\Script\Library\Player\PlayerSc.lua" />
+    <None Include="dat\Script\Library\Sound\SoundSc.lua" />
+    <None Include="dat\Script\Library\Talker\CharaTypeSc.lua" />
+    <None Include="dat\Script\Library\Talker\ImgCharaSc.lua" />
+    <None Include="dat\Script\Library\Talker\Library.lua" />
+    <None Include="dat\Script\Library\Talker\SerifBoxSc.lua" />
+    <None Include="dat\Script\Library\Timeline\TimelineSc.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\MinionBullet.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\MinionBullet.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\MinionBullet.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at5.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\MinionBullet.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\MinionBullet.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\MinionBullet.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\MinionBullet.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\MinionBullet.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage0\MinionMover.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at5.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage1\MinionMover.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at5.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage2\MinionMover.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at5.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage3\MinionMover.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage3\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage3\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage3\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage3\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage3\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage4\MinionMover.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage4\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage4\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage4\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage4\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage4\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage5\MinionMover.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage5\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage5\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage5\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage5\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage5\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage6\MinionMover.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage6\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage6\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage6\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage6\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage6\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage7\MinionMover.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at0.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at1.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at2.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at3.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at4.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at5.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at6.lua" />
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at7.lua" />
+    <None Include="dat\Script\Talk\0.lua" />
+    <None Include="dat\Script\Talk\1.lua" />
+    <None Include="dat\Script\Talk\10.lua" />
+    <None Include="dat\Script\Talk\11.lua" />
+    <None Include="dat\Script\Talk\12.lua" />
+    <None Include="dat\Script\Talk\13.lua" />
+    <None Include="dat\Script\Talk\14.lua" />
+    <None Include="dat\Script\Talk\15.lua" />
+    <None Include="dat\Script\Talk\16.lua" />
+    <None Include="dat\Script\Talk\17.lua" />
+    <None Include="dat\Script\Talk\18.lua" />
+    <None Include="dat\Script\Talk\19.lua" />
+    <None Include="dat\Script\Talk\2.lua" />
+    <None Include="dat\Script\Talk\3.lua" />
+    <None Include="dat\Script\Talk\4.lua" />
+    <None Include="dat\Script\Talk\5.lua" />
+    <None Include="dat\Script\Talk\6.lua" />
+    <None Include="dat\Script\Talk\7.lua" />
+    <None Include="dat\Script\Talk\8.lua" />
+    <None Include="dat\Script\Talk\9.lua" />
+    <None Include="dat\Script\Talk\Boss1TalkEnd\Akagi.lua" />
+    <None Include="dat\Script\Talk\Boss1TalkEnd\Ayano.lua" />
+    <None Include="dat\Script\Talk\Boss1TalkEnd\Hime.lua" />
+    <None Include="dat\Script\Talk\Boss1TalkEnd\Ioriko.lua" />
+    <None Include="dat\Script\Talk\Boss1TalkEnd\Misato.lua" />
+    <None Include="dat\Script\Talk\Boss1Talk\Akagi.lua" />
+    <None Include="dat\Script\Talk\Boss1Talk\Ayano.lua" />
+    <None Include="dat\Script\Talk\Boss1Talk\Hime.lua" />
+    <None Include="dat\Script\Talk\Boss1Talk\Ioriko.lua" />
+    <None Include="dat\Script\Talk\Boss1Talk\Misato.lua" />
+    <None Include="dat\Script\Talk\Boss4TalkEnd\AkagiHime.lua" />
+    <None Include="dat\Script\Talk\Boss4TalkEnd\AyanoMisato.lua" />
+    <None Include="dat\Script\Talk\Boss4TalkEnd\Ioriko.lua" />
+    <None Include="dat\Script\Talk\Boss4Talk\Akagi.lua" />
+    <None Include="dat\Script\Talk\Boss4Talk\Ayano.lua" />
+    <None Include="dat\Script\Talk\Boss4Talk\Hime.lua" />
+    <None Include="dat\Script\Talk\Boss4Talk\Ioriko.lua" />
+    <None Include="dat\Script\Talk\Boss4Talk\Misato.lua" />
+    <None Include="dat\Script\Talk\Boss5Talk\Akagi.lua" />
+    <None Include="dat\Script\Talk\Boss5Talk\Ayano.lua" />
+    <None Include="dat\Script\Talk\Boss5Talk\Hime.lua" />
+    <None Include="dat\Script\Talk\Boss5Talk\Ioriko.lua" />
+    <None Include="dat\Script\Talk\Boss5Talk\Misato.lua" />
+    <None Include="dat\Script\Talk\Boss6Talk\StoryMode.lua" />
+    <None Include="dat\Script\Talk\Boss7Talk\Akagi.lua" />
+    <None Include="dat\Script\Talk\Boss7Talk\Ayano.lua" />
+    <None Include="dat\Script\Talk\Boss7Talk\Hime.lua" />
+    <None Include="dat\Script\Talk\Boss7Talk\Ioriko.lua" />
+    <None Include="dat\Script\Talk\Boss7Talk\Misato.lua" />
+    <None Include="dat\Script\Talk\ending.lua" />
+    <None Include="dat\Script\TimeLine\ItemMinion\ItemMinion.lua" />
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at0.lua" />
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at1.lua" />
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at2.lua" />
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at3.lua" />
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at4.lua" />
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at5.lua" />
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at6.lua" />
+    <None Include="dat\Script\TimeLine\PlayerBullet\PlayerBullet.lua" />
+    <None Include="dat\Script\TimeLine\Stage0.lua" />
+    <None Include="dat\Script\TimeLine\Stage1.lua" />
+    <None Include="dat\Script\TimeLine\Stage2.lua" />
+    <None Include="dat\Script\TimeLine\Stage3.lua" />
+    <None Include="dat\Script\TimeLine\Stage4.lua" />
+    <None Include="dat\Script\TimeLine\Stage5.lua" />
+    <None Include="dat\Script\TimeLine\Stage6.lua" />
+    <None Include="dat\Script\TimeLine\Stage7.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="dat\Script\スクリプト説明書\タイムラインのリファレンス.txt" />
+    <Text Include="dat\Script\スクリプト説明書\会話スクリプトのリファレンス.txt" />
+    <Text Include="dat\Script\スクリプト説明書\弾の種類リスト.txt" />
+    <Text Include="dat\Script\スクリプト説明書\弾幕便利系の関数.txt" />
+    <Text Include="dat\Script\スクリプト説明書\弾幕基本的な関数.txt" />
+    <Text Include="dat\Script\スクリプト説明書\敵種類リスト.txt" />
+    <Text Include="dat\Script\スクリプト説明書\雑魚敵のリファレンス.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

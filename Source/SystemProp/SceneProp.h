@@ -1,0 +1,29 @@
+#pragma once
+//ゲームシーンの種類
+enum SCENE_TYPE {
+	TITLE,
+	//セレクト出来る種類
+	DIFFICULTY_SELECT,
+	EXTRA_MODE,
+	ALICE_MODE,
+	REPLAY,
+	REPLAY_WRITE_MODE,
+	REPLAY_READ_MODE,
+	STORY_SELECT,
+	DRESS_UP,
+	MUSIC,
+	HELP,
+	CONFIG,
+	//深部のセレクトシーン
+	SELECT_CHARA,
+	SELECT_CHARA_DUEL,
+	SELECT_STAGE,
+	//インゲームのシーン
+	GAME_MAIN,
+	GAME_RETRY,
+	//追加(オンライン用)
+	SERVER_ROOM,
+	ONLINE,
+	ONLINE_FIGHT,
+	FIGHT_MODE,
+};

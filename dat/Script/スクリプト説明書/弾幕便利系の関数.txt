@@ -1,0 +1,80 @@
+#クラス
+・et_s		:Shot クラス用の便利関数をまとめたクラス
+・et_l		:Lazerクラス用の便利関数をまとめたクラス
+・et_lc		:LazCrクラス用の便利関数をまとめたクラス
+
+#中身
+
+<関数の設定>
+・size(num)
+・bound(flag)
+・noBoundAngle(flag)
+・state2(num)
+・rayer(num)
+・rota(flag)	:次に呼ぶ弾幕関数の弾を回転するかどうかを指定
+・shine(flag)	:次に呼ぶ弾幕関数の弾を加算発光するかどうかを指定
+・numInState2(flag) :次に呼ぶ弾幕関数で弾のState2に個数のうちの何番目かを取得させるかどうかを指定(例: 10個の円形弾だったら、0～9の順番に取得する)
+・noDelete(flag) :次に呼ぶ弾幕関数の弾が自機にあたっても消えなくなる
+<円形弾を座標指定で生成する>
+・ringAt(x, y,num, dist, type, color, speed, add_rd, state)
+
+<円形弾をボスの座標から生成する>
+・ring(num, dist, type, color, speed, add_rd, state)
+・et_lc.ring(num, dist, length, color, speed, add_rd, state)
+・et_l.ring(num, dist, type ,color, speed, add_rd, state)
+<円形弾そのものを1個のオブジェクトとして角度を指定するよ>
+・ringVecAt(x, y, num, dist, type ,color, speed, angle, state)
+
+<円形弾そのものを1個のオブジェクトとして角度を指定するよ>
+・ringVec(num, dist, type ,color, speed, angle, state)
+
+<n-way弾を座標指定で生成する>
+・et_lc.nwayAt(x, y, length, nway, dist, color, speed, radian, add_rd, state)
+・nwayAt(x, y, nway, num, dist, type, color, speed, add_speed, space_rd, add_rd, state)
+
+    nway	:wayの数
+    num 	:1方向ごとに出す数
+    add_speed	:numで指定した弾ごとに速度を加える
+    space_rd	:way1個分の角度
+    add_rd	:nway全体の角度
+
+<n-way弾をボスの座標から生成する>
+・nway(nway, num, dist, type ,color, speed, add_speed, space_rd, add_rd, state)
+
+    nway	:wayの数
+    num 	:1方向ごとに出す数
+    add_speed	:numで指定した弾ごとに速度を加える
+    space_rd	:nway全体の角度
+    add_rd	:way1個分の角度
+
+et_l.nway(nway, num, dist, type ,color, speed, add_speed, radian, add_rd, state)
+
+<画面の端から弾を生成する>
+・outside(area, type ,color, speed, add_rd, state)
+
+　※出る場所はareaで指定
+
+　　AREA_LEFT	:左端
+　　AREA_RIGHT	:右端
+　　AREA_UP	:上側
+　　AREA_DOWN	:下側
+
+<弾幕を角度を加える>
+・rd_add(bl_num, start_time, add_time, add_angle, state)
+
+　　bl_num番目の弾でstateが一致する場合、
+　　start_timeからadd_timeの時間で角度に
+　　add_angleを加える
+
+<弾幕を加速させる>
+・sp_up(bl_num, start_time, add_time, add_speed, state)
+
+　　bl_num番目の弾でstateが一致する場合、
+　　start_timeからadd_timeの時間で角度に
+　　add_speedを加える
+
+※レーザー用
+<軸の画像タイプを指定する>
+・standType(num)
+<幅と長さを指定する>
+・size(length, thick)

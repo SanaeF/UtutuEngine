@@ -1,0 +1,2450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="library">
+      <UniqueIdentifier>{afce56b2-09de-4e7e-9c58-2ffc7a494548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\Graphics">
+      <UniqueIdentifier>{7526bad6-6cbb-4bc4-b131-c5ed25b80047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\Graphics\Graphics2D">
+      <UniqueIdentifier>{3302d618-e6b0-4257-a7ae-492f4cbe428f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\Graphics\Graphics3D">
+      <UniqueIdentifier>{22232e25-8b74-4b99-b6d8-71f2dea0e1a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\Graphics\Movie">
+      <UniqueIdentifier>{1f564f16-9a18-4a39-82fe-f15a8c950549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\Sound">
+      <UniqueIdentifier>{e965f31f-7689-4abd-8366-781432aa9bc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{112c0c23-051a-4697-b04b-980ab942d426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object">
+      <UniqueIdentifier>{9c64c9fc-d2b3-458a-9140-bcc62f4f8827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource">
+      <UniqueIdentifier>{f865bfd6-5c17-40e7-b9f9-38cc1c353387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SystemProp">
+      <UniqueIdentifier>{339336b8-2658-44c6-a7d4-ca27dbe7a643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Player">
+      <UniqueIdentifier>{ee0ab192-0509-4f16-af00-fa06a40ce064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Player\Bom">
+      <UniqueIdentifier>{0caa27be-e8ce-44e9-ad01-8954775c738d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\World">
+      <UniqueIdentifier>{01d7d78d-0b57-41d4-a546-4364ca5fd06d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset">
+      <UniqueIdentifier>{1c63325f-db04-4574-a420-b374e20dd204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script">
+      <UniqueIdentifier>{f5e7c3b7-f7ee-433b-a341-78039a23d26b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Object">
+      <UniqueIdentifier>{0e916453-0876-4806-84ff-a43a8b9977c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Collider">
+      <UniqueIdentifier>{0a5229f5-9530-4407-ad1e-eac5cff2b335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Bullet">
+      <UniqueIdentifier>{284149fc-d4ff-4148-9f77-2d71d3a27007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Bullet\Lazer">
+      <UniqueIdentifier>{5f2a8ab3-1611-4225-a037-3d40624c59a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Bullet\GrazeEffect">
+      <UniqueIdentifier>{1125bd9e-d7e5-40b9-b466-f658f86828c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Helper">
+      <UniqueIdentifier>{f0992716-4462-4451-bada-334c9fc1ef0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\String">
+      <UniqueIdentifier>{7213433f-0004-4f1e-b944-0759cbcdfaa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application">
+      <UniqueIdentifier>{5fd24df4-4aeb-42a5-a6c9-eda74094bc10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Application">
+      <UniqueIdentifier>{5dd89aab-0c9b-4bf1-929c-6b66770659cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\AppManager">
+      <UniqueIdentifier>{2976128b-3b13-43d6-a269-6e247753d2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\ScoreBoard">
+      <UniqueIdentifier>{66607214-3441-4b04-8433-df8d47cdd029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Key">
+      <UniqueIdentifier>{92cd25c8-6170-44ed-b139-2a00a5b3cd36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Sound">
+      <UniqueIdentifier>{d2c0cc56-39fa-4e8e-a514-33d12caf84b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager">
+      <UniqueIdentifier>{620ff0c1-7ff3-42d4-a860-49573517f65a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MassageHandler">
+      <UniqueIdentifier>{e15ff24f-9c80-4d48-842d-5db6092ab578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\FrameManager">
+      <UniqueIdentifier>{ca01f9c2-eaa3-4a91-93e4-dc3f7fa34d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\SaveDataManager">
+      <UniqueIdentifier>{25cdd18a-ee35-49c8-ae44-97abb990de8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Effect">
+      <UniqueIdentifier>{9aca6468-0731-46d2-9e58-f2dedc373db3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\EditPointer">
+      <UniqueIdentifier>{e5d3b839-0a70-4446-a3f7-f3174404f30b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Bullet\TurnLazer">
+      <UniqueIdentifier>{a45b1644-269b-4d29-8f74-36f7976919f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\TalkSceneManager">
+      <UniqueIdentifier>{082e59c2-8748-4afc-bc25-88c47a563ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Talk">
+      <UniqueIdentifier>{8307e385-d549-465e-9ad9-0b953ed84766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source\Manager\CharaImgManager">
+      <UniqueIdentifier>{0e960418-ee34-4fb7-9ce6-a3d2c12a96c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\CharaImgManager\TalkMotion">
+      <UniqueIdentifier>{8adfeb1f-862c-4ad3-a8c4-033126e7c1c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\CharaImgManager\TalkMotion\EyeMotion">
+      <UniqueIdentifier>{da852469-4759-4ee0-a0fa-cffd720d5783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\CharaImgManager\TalkMotion\EyeBrowMotion">
+      <UniqueIdentifier>{d5b9ec15-a26a-4ee9-bc7a-a4233f94c0b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\CharaImgManager\TalkMotion\MouthMotion">
+      <UniqueIdentifier>{6498faa4-fe3f-4646-8717-8729ebdcb7ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Tools">
+      <UniqueIdentifier>{b7b96ec0-76f6-4aa8-8567-e0ca58e699aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Tools\Transform">
+      <UniqueIdentifier>{f29a0ead-11f1-4e1c-93b0-3f219efc8555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Minion">
+      <UniqueIdentifier>{92749f62-7c71-4fbf-966e-4845a8e62eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\EffectTools">
+      <UniqueIdentifier>{94d978fa-88f4-4599-a005-afd3f5e5abfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\EffectTools\Shake">
+      <UniqueIdentifier>{0388f7a5-3fa8-4d2b-b25e-70e6e12576f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Library">
+      <UniqueIdentifier>{f48a8ece-cf14-4c86-a8d2-3c042d685fd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Library\Minion">
+      <UniqueIdentifier>{d63c5604-129e-486b-aabc-a626aaa652b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\BackGround">
+      <UniqueIdentifier>{3d4b5ced-6d1a-43e9-8003-4adb4146923c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Object\Parameter">
+      <UniqueIdentifier>{f040eb71-226a-42c1-a5be-ecf4b1f04c94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Object\Parameter\Position">
+      <UniqueIdentifier>{246cb3c7-517a-43eb-8b2e-93bc32bac30b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Object\Parameter\FadeIn">
+      <UniqueIdentifier>{61423618-6152-48cb-add6-64d8fc83ce44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\NetWork">
+      <UniqueIdentifier>{5278f764-1796-4529-86be-6ec15ed460f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Server">
+      <UniqueIdentifier>{10f2bbcc-d21f-4886-99cf-f696b09c5c18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Player\Shot">
+      <UniqueIdentifier>{1161e950-7b5a-4fec-940c-9dbe60f10579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Player\Shot\PlayerShot">
+      <UniqueIdentifier>{4abe061c-cfe6-45d9-af91-ffb56476bed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Collider\Square">
+      <UniqueIdentifier>{37a57d97-7200-4007-af2c-68cc832de814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp">
+      <UniqueIdentifier>{c2b566a6-b41d-4bf1-b376-df98890b660d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move">
+      <UniqueIdentifier>{00c58d0e-c628-4100-bbe4-d0082c6e979e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage0">
+      <UniqueIdentifier>{5254b503-494f-4e03-9902-7ce219b11b76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet">
+      <UniqueIdentifier>{0b1f945c-a8ab-492f-8873-1bf407604eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Library\Timeline">
+      <UniqueIdentifier>{9177b319-82f6-4e5b-8513-952a554ca870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Library\Bullet">
+      <UniqueIdentifier>{07a12adb-d6eb-47ab-a511-fb52ebeded29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Library\Bullet\BulletProp">
+      <UniqueIdentifier>{8e8d4398-6833-4e34-be40-09382a393828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Library\Sound">
+      <UniqueIdentifier>{a57f8e12-07b7-4124-97df-a10b9538c2d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Library\Boss">
+      <UniqueIdentifier>{ce8fbc29-1034-46ba-926d-5fd79f8546af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Library\Player">
+      <UniqueIdentifier>{3e85211f-7328-4f5c-951f-fe6b5423c943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Library\Bullet\BulletProp\BossBulletEt">
+      <UniqueIdentifier>{78ddfe64-4e88-4041-8485-2383a88b19fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Bullet">
+      <UniqueIdentifier>{813924dd-8d14-405f-b712-dd2df968e3b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Bullet\Boss0">
+      <UniqueIdentifier>{ff0a8850-f7f9-4951-b62a-dbdba3cc2f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\ScoreBoard\StartingCall">
+      <UniqueIdentifier>{7566733d-b4c1-4366-9634-b5b988fde6e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Bullet\Boss1">
+      <UniqueIdentifier>{19e68f28-3234-4376-bbaf-47db14cbe778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Bullet\Boss2">
+      <UniqueIdentifier>{97a0e6a6-221e-49f7-9b9c-1be15983d9b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Bullet\Boss3">
+      <UniqueIdentifier>{8b6896d4-d2b3-4a66-bf25-7857fcb477a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Bullet\Boss4">
+      <UniqueIdentifier>{a156c63d-5bc9-4d40-a3eb-bbaeaf007e41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Bullet\Boss5">
+      <UniqueIdentifier>{b6e17113-6ed0-45e1-b064-7b1d41f56975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Bullet\BossPlayer">
+      <UniqueIdentifier>{b6e4d4fc-d6c3-4210-97c9-012282329e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\EffectTools\ScreenFade">
+      <UniqueIdentifier>{6d1f8830-3724-45e9-b534-3ca499a80a7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Player\Item">
+      <UniqueIdentifier>{3c0fc252-87a6-496b-b1f5-672870d10356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Player\mover">
+      <UniqueIdentifier>{604da7cc-9fc5-4afe-a3d6-a48cc608e71d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage1">
+      <UniqueIdentifier>{917470d7-4dfe-4252-9cd2-88a9d3b1a7c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage0">
+      <UniqueIdentifier>{01f0cd4b-d04a-4d70-bea9-08d62d59be1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage2">
+      <UniqueIdentifier>{c4daba6f-fc75-41ae-a70a-567c49e1798d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage2">
+      <UniqueIdentifier>{e0d716b9-e1b2-4c8c-aea1-ae986be80a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage1">
+      <UniqueIdentifier>{62c0cec3-0047-46d8-85cf-b2d7a16488d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage0\Pattern">
+      <UniqueIdentifier>{ba5bd351-a247-46f4-9164-29eecfd5d4ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage0\Pattern">
+      <UniqueIdentifier>{e36cf630-f423-484c-ad75-aabdb324b731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage1\Pattern">
+      <UniqueIdentifier>{1064f87e-4c89-4e2f-82b9-827d6099c307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage2\Pattern">
+      <UniqueIdentifier>{8403b20a-6fc9-4f3e-a3fd-548a0f7d0f67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage1\Pattern">
+      <UniqueIdentifier>{046e83c3-4625-44a4-b209-a6bfb6619a42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage2\Pattern">
+      <UniqueIdentifier>{102341a8-9f20-4a27-8f54-12ea86a964df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Item">
+      <UniqueIdentifier>{eca3f814-3da3-4f7f-9733-71485f6a31ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Item\BitItem">
+      <UniqueIdentifier>{ce342d1f-623a-468c-bbb8-f53738878148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\ItemManager">
+      <UniqueIdentifier>{eea71006-d5be-4f1d-a48d-c84f465e3413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\FileManager">
+      <UniqueIdentifier>{4eae501a-baab-4d85-ba58-05c83ffc8a71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\KeyInput">
+      <UniqueIdentifier>{4e90b73b-a026-4cc6-9247-19cc4b269db4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\SceneManager">
+      <UniqueIdentifier>{4c334060-d99d-46ad-a403-daed2e71bbef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\BulletImage">
+      <UniqueIdentifier>{ad4b41b4-0e4b-44bf-afb0-3b9f309b4266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\CharacterImage">
+      <UniqueIdentifier>{04d73efc-695d-4249-9610-1910f6b16316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\EnemyImage">
+      <UniqueIdentifier>{ec8be9ca-fe5b-4c81-873b-999707e7ce56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\ItemImage">
+      <UniqueIdentifier>{83f40210-b3d6-4d80-916a-b5f7de155ff0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\MapImage">
+      <UniqueIdentifier>{475274ef-f491-4798-a0a5-1d1ea941f5ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\PlayerImage">
+      <UniqueIdentifier>{8405c231-cc58-44fe-94c3-6b5075f6f732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\ParticleImage">
+      <UniqueIdentifier>{d0ae081d-f113-41df-9558-e83cb332a91e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\SoundData">
+      <UniqueIdentifier>{a767ca1c-597b-4cc8-9d58-4e2d5809ed9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\SaveData">
+      <UniqueIdentifier>{f763330c-11dc-4d95-9209-7b2ba1e23d58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\GUI">
+      <UniqueIdentifier>{d7198c46-050a-4c24-9f74-4cdc1515806e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\GUI\BossUIImage">
+      <UniqueIdentifier>{d0426b3a-ccab-4a09-a7cd-c49e0fa80b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\GUI\GameUIImage">
+      <UniqueIdentifier>{d5a4e257-500f-43a6-9062-94af3fe9b6a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\GUI\LoadUIImage">
+      <UniqueIdentifier>{82350a30-0e01-4994-ab03-936a3e6a585d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\GUI\MenuUIImage">
+      <UniqueIdentifier>{708b9ab4-c46a-4135-9f35-626ccc18a62b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\GUI\SelectUIImage">
+      <UniqueIdentifier>{fd07c38b-b162-4564-b137-7b77d131656c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\GUI\TextUIImage">
+      <UniqueIdentifier>{376b2792-1088-4537-8ef4-c0204ef07f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow">
+      <UniqueIdentifier>{43c2ff91-afcd-47b9-afa8-a58b5a511ea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\GameScene">
+      <UniqueIdentifier>{08612020-a74f-4612-a2ac-e34ab9455cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\GameScene\Pause">
+      <UniqueIdentifier>{a05544e2-c7f2-453a-8c73-b96f19a5f2cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\GameScene\StageMap">
+      <UniqueIdentifier>{48c305f9-5c80-447a-bc51-2f4d74c83a4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\GameScene\TimeLine">
+      <UniqueIdentifier>{c8c77329-0433-4b8e-98de-df7c5d9be1e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\GameScene\SingleGameStats">
+      <UniqueIdentifier>{afbb97ce-e8e9-42df-91a0-3f192c216e0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\Scene">
+      <UniqueIdentifier>{9f3d3cf9-6e15-4a02-b219-495fa6037bdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\EndingScene">
+      <UniqueIdentifier>{6d727eae-9de4-4224-8e02-440a7017e750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\ScoreBoard\PlayerScore">
+      <UniqueIdentifier>{50309fa0-9ac9-4377-8efe-31752c74795e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\ScoreBoard\DuelScore">
+      <UniqueIdentifier>{9655b5b4-e181-4cf9-acaa-740eae85728e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\GameScene\GameMode">
+      <UniqueIdentifier>{39c18b51-b6e3-4f6f-986a-3d28b7879bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\GameScene\GameMode\StoryMode">
+      <UniqueIdentifier>{c78dd407-fcb5-48fb-afa8-1abcbb37a2ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Application\LoadScene">
+      <UniqueIdentifier>{98773b61-a564-4525-accb-7ca69a939180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\GameScene\GameMode\SingleMode">
+      <UniqueIdentifier>{ede5ead0-dd30-4fb5-944d-5098866fdb45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\GameScene\GameMode\DuelMode">
+      <UniqueIdentifier>{9bdc6a1c-a8c1-43f5-812a-618f0f4ee163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Player\Data">
+      <UniqueIdentifier>{ac16d7df-bf7d-41db-bfa2-adf264ebcd00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene">
+      <UniqueIdentifier>{e6cd9e3b-a7b9-4d63-a82a-3bf129242771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\Title">
+      <UniqueIdentifier>{ac29f5d5-4d21-429d-a485-e6d5e98817fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\StageSelect">
+      <UniqueIdentifier>{5911fb41-e4b1-40b3-ad77-45b81bcb3875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\Story">
+      <UniqueIdentifier>{0c765b88-7cac-4766-a95d-695158d104df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\CharaSelect">
+      <UniqueIdentifier>{d75a9df5-cd89-4cdc-ac32-f72112b90106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaSelectDuel">
+      <UniqueIdentifier>{ded2e4ce-c6e1-4aba-9abc-d20ace3f8daa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\DressRoom">
+      <UniqueIdentifier>{2d8493de-ba6a-475b-82a7-466f955e335c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\MusicRoom">
+      <UniqueIdentifier>{fccab2f0-eb21-41c0-9138-8a42f701178c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\HelpRoom">
+      <UniqueIdentifier>{7ca16244-7ffa-4261-b433-ca94d8e75a9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\ConfigRoom">
+      <UniqueIdentifier>{4ca213ec-945b-4bbd-9043-5eefc6fe9eb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\OnlineRoom">
+      <UniqueIdentifier>{2ef3698e-203d-42a1-90ff-1b3d1ba8bd24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\DressRoom\ClothText">
+      <UniqueIdentifier>{55088348-d8cd-424d-a49f-72433e75c851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Minion\MinionMotion">
+      <UniqueIdentifier>{ccf7924a-060c-4805-8fe6-6c80436b8481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\ScoreBoard\ItemRoulette">
+      <UniqueIdentifier>{9376f933-c4f6-4e61-899c-7ac294ac3dc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\ScoreBoard\SubTitle">
+      <UniqueIdentifier>{1e62d4a9-ae9a-44d4-8c6a-93ffe767184b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\説明書">
+      <UniqueIdentifier>{08699984-2d15-4be2-ac42-d5da75d72843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Item\GhostItem">
+      <UniqueIdentifier>{74bc8fcb-ed1f-48c0-851d-9b9d21d94d2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\TimeLine">
+      <UniqueIdentifier>{ff02388a-adf2-4a58-a549-ebe7185b586d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\TimeLine\PlayerBullet">
+      <UniqueIdentifier>{54a6333f-90d9-48c0-9587-67574ea5640c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\TimeLine\PlayerBullet\Pattern">
+      <UniqueIdentifier>{8f2f946a-1066-4f18-ac39-f00b66464fe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\TimeLine\ItemMinion">
+      <UniqueIdentifier>{1e9ae1ce-505e-498c-944b-b2d7d8315458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Boss">
+      <UniqueIdentifier>{2d506970-25dc-4e82-9827-dbd5f6aaeda5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Boss\BossMotion">
+      <UniqueIdentifier>{8da2452c-8019-4351-886d-871c44dab58e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script">
+      <UniqueIdentifier>{7865d7d8-bbaf-40ae-887e-f89a80440d59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\TimeLineScript">
+      <UniqueIdentifier>{bfda5c2b-ef7e-4111-bf3b-4acd7c474d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\TalkScript">
+      <UniqueIdentifier>{85cc958c-fc5b-48fe-9bae-b319b286a2db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\TalkScript\BoxScript">
+      <UniqueIdentifier>{3d4b5e07-c017-4978-b93e-0807c704d85c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\TalkScript\ImgCharaScript">
+      <UniqueIdentifier>{3a4fcb4c-c913-44c1-be22-3f5dc5c72f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\BossBulletScript">
+      <UniqueIdentifier>{3ca440ac-05ef-4313-b34a-a64f378c209d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager">
+      <UniqueIdentifier>{c57095ec-c221-4b1b-8f2b-8986e34297c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\BossScript">
+      <UniqueIdentifier>{b16c1584-9661-419c-896a-f0f5454f3cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\PlayerScript">
+      <UniqueIdentifier>{6cadb19a-72c7-4415-8720-90a0cd1bb809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\MinionScript">
+      <UniqueIdentifier>{3e88d91e-41c3-481f-b907-71be7583d3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\ShakeScript">
+      <UniqueIdentifier>{f0385e5e-134c-4653-ba53-75435d3fd6b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\BulletScript">
+      <UniqueIdentifier>{8a1bed2c-7a54-4ffc-931c-484fe63adb33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\BulletScript\Lazer">
+      <UniqueIdentifier>{8742c851-dc0d-4d07-942c-607e72765dc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\BulletScript\Shot">
+      <UniqueIdentifier>{a44585a8-19ed-4b61-b3f0-c2c93dc5d77b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\BulletScript\TurnLazer">
+      <UniqueIdentifier>{989cf9ed-0560-46f2-a483-5cc10f9f69da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\BulletScript\Color">
+      <UniqueIdentifier>{d74b2c78-8cc5-44bb-803c-975f3847a16b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\BulletScript\Type">
+      <UniqueIdentifier>{e472e43b-9e06-4c6f-8900-795e05a27a14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\SoundScript">
+      <UniqueIdentifier>{d94e399a-c8f8-4b47-9d5f-d57bde35c7df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\HelperScript">
+      <UniqueIdentifier>{5d19bcdb-6c92-4851-975b-22e710c26296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\Manager\EnemyImageScript">
+      <UniqueIdentifier>{3c4e6210-73f4-4897-8fa8-ebc894b6f6c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Script\ScriptLoader">
+      <UniqueIdentifier>{f87691fa-f354-4379-ba3d-14952905ba39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage3">
+      <UniqueIdentifier>{c5760d5d-15ec-42ba-9f55-73dcff8fe60b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage4">
+      <UniqueIdentifier>{303bde93-e271-4d80-ab28-e88be8a9536d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage5">
+      <UniqueIdentifier>{53bb6fc4-0c30-4efe-8064-e181e1855a66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage6">
+      <UniqueIdentifier>{acd5f4d1-d101-43f6-8d72-b7252a46683d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage7">
+      <UniqueIdentifier>{40832b2b-868e-49d1-a827-6d2c628b0ec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage7\Pattern">
+      <UniqueIdentifier>{9a9fce02-6a62-42d3-915b-3e20227e2d4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage6\Pattern">
+      <UniqueIdentifier>{5c993741-571e-4484-b0a8-74b700f2d54f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage5\Pattern">
+      <UniqueIdentifier>{705885f6-9838-4138-83c7-3f80fd4d53f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage4\Pattern">
+      <UniqueIdentifier>{4743e0c6-eaaf-4193-8778-0e8c443073e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Bullet\Stage3\Pattern">
+      <UniqueIdentifier>{330cb4ae-4fdb-48a2-85d2-acfbd304a87a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage3">
+      <UniqueIdentifier>{35e08cc3-2a77-4c8f-9330-8adc0017aa42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage4">
+      <UniqueIdentifier>{2d5e7177-c614-4c0e-86fa-27c27f417fd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage5">
+      <UniqueIdentifier>{1a8d1985-22e4-41e8-97a9-162d3c877e67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage6">
+      <UniqueIdentifier>{5b0bb839-f14c-4d65-bf99-17694b632980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage7">
+      <UniqueIdentifier>{f33e7c79-4415-4d3e-9849-a41e02053a0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage7\Pattern">
+      <UniqueIdentifier>{062f8705-a0fe-46a4-9597-dd775794eb67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage6\Pattern">
+      <UniqueIdentifier>{1a542f94-5ce4-4855-bbb0-e2577d592a2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage5\Pattern">
+      <UniqueIdentifier>{c3ca085a-1900-46c7-809a-b6d68036a297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage4\Pattern">
+      <UniqueIdentifier>{7b4efbff-82cb-44c2-a9c6-2b4a5edd6f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\MinionProp\Move\Stage3\Pattern">
+      <UniqueIdentifier>{ef8d737a-e53e-4baa-a815-b14049452ecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\FacialEffectImage">
+      <UniqueIdentifier>{3b5beee8-1a5d-4b53-9f8d-115839e980e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\CharaImgManager\FacialEffect">
+      <UniqueIdentifier>{bcd796be-20db-404e-b6b0-f92bb2cec79f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\StorySelect">
+      <UniqueIdentifier>{5fdc3008-3838-46df-a4d6-f58211fe8acc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\AliceSelect">
+      <UniqueIdentifier>{70df6dfb-3235-4c9d-85f3-4dbbc0a0dd24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameMassage">
+      <UniqueIdentifier>{e61bf46e-21a2-42f8-abf1-8c6b7abdbcc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SystemProp\AliceProp">
+      <UniqueIdentifier>{e0ae5367-94cc-4f65-aa1a-c8e62342f1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\GameScene\TimeLine\Camp">
+      <UniqueIdentifier>{df5ffefe-992c-4416-9af5-cc6aab009d3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Talk\Boss1Talk">
+      <UniqueIdentifier>{81d94f79-6dac-42d5-8d6a-f6ec3fc0ed49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Talk\Boss1TalkEnd">
+      <UniqueIdentifier>{98e38704-57b4-4a0d-8d5e-5f0153a0b41c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Library\Talker">
+      <UniqueIdentifier>{47b0081f-5e87-4d4b-8e25-500b4426e257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\Movie">
+      <UniqueIdentifier>{a288f738-238d-42c5-a288-20ae55f202b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\Scene\SelectYN">
+      <UniqueIdentifier>{4299bfdc-ff1f-45fb-b7aa-6838cf687055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\CustomWeapon">
+      <UniqueIdentifier>{041a1ea0-4985-454a-b936-e168d33770c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect">
+      <UniqueIdentifier>{563daa93-0fc3-4cdc-aaaa-7e2992ac5784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\DebugLog">
+      <UniqueIdentifier>{f0aa485f-f45a-4ef8-a3a2-5170fe763c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Bullet\Shot">
+      <UniqueIdentifier>{33b6a98a-04bd-49ab-b8ae-c62fcc25694e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Bullet\Boss6">
+      <UniqueIdentifier>{46e71c54-66c6-493a-8b1e-446d930842d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Talk\Boss4Talk">
+      <UniqueIdentifier>{398b74b3-6898-4259-85c2-c83d674e7438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Talk\Boss4TalkEnd">
+      <UniqueIdentifier>{241982d8-b5f0-4d09-9363-04c765ea3e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Talk\Boss5Talk">
+      <UniqueIdentifier>{d6609928-3da5-4dd9-8941-2f3290231198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SystemProp\GameSceneProp">
+      <UniqueIdentifier>{c75130cc-7877-4805-8d8e-4d1160345eb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\GameScene\EndingTalk">
+      <UniqueIdentifier>{155fe237-aa7d-40d0-be11-5b17e39cfcde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Talk\Boss6Talk">
+      <UniqueIdentifier>{f7dfa3b1-581e-49b2-954d-9118d5a90d60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Bullet\Boss7 - %28EX%29">
+      <UniqueIdentifier>{23b06daa-8630-4bac-933f-39dfe6c7b8f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource\OnePictureImage">
+      <UniqueIdentifier>{70132c4a-b998-4418-954e-4a9395a2f809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Talk\Boss7Talk">
+      <UniqueIdentifier>{f1fb43ea-bca5-4dd1-84b3-83f25872c341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponLore">
+      <UniqueIdentifier>{e910c6ae-8b54-4169-be04-e8226bb076f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Replayer">
+      <UniqueIdentifier>{fded4cdf-6e12-4fa4-a1ff-70981ffcf556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\ReplayRoom">
+      <UniqueIdentifier>{b6bbf224-8150-4c22-9aa7-f984ea5f20be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Tools\TextInput">
+      <UniqueIdentifier>{e4a9eb70-f7c2-41ae-b995-b183f3cb61ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Replayer\KeyCapture">
+      <UniqueIdentifier>{efc513d0-33e5-4872-8bee-6f1e9e3af93f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Object\Player\Shot\SideOption">
+      <UniqueIdentifier>{af873a06-dd64-4612-a3d6-653a805c0877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\BulletManager">
+      <UniqueIdentifier>{c5549621-050f-4f8a-941b-e481c267a477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\BossManager">
+      <UniqueIdentifier>{511991a5-4316-445a-a957-24a7c4b73489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\BossManager\MagicRingEffect">
+      <UniqueIdentifier>{6d02e228-d641-4ceb-8a93-3b69a4908ca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset\Script\Library\BossBullet">
+      <UniqueIdentifier>{643461c9-76bb-4aba-9d89-849a9a49c44d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\BossManager\BossBonus">
+      <UniqueIdentifier>{9cab5c03-5362-412f-8fb2-66d4b6967b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\BossManager\BossUI">
+      <UniqueIdentifier>{3ae9ed5a-ed65-465f-9846-ad42d3df29a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\BossManager\BossBonus\BossScore">
+      <UniqueIdentifier>{c3eff530-012a-486b-a888-145e90331569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\BossManager\BossBonus\BossItem">
+      <UniqueIdentifier>{764bc017-79d3-4b34-ae5f-442ba91e1b9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\BossManager\BossHP">
+      <UniqueIdentifier>{264dcc39-90a9-4e70-a1c4-bd48a1b7de56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Manager\MinionManager">
+      <UniqueIdentifier>{6126d6c0-74dd-477e-8138-d54d1814dade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Tools\TimeFader">
+      <UniqueIdentifier>{73ec7a4a-b1d6-4573-8f17-fad8d9b0203e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile">
+      <UniqueIdentifier>{647b66d5-f0c4-4883-bf3f-7d182860fced}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\object\Bullet\Shot\Shot_Info.cpp">
+      <Filter>Source\Object\Bullet\Shot</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\library\Graphics\Graphics2D\Graphics2D.cpp">
+      <Filter>library\Graphics\Graphics2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Bullet\GrazeEffect\GrazeEffect.cpp">
+      <Filter>Source\Object\Bullet\GrazeEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Bullet\lazer\Lazer_Info.cpp">
+      <Filter>Source\Object\Bullet\Lazer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MassageHandle\MassageHandle.cpp">
+      <Filter>Source\MassageHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\World\World.cpp">
+      <Filter>Source\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Object\Object.cpp">
+      <Filter>Source\Object\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Boss\Boss.cpp">
+      <Filter>Source\Object\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Player\Player.cpp">
+      <Filter>Source\Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Collider\Collider.cpp">
+      <Filter>Source\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Player\Bom\Bom_Info.cpp">
+      <Filter>Source\Object\Player\Bom</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helper\Helper.cpp">
+      <Filter>Source\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\library\Graphics\String\StringDX.cpp">
+      <Filter>library\String</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Title\Title.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Application\Application.cpp">
+      <Filter>Source\Application\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\library\AppManager\AppManager.cpp">
+      <Filter>library\AppManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\GameScene\GameScene.cpp">
+      <Filter>Source\Application\GameFlow\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\StageSelect\StageSelect.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\StageSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Key\Key.cpp">
+      <Filter>Source\Application\Key</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\ScoreBoard\ScoreBoard.cpp">
+      <Filter>Source\Application\ScoreBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\FrameManager\FrameManager.cpp">
+      <Filter>Source\Manager\FrameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Music\MusicRoom.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\MusicRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\library\Sound\SoundDX.cpp">
+      <Filter>library\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Sound\Sound.cpp">
+      <Filter>Source\Application\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\SaveDataManager\SaveDataManager.cpp">
+      <Filter>Source\Manager\SaveDataManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Effect\Effect.cpp">
+      <Filter>Source\Object\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\EditPointer\EditPointer.cpp">
+      <Filter>Source\Object\EditPointer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Bullet\TurnLazer\TurnLazer_Info.cpp">
+      <Filter>Source\Object\Bullet\TurnLazer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\TalkScript\TalkScript.cpp">
+      <Filter>Source\Script\TalkScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\TalkScript\BoxScript\BoxScript.cpp">
+      <Filter>Source\Script\TalkScript\BoxScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\TalkSceneManager\TalkSceneManager.cpp">
+      <Filter>Source\Manager\TalkSceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\TalkScript\ImgCharaScript\ImgCharaScript.cpp">
+      <Filter>Source\Script\TalkScript\ImgCharaScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\CharaImgManager\CharaImgManager.cpp">
+      <Filter>Source\Manager\CharaImgManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\CharaImgManager\TalkMotion\EyeBrowMotion\EyeBrowMotion.cpp">
+      <Filter>Source\Manager\CharaImgManager\TalkMotion\EyeBrowMotion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\CharaImgManager\TalkMotion\EyeMotion\EyeMotion.cpp">
+      <Filter>Source\Manager\CharaImgManager\TalkMotion\EyeMotion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\CharaImgManager\TalkMotion\MouthMotion\MouthMotion.cpp">
+      <Filter>Source\Manager\CharaImgManager\TalkMotion\MouthMotion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Tools\Transform\Transform.cpp">
+      <Filter>Source\Tools\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Minion\Minion.cpp">
+      <Filter>Source\Object\Minion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EffectTools\Shake\Shake.cpp">
+      <Filter>Source\EffectTools\Shake</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\BossScript\BossScript.cpp">
+      <Filter>Source\Script\Manager\BossScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\PlayerScript\PlayerScript.cpp">
+      <Filter>Source\Script\Manager\PlayerScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\MinionScript\MinionScript.cpp">
+      <Filter>Source\Script\Manager\MinionScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\GameScene\Pause\Pause.cpp">
+      <Filter>Source\Application\GameFlow\GameScene\Pause</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\BackGround\BackGround.cpp">
+      <Filter>Source\Object\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\library\Graphics\Graphics3D\Graphics3D.cpp">
+      <Filter>library\Graphics\Graphics3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\GameScene\StageMap\StageMap.cpp">
+      <Filter>Source\Application\GameFlow\GameScene\StageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Object\Parameter\Position\Position.cpp">
+      <Filter>Source\Object\Object\Parameter\Position</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Object\Parameter\FadeIn\FadeIn.cpp">
+      <Filter>Source\Object\Object\Parameter\FadeIn</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\ShakeScript\ShakeScript.cpp">
+      <Filter>Source\Script\Manager\ShakeScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Help\HelpRoom.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\HelpRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Config\ConfigRoom.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\ConfigRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Online\OnlineRoom.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\OnlineRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\library\NetWork\NetWorkDx.cpp">
+      <Filter>library\NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Player\Shot\PlayerShot\PlayerShot.cpp">
+      <Filter>Source\Object\Player\Shot\PlayerShot</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Collider\Square\HitSquare.cpp">
+      <Filter>Source\Collider\Square</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\GameScene\TimeLine\TimeLine.cpp">
+      <Filter>Source\Application\GameFlow\GameScene\TimeLine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\TimeLineScript\TimeLineScript.cpp">
+      <Filter>Source\Script\TimeLineScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\BulletScript\Lazer\LazerScript.cpp">
+      <Filter>Source\Script\Manager\BulletScript\Lazer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\BulletScript\Shot\ShotScript.cpp">
+      <Filter>Source\Script\Manager\BulletScript\Shot</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\BulletScript\TurnLazer\TurnLazerScript.cpp">
+      <Filter>Source\Script\Manager\BulletScript\TurnLazer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\BulletScript\Color\BulletColorScript.cpp">
+      <Filter>Source\Script\Manager\BulletScript\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\BulletScript\Type\BulletTypeScript.cpp">
+      <Filter>Source\Script\Manager\BulletScript\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\SoundScript\SoundScript.cpp">
+      <Filter>Source\Script\Manager\SoundScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\BossBulletScript\BossBulletScript.cpp">
+      <Filter>Source\Script\BossBulletScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\ScoreBoard\StartingCall\StartingCall.cpp">
+      <Filter>Source\Application\ScoreBoard\StartingCall</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\HelperScript\HelperScript.cpp">
+      <Filter>Source\Script\Manager\HelperScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\Manager\EnemyImageScript\EnemyImageScript.cpp">
+      <Filter>Source\Script\Manager\EnemyImageScript</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\GameScene\SingleGameStats\SingleGameStats.cpp">
+      <Filter>Source\Application\GameFlow\GameScene\SingleGameStats</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\EndingScene\EndingScene.cpp">
+      <Filter>Source\Application\GameFlow\EndingScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\library\Graphics\Movie\MovieDX.cpp">
+      <Filter>library\Graphics\Movie</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EffectTools\ScreenFade\ScreenFade.cpp">
+      <Filter>Source\EffectTools\ScreenFade</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Player\Item\ItemStack.cpp">
+      <Filter>Source\Object\Player\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Player\mover\PlayerMover.cpp">
+      <Filter>Source\Object\Player\mover</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Item\BitItem\BitItem.cpp">
+      <Filter>Source\Object\Item\BitItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\ItemManager\ItemManager.cpp">
+      <Filter>Source\Manager\ItemManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\library\FileManager\FileManager.cpp">
+      <Filter>library\FileManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Server\DuelServer.cpp">
+      <Filter>Source\Application\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\library\KeyInput\KeyInputDX.cpp">
+      <Filter>library\KeyInput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\SceneManager\SceneManager.cpp">
+      <Filter>Source\Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\Scene\Scene.cpp">
+      <Filter>Source\Application\GameFlow\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\BulletImage\BulletImage.cpp">
+      <Filter>Source\Resource\BulletImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\CharacterImage\CharacterImage.cpp">
+      <Filter>Source\Resource\CharacterImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\EnemyImage\EnemyImage.cpp">
+      <Filter>Source\Resource\EnemyImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\ItemImage\ItemImage.cpp">
+      <Filter>Source\Resource\ItemImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\MapImage\MapImage.cpp">
+      <Filter>Source\Resource\MapImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\ParticleImage\ParicleImage.cpp">
+      <Filter>Source\Resource\ParticleImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\PlayerImage\PlayerImage.cpp">
+      <Filter>Source\Resource\PlayerImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\SoundData\SoundData.cpp">
+      <Filter>Source\Resource\SoundData</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\SaveData\SaveData.cpp">
+      <Filter>Source\Resource\SaveData</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\GUI\BossUIImage\BossUIImage.cpp">
+      <Filter>Source\Resource\GUI\BossUIImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\GUI\GameUIImage\GameUIImage.cpp">
+      <Filter>Source\Resource\GUI\GameUIImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\GUI\LoadUIImage\LoadUIImage.cpp">
+      <Filter>Source\Resource\GUI\LoadUIImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\GUI\TextUIImage\TextUIImage.cpp">
+      <Filter>Source\Resource\GUI\TextUIImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\GUI\SelectUIImage\SelectUIImage.cpp">
+      <Filter>Source\Resource\GUI\SelectUIImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\GUI\MenuUIImage\MenuUIImage.cpp">
+      <Filter>Source\Resource\GUI\MenuUIImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\LoadManager.cpp">
+      <Filter>Source\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\Story\Story.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\Story</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaSelectDuel\CharaSelectDuel.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\CharaSelect\CharaSelectDuel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaSelect.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\CharaSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\ScoreBoard\PlayerScore\PlayerScore.cpp">
+      <Filter>Source\Application\ScoreBoard\PlayerScore</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\ScoreBoard\DuelScore\DuelScore.cpp">
+      <Filter>Source\Application\ScoreBoard\DuelScore</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\GameScene\GameMode\StoryMode\StoryMode.cpp">
+      <Filter>Source\Application\GameFlow\GameScene\GameMode\StoryMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Application\LoadScene\LoadScene.cpp">
+      <Filter>Source\Application\Application\LoadScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\GameScene\GameMode\SingleMode\SingleMode.cpp">
+      <Filter>Source\Application\GameFlow\GameScene\GameMode\SingleMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\GameScene\GameMode\DuelMode\DuelMode.cpp">
+      <Filter>Source\Application\GameFlow\GameScene\GameMode\DuelMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Script\ScriptLoader\ScriptLoader.cpp">
+      <Filter>Source\Script\ScriptLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\DressRoom\DressRoom.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\DressRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\DressRoom\ClothText\ClothText.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\DressRoom\ClothText</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Minion\MinionMotion\MinionMotion.cpp">
+      <Filter>Source\Object\Minion\MinionMotion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Boss\BossMotion\BossMotion.cpp">
+      <Filter>Source\Object\Boss\BossMotion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\ScoreBoard\ItemRoulette\ItemRoulette.cpp">
+      <Filter>Source\Application\ScoreBoard\ItemRoulette</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\ScoreBoard\SubTitle\SubTitle.cpp">
+      <Filter>Source\Application\ScoreBoard\SubTitle</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Player\Shot\OptionManager..cpp">
+      <Filter>Source\Object\Player\Shot</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Item\GhostItem\GhostItem.cpp">
+      <Filter>Source\Object\Item\GhostItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\FacialEffectImage\FacialEffectImage.cpp">
+      <Filter>Source\Resource\FacialEffectImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\CharaImgManager\FacialEffect\FacialEffect.cpp">
+      <Filter>Source\Manager\CharaImgManager\FacialEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\StorySelect\StorySelect.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\StorySelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\AliceSelect\AliceSelect.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\AliceSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameMassage\GameMassage.cpp">
+      <Filter>Source\Application\GameMassage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SystemProp\AliceProp\AliceProp.cpp">
+      <Filter>Source\SystemProp\AliceProp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\GameScene\TimeLine\Camp\Camp.cpp">
+      <Filter>Source\Application\GameFlow\GameScene\TimeLine\Camp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\Scene\SelectYN\SelectYN.cpp">
+      <Filter>Source\Application\GameFlow\Scene\SelectYN</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CustomWeapon\CustomWeapon.cpp">
+      <Filter>Source\CustomWeapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect\WeaponSelect.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\DebugLog\DebugLog.cpp">
+      <Filter>Source\Application\DebugLog</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SystemProp\GameSceneProp\GameSceneProp.cpp">
+      <Filter>Source\SystemProp\GameSceneProp</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\GameScene\EndingTalk\EndingTalk.cpp">
+      <Filter>Source\Application\GameFlow\GameScene\EndingTalk</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\OnePictureImage\OnePictureImage.cpp">
+      <Filter>Source\Resource\OnePictureImage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponLore\WeaponLore.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\AliceSelect\WeaponLore</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Replayer\Replayer.cpp">
+      <Filter>Source\Application\Replayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\ReplayRoom\ReplayRoom.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\ReplayRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Tools\TextInput\TextInputer.cpp">
+      <Filter>Source\Tools\TextInput</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Replayer\KeyCapture\KeyCapture.cpp">
+      <Filter>Source\Application\Replayer\KeyCapture</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object\Player\Shot\SideOption\SideOption.cpp">
+      <Filter>Source\Object\Player\Shot\SideOption</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\BulletManager\BulletManager.cpp">
+      <Filter>Source\Manager\BulletManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\BossManager\BossManager.cpp">
+      <Filter>Source\Manager\BossManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\BossManager\MagicRingEffect\MagicRingEffect.cpp">
+      <Filter>Source\Manager\BossManager\MagicRingEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\BossManager\BossUI\BossUI.cpp">
+      <Filter>Source\Manager\BossManager\BossUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\BossManager\BossBonus\BossBonus.cpp">
+      <Filter>Source\Manager\BossManager\BossBonus</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\BossManager\BossBonus\BossScore\BossScore.cpp">
+      <Filter>Source\Manager\BossManager\BossBonus\BossScore</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\BossManager\BossBonus\BossItem\BossItem.cpp">
+      <Filter>Source\Manager\BossManager\BossBonus\BossItem</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\BossManager\BossHP\BossHP.cpp">
+      <Filter>Source\Manager\BossManager\BossHP</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Manager\MinionManager\MinionManager.cpp">
+      <Filter>Source\Manager\MinionManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Tools\TimeFader\TimeFader.cpp">
+      <Filter>Source\Tools\TimeFader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile\CharaProfile.cpp">
+      <Filter>Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\object\Bullet\Shot\Shot_Info.h">
+      <Filter>Source\Object\Bullet\Shot</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\library\Graphics\Graphics2D\Graphics2D.h">
+      <Filter>library\Graphics\Graphics2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SystemProp\AreaProp.h">
+      <Filter>Source\SystemProp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Bullet\lazer\Lazer_Info.h">
+      <Filter>Source\Object\Bullet\Lazer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MassageHandle\MassageHandle.h">
+      <Filter>Source\MassageHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SystemProp\GameStatsProp.h">
+      <Filter>Source\SystemProp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\World\World.h">
+      <Filter>Source\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Object\Object.h">
+      <Filter>Source\Object\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Boss\Boss.h">
+      <Filter>Source\Object\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Player\Player.h">
+      <Filter>Source\Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Collider\Collider.h">
+      <Filter>Source\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Player\Bom\Bom_Info.h">
+      <Filter>Source\Object\Player\Bom</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Bullet\GrazeEffect\GrazeEffect.h">
+      <Filter>Source\Object\Bullet\GrazeEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Helper\Helper.h">
+      <Filter>Source\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\library\Graphics\String\StringDX.h">
+      <Filter>library\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\GameScene\GameScene.h">
+      <Filter>Source\Application\GameFlow\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Title\Title.h">
+      <Filter>Source\Application\GameFlow\MenuScene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Application\Application.h">
+      <Filter>Source\Application\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\library\AppManager\AppManager.h">
+      <Filter>library\AppManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SystemProp\SceneProp.h">
+      <Filter>Source\SystemProp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\StageSelect\StageSelect.h">
+      <Filter>Source\Application\GameFlow\MenuScene\StageSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Key\Key.h">
+      <Filter>Source\Application\Key</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\ScoreBoard\ScoreBoard.h">
+      <Filter>Source\Application\ScoreBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\FrameManager\FrameManager.h">
+      <Filter>Source\Manager\FrameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Music\MusicRoom.h">
+      <Filter>Source\Application\GameFlow\MenuScene\MusicRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\library\Sound\SoundDX.h">
+      <Filter>library\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Sound\Sound.h">
+      <Filter>Source\Application\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\SaveDataManager\SaveDataManager.h">
+      <Filter>Source\Manager\SaveDataManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Effect\Effect.h">
+      <Filter>Source\Object\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\EditPointer\EditPointer.h">
+      <Filter>Source\Object\EditPointer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Bullet\TurnLazer\TurnLazer_Info.h">
+      <Filter>Source\Object\Bullet\TurnLazer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\TalkScript\TalkScript.h">
+      <Filter>Source\Script\TalkScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\TalkScript\BoxScript\BoxScript.h">
+      <Filter>Source\Script\TalkScript\BoxScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\TalkSceneManager\TalkSceneManager.h">
+      <Filter>Source\Manager\TalkSceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\TalkScript\ImgCharaScript\ImgCharaScript.h">
+      <Filter>Source\Script\TalkScript\ImgCharaScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\CharaImgManager\CharaImgManager.h">
+      <Filter>Source\Manager\CharaImgManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\CharaImgManager\TalkMotion\TalkMotion.h">
+      <Filter>Source\Manager\CharaImgManager\TalkMotion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\CharaImgManager\TalkMotion\EyeBrowMotion\EyeBrowMotion.h">
+      <Filter>Source\Manager\CharaImgManager\TalkMotion\EyeBrowMotion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\CharaImgManager\TalkMotion\EyeMotion\EyeMotion.h">
+      <Filter>Source\Manager\CharaImgManager\TalkMotion\EyeMotion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\CharaImgManager\TalkMotion\MouthMotion\MouthMotion.h">
+      <Filter>Source\Manager\CharaImgManager\TalkMotion\MouthMotion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Tools\Transform\Transform.h">
+      <Filter>Source\Tools\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Minion\Minion.h">
+      <Filter>Source\Object\Minion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EffectTools\Shake\Shake.h">
+      <Filter>Source\EffectTools\Shake</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\BossScript\BossScript.h">
+      <Filter>Source\Script\Manager\BossScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\PlayerScript\PlayerScript.h">
+      <Filter>Source\Script\Manager\PlayerScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\MinionScript\MinionScript.h">
+      <Filter>Source\Script\Manager\MinionScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\GameScene\Pause\Pause.h">
+      <Filter>Source\Application\GameFlow\GameScene\Pause</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\BackGround\BackGround.h">
+      <Filter>Source\Object\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\library\Graphics\Graphics3D\Graphics3D.h">
+      <Filter>library\Graphics\Graphics3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\GameScene\StageMap\StageMap.h">
+      <Filter>Source\Application\GameFlow\GameScene\StageMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Object\Parameter\Position\Position.h">
+      <Filter>Source\Object\Object\Parameter\Position</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Object\Parameter\FadeIn\FadeIn.h">
+      <Filter>Source\Object\Object\Parameter\FadeIn</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\ShakeScript\ShakeScript.h">
+      <Filter>Source\Script\Manager\ShakeScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Help\HelpRoom.h">
+      <Filter>Source\Application\GameFlow\MenuScene\HelpRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Config\ConfigRoom.h">
+      <Filter>Source\Application\GameFlow\MenuScene\ConfigRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Online\OnlineRoom.h">
+      <Filter>Source\Application\GameFlow\MenuScene\OnlineRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\library\NetWork\NetWorkDx.h">
+      <Filter>library\NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Player\Shot\PlayerShot\PlayerShot.h">
+      <Filter>Source\Object\Player\Shot\PlayerShot</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Collider\Square\HitSquare.h">
+      <Filter>Source\Collider\Square</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\GameScene\TimeLine\TimeLine.h">
+      <Filter>Source\Application\GameFlow\GameScene\TimeLine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\TimeLineScript\TimeLineScript.h">
+      <Filter>Source\Script\TimeLineScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\BulletScript\Lazer\LazerScript.h">
+      <Filter>Source\Script\Manager\BulletScript\Lazer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\BulletScript\Shot\ShotScript.h">
+      <Filter>Source\Script\Manager\BulletScript\Shot</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\BulletScript\TurnLazer\TurnLazerScript.h">
+      <Filter>Source\Script\Manager\BulletScript\TurnLazer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\BulletScript\Color\BulletColorScript.h">
+      <Filter>Source\Script\Manager\BulletScript\Color</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\BulletScript\Type\BulletTypeScript.h">
+      <Filter>Source\Script\Manager\BulletScript\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\SoundScript\SoundScript.h">
+      <Filter>Source\Script\Manager\SoundScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\BossBulletScript\BossBulletScript.h">
+      <Filter>Source\Script\BossBulletScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\ScoreBoard\StartingCall\StartingCall.h">
+      <Filter>Source\Application\ScoreBoard\StartingCall</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\HelperScript\HelperScript.h">
+      <Filter>Source\Script\Manager\HelperScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\Manager\EnemyImageScript\EnemyImageScript.h">
+      <Filter>Source\Script\Manager\EnemyImageScript</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\GameScene\SingleGameStats\SingleGameStats.h">
+      <Filter>Source\Application\GameFlow\GameScene\SingleGameStats</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\EndingScene\EndingScene.h">
+      <Filter>Source\Application\GameFlow\EndingScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\library\Graphics\Movie\MovieDX.h">
+      <Filter>library\Graphics\Movie</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EffectTools\ScreenFade\ScreenFade.h">
+      <Filter>Source\EffectTools\ScreenFade</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Player\Item\ItemStack.h">
+      <Filter>Source\Object\Player\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Player\mover\PlayerMover.h">
+      <Filter>Source\Object\Player\mover</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Item\BitItem\BitItem.h">
+      <Filter>Source\Object\Item\BitItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\ItemManager\ItemManager.h">
+      <Filter>Source\Manager\ItemManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\library\FileManager\FileManager.h">
+      <Filter>library\FileManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Server\DuelServer.h">
+      <Filter>Source\Application\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\library\KeyInput\KeyInputDX.h">
+      <Filter>library\KeyInput</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\SceneManager\SceneManager.h">
+      <Filter>Source\Manager\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\Scene\Scene.h">
+      <Filter>Source\Application\GameFlow\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\BulletImage\BulletImage.h">
+      <Filter>Source\Resource\BulletImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\CharacterImage\CharacterImage.h">
+      <Filter>Source\Resource\CharacterImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\EnemyImage\EnemyImage.h">
+      <Filter>Source\Resource\EnemyImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\ItemImage\ItemImage.h">
+      <Filter>Source\Resource\ItemImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\MapImage\MapImage.h">
+      <Filter>Source\Resource\MapImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\ParticleImage\ParicleImage.h">
+      <Filter>Source\Resource\ParticleImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\PlayerImage\PlayerImage.h">
+      <Filter>Source\Resource\PlayerImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\SoundData\SoundData.h">
+      <Filter>Source\Resource\SoundData</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\SaveData\SaveData.h">
+      <Filter>Source\Resource\SaveData</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\GUI\BossUIImage\BossUIImage.h">
+      <Filter>Source\Resource\GUI\BossUIImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\GUI\GameUIImage\GameUIImage.h">
+      <Filter>Source\Resource\GUI\GameUIImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\GUI\LoadUIImage\LoadUIImage.h">
+      <Filter>Source\Resource\GUI\LoadUIImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\GUI\TextUIImage\TextUIImage.h">
+      <Filter>Source\Resource\GUI\TextUIImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\GUI\SelectUIImage\SelectUIImage.h">
+      <Filter>Source\Resource\GUI\SelectUIImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\GUI\MenuUIImage\MenuUIImage.h">
+      <Filter>Source\Resource\GUI\MenuUIImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\LoadManager.h">
+      <Filter>Source\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\Story\Story.h">
+      <Filter>Source\Application\GameFlow\MenuScene\Story</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaSelectDuel\CharaSelectDuel.h">
+      <Filter>Source\Application\GameFlow\MenuScene\CharaSelect\CharaSelectDuel</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaSelect.h">
+      <Filter>Source\Application\GameFlow\MenuScene\CharaSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\ScoreBoard\PlayerScore\PlayerScore.h">
+      <Filter>Source\Application\ScoreBoard\PlayerScore</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\ScoreBoard\DuelScore\DuelScore.h">
+      <Filter>Source\Application\ScoreBoard\DuelScore</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\GameScene\GameMode\StoryMode\StoryMode.h">
+      <Filter>Source\Application\GameFlow\GameScene\GameMode\StoryMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Application\LoadScene\LoadScene.h">
+      <Filter>Source\Application\Application\LoadScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\GameScene\GameMode\SingleMode\SingleMode.h">
+      <Filter>Source\Application\GameFlow\GameScene\GameMode\SingleMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\GameScene\GameMode\DuelMode\DuelMode.h">
+      <Filter>Source\Application\GameFlow\GameScene\GameMode\DuelMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Script\ScriptLoader\ScriptLoader.h">
+      <Filter>Source\Script\ScriptLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Player\Data\CharaCustom.h">
+      <Filter>Source\Object\Player\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Player\Data\PlayerData.h">
+      <Filter>Source\Object\Player\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\DressRoom\DressRoom.h">
+      <Filter>Source\Application\GameFlow\MenuScene\DressRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\DressRoom\ClothText\ClothText.h">
+      <Filter>Source\Application\GameFlow\MenuScene\DressRoom\ClothText</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Minion\MinionMotion\MinionMotion.h">
+      <Filter>Source\Object\Minion\MinionMotion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Boss\BossMotion\BossMotion.h">
+      <Filter>Source\Object\Boss\BossMotion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\ScoreBoard\ItemRoulette\ItemRoulette.h">
+      <Filter>Source\Application\ScoreBoard\ItemRoulette</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\ScoreBoard\SubTitle\SubTitle.h">
+      <Filter>Source\Application\ScoreBoard\SubTitle</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Player\Shot\OptionManager.h">
+      <Filter>Source\Object\Player\Shot</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Item\GhostItem\GhostItem.h">
+      <Filter>Source\Object\Item\GhostItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\FacialEffectImage\FacialEffectImage.h">
+      <Filter>Source\Resource\FacialEffectImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\CharaImgManager\FacialEffect\FacialEffect.h">
+      <Filter>Source\Manager\CharaImgManager\FacialEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\StorySelect\StorySelect.h">
+      <Filter>Source\Application\GameFlow\MenuScene\StorySelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\AliceSelect\AliceSelect.h">
+      <Filter>Source\Application\GameFlow\MenuScene\AliceSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameMassage\GameMassage.h">
+      <Filter>Source\Application\GameMassage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SystemProp\AliceProp\AliceProp.h">
+      <Filter>Source\SystemProp\AliceProp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\GameScene\TimeLine\Camp\Camp.h">
+      <Filter>Source\Application\GameFlow\GameScene\TimeLine\Camp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\Scene\SelectYN\SelectYN.h">
+      <Filter>Source\Application\GameFlow\Scene\SelectYN</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CustomWeapon\CustomWeapon.h">
+      <Filter>Source\CustomWeapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect\WeaponSelect.h">
+      <Filter>Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\DebugLog\DebugLog.h">
+      <Filter>Source\Application\DebugLog</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SystemProp\GameSceneProp\GameSceneProp.h">
+      <Filter>Source\SystemProp\GameSceneProp</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\GameScene\EndingTalk\EndingTalk.h">
+      <Filter>Source\Application\GameFlow\GameScene\EndingTalk</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Resource\OnePictureImage\OnePictureImage.h">
+      <Filter>Source\Resource\OnePictureImage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponLore\WeaponLore.h">
+      <Filter>Source\Application\GameFlow\MenuScene\AliceSelect\WeaponLore</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Replayer\Replayer.h">
+      <Filter>Source\Application\Replayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\ReplayRoom\ReplayRoom.h">
+      <Filter>Source\Application\GameFlow\MenuScene\ReplayRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Tools\TextInput\TextInputer.h">
+      <Filter>Source\Tools\TextInput</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Replayer\KeyCapture\KeyCapture.h">
+      <Filter>Source\Application\Replayer\KeyCapture</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object\Player\Shot\SideOption\SideOption.h">
+      <Filter>Source\Object\Player\Shot\SideOption</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\BulletManager\BulletManager.h">
+      <Filter>Source\Manager\BulletManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\BossManager\BossManager.h">
+      <Filter>Source\Manager\BossManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\BossManager\MagicRingEffect\MagicRingEffect.h">
+      <Filter>Source\Manager\BossManager\MagicRingEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\BossManager\BossUI\BossUI.h">
+      <Filter>Source\Manager\BossManager\BossUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\BossManager\BossBonus\BossBonus.h">
+      <Filter>Source\Manager\BossManager\BossBonus</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\BossManager\BossBonus\BossScore\BossScore.h">
+      <Filter>Source\Manager\BossManager\BossBonus\BossScore</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\BossManager\BossBonus\BossItem\BossItem.h">
+      <Filter>Source\Manager\BossManager\BossBonus\BossItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\BossManager\BossHP\BossHP.h">
+      <Filter>Source\Manager\BossManager\BossHP</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Manager\MinionManager\MinionManager.h">
+      <Filter>Source\Manager\MinionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Tools\TimeFader\TimeFader.h">
+      <Filter>Source\Tools\TimeFader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile\CharaProfile.h">
+      <Filter>Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dat\Script\Talk\0.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Library\Minion\MinionSc.lua">
+      <Filter>Asset\Script\Library\Minion</Filter>
+    </None>
+    <None Include="dat\Script\Library\Timeline\TimelineSc.lua">
+      <Filter>Asset\Script\Library\Timeline</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\Stage0.lua">
+      <Filter>Asset\Script\TimeLine</Filter>
+    </None>
+    <None Include="dat\Script\Library\Bullet\BulletProp\BulletColor.lua">
+      <Filter>Asset\Script\Library\Bullet\BulletProp</Filter>
+    </None>
+    <None Include="dat\Script\Library\Bullet\BulletProp\BulletImage.lua">
+      <Filter>Asset\Script\Library\Bullet\BulletProp</Filter>
+    </None>
+    <None Include="dat\Script\Library\Bullet\BulletProp\LazerSc.lua">
+      <Filter>Asset\Script\Library\Bullet\BulletProp</Filter>
+    </None>
+    <None Include="dat\Script\Library\Bullet\BulletProp\ShotSc.lua">
+      <Filter>Asset\Script\Library\Bullet\BulletProp</Filter>
+    </None>
+    <None Include="dat\Script\Library\Bullet\BulletProp\TurnLazerSc.lua">
+      <Filter>Asset\Script\Library\Bullet\BulletProp</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Library.lua">
+      <Filter>Asset\Script\Bullet</Filter>
+    </None>
+    <None Include="dat\Script\Library\Sound\SoundSc.lua">
+      <Filter>Asset\Script\Library\Sound</Filter>
+    </None>
+    <None Include="dat\Script\Library\Boss\BossSc.lua">
+      <Filter>Asset\Script\Library\Boss</Filter>
+    </None>
+    <None Include="dat\Script\Library\Player\PlayerSc.lua">
+      <Filter>Asset\Script\Library\Player</Filter>
+    </None>
+    <None Include="dat\Script\Library\Bullet\BulletProp\BossBulletEt\LazerEt.lua">
+      <Filter>Asset\Script\Library\Bullet\BulletProp\BossBulletEt</Filter>
+    </None>
+    <None Include="dat\Script\Library\Bullet\BulletProp\BossBulletEt\ShotEt.lua">
+      <Filter>Asset\Script\Library\Bullet\BulletProp\BossBulletEt</Filter>
+    </None>
+    <None Include="dat\Script\Library\Bullet\BulletProp\BossBulletEt\TLazerEt.lua">
+      <Filter>Asset\Script\Library\Bullet\BulletProp\BossBulletEt</Filter>
+    </None>
+    <None Include="dat\Script\Library\Bullet\BulletProp\BossBulletEt\BulletEtSet.lua">
+      <Filter>Asset\Script\Library\Bullet\BulletProp\BossBulletEt</Filter>
+    </None>
+    <None Include="dat\Script\Library\Helper.lua">
+      <Filter>Asset\Script\Library</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\BossPlayer\at0.lua">
+      <Filter>Asset\Script\Bullet\BossPlayer</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\BossPlayer\at1.lua">
+      <Filter>Asset\Script\Bullet\BossPlayer</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\BossPlayer\at2.lua">
+      <Filter>Asset\Script\Bullet\BossPlayer</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\BossPlayer\at3.lua">
+      <Filter>Asset\Script\Bullet\BossPlayer</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\BossPlayer\at4.lua">
+      <Filter>Asset\Script\Bullet\BossPlayer</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\BossPlayer\at5.lua">
+      <Filter>Asset\Script\Bullet\BossPlayer</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\BossPlayer\at6.lua">
+      <Filter>Asset\Script\Bullet\BossPlayer</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss0\at0.lua">
+      <Filter>Asset\Script\Bullet\Boss0</Filter>
+    </None>
+    <None Include="dat\Script\Library\EnemyImage.lua">
+      <Filter>Asset\Script\Library</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss0\at1.lua">
+      <Filter>Asset\Script\Bullet\Boss0</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss0\at4.lua">
+      <Filter>Asset\Script\Bullet\Boss0</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss0\at2.lua">
+      <Filter>Asset\Script\Bullet\Boss0</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss0\at3.lua">
+      <Filter>Asset\Script\Bullet\Boss0</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss1\at0.lua">
+      <Filter>Asset\Script\Bullet\Boss1</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss1\at1.lua">
+      <Filter>Asset\Script\Bullet\Boss1</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss1\at2.lua">
+      <Filter>Asset\Script\Bullet\Boss1</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss1\at3.lua">
+      <Filter>Asset\Script\Bullet\Boss1</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss1\at4.lua">
+      <Filter>Asset\Script\Bullet\Boss1</Filter>
+    </None>
+    <None Include="dat\Script\Talk\2.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\3.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\4.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\5.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss2\at0.lua">
+      <Filter>Asset\Script\Bullet\Boss2</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss2\at1.lua">
+      <Filter>Asset\Script\Bullet\Boss2</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss2\at2.lua">
+      <Filter>Asset\Script\Bullet\Boss2</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss2\at3.lua">
+      <Filter>Asset\Script\Bullet\Boss2</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss2\at4.lua">
+      <Filter>Asset\Script\Bullet\Boss2</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss3\at0.lua">
+      <Filter>Asset\Script\Bullet\Boss3</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss3\at1.lua">
+      <Filter>Asset\Script\Bullet\Boss3</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss3\at2.lua">
+      <Filter>Asset\Script\Bullet\Boss3</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss3\at3.lua">
+      <Filter>Asset\Script\Bullet\Boss3</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss3\at4.lua">
+      <Filter>Asset\Script\Bullet\Boss3</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\Stage1.lua">
+      <Filter>Asset\Script\TimeLine</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\Stage2.lua">
+      <Filter>Asset\Script\TimeLine</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at0.lua">
+      <Filter>Asset\Script\TimeLine\PlayerBullet\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at1.lua">
+      <Filter>Asset\Script\TimeLine\PlayerBullet\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at2.lua">
+      <Filter>Asset\Script\TimeLine\PlayerBullet\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at3.lua">
+      <Filter>Asset\Script\TimeLine\PlayerBullet\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at4.lua">
+      <Filter>Asset\Script\TimeLine\PlayerBullet\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at5.lua">
+      <Filter>Asset\Script\TimeLine\PlayerBullet\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\PlayerBullet\Pattern\at6.lua">
+      <Filter>Asset\Script\TimeLine\PlayerBullet\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\Library\ItemList.lua">
+      <Filter>Asset\Script\Library</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\MinionBullet.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage1</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\MinionBullet.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage2</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\MinionBullet.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage0</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage0\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage0\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage0\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage0\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage0\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage0\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage0\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage0\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage0\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage0\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage0\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage0\MinionMover.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage0</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage1\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage1\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage1\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage1\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage1\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage1\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage1\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage1\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage1\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage1\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage1\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage1\Pattern\at5.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage1\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage1\MinionMover.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage1</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage2\MinionMover.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage2</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\PlayerBullet\PlayerBullet.lua">
+      <Filter>Asset\Script\TimeLine\PlayerBullet</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\ItemMinion\ItemMinion.lua">
+      <Filter>Asset\Script\TimeLine\ItemMinion</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss0\atN0.lua">
+      <Filter>Asset\Script\Bullet\Boss0</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss0\atN1.lua">
+      <Filter>Asset\Script\Bullet\Boss0</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage0\Pattern\at5.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage0\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss1\at5.lua">
+      <Filter>Asset\Script\Bullet\Boss1</Filter>
+    </None>
+    <None Include="dat\Script\Talk\1.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage3\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage3\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage3\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage3\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage3\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage3\MinionBullet.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage3</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage4\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage4\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage4\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage4\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage4\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage4\MinionBullet.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage4</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage5\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage5\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage5\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage5\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage5\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage5\MinionBullet.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage5</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage6\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage6\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage6\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage6\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage6\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage6\MinionBullet.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage6</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\MinionBullet.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage7</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage7\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage3\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage3\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage3\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage3\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage3\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage3\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage3\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage3\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage3\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage3\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage3\MinionMover.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage3</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage4\MinionMover.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage4</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage4\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage4\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage4\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage4\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage4\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage4\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage4\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage4\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage4\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage4\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage5\MinionMover.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage5</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage5\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage5\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage5\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage5\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage5\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage5\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage5\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage5\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage5\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage5\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage6\MinionMover.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage6</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage6\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage6\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage6\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage6\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage6\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage6\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage6\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage6\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage6\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage6\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage7\MinionMover.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage7</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at0.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at1.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at2.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at3.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at4.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\Stage3.lua">
+      <Filter>Asset\Script\TimeLine</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\Stage4.lua">
+      <Filter>Asset\Script\TimeLine</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\Stage5.lua">
+      <Filter>Asset\Script\TimeLine</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\Stage6.lua">
+      <Filter>Asset\Script\TimeLine</Filter>
+    </None>
+    <None Include="dat\Script\TimeLine\Stage7.lua">
+      <Filter>Asset\Script\TimeLine</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Bullet\Stage2\Pattern\at5.lua">
+      <Filter>Asset\Script\MinionProp\Bullet\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss2\atN0.lua">
+      <Filter>Asset\Script\Bullet\Boss2</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage2\Pattern\at5.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage2\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\Talk\6.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss2\at5.lua">
+      <Filter>Asset\Script\Bullet\Boss2</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss2\at6.lua">
+      <Filter>Asset\Script\Bullet\Boss2</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss1TalkEnd\Ayano.lua">
+      <Filter>Asset\Script\Talk\Boss1TalkEnd</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss1Talk\Ayano.lua">
+      <Filter>Asset\Script\Talk\Boss1Talk</Filter>
+    </None>
+    <None Include="dat\Script\Library\Talker\CharaTypeSc.lua">
+      <Filter>Asset\Script\Library\Talker</Filter>
+    </None>
+    <None Include="dat\Script\Library\Talker\ImgCharaSc.lua">
+      <Filter>Asset\Script\Library\Talker</Filter>
+    </None>
+    <None Include="dat\Script\Library\Talker\Library.lua">
+      <Filter>Asset\Script\Library\Talker</Filter>
+    </None>
+    <None Include="dat\Script\Library\Talker\SerifBoxSc.lua">
+      <Filter>Asset\Script\Library\Talker</Filter>
+    </None>
+    <None Include="dat\Script\Library\Bullet\BulletLib.lua">
+      <Filter>Asset\Script\Library\Bullet</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss1Talk\Hime.lua">
+      <Filter>Asset\Script\Talk\Boss1Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss1TalkEnd\Hime.lua">
+      <Filter>Asset\Script\Talk\Boss1TalkEnd</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss1TalkEnd\Ioriko.lua">
+      <Filter>Asset\Script\Talk\Boss1TalkEnd</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss1Talk\Ioriko.lua">
+      <Filter>Asset\Script\Talk\Boss1Talk</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss3\atN0.lua">
+      <Filter>Asset\Script\Bullet\Boss3</Filter>
+    </None>
+    <None Include="dat\Script\Talk\7.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\8.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss3\at5.lua">
+      <Filter>Asset\Script\Bullet\Boss3</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss3\at6.lua">
+      <Filter>Asset\Script\Bullet\Boss3</Filter>
+    </None>
+    <None Include="dat\Script\Talk\9.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss1Talk\Misato.lua">
+      <Filter>Asset\Script\Talk\Boss1Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss1Talk\Akagi.lua">
+      <Filter>Asset\Script\Talk\Boss1Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss1TalkEnd\Akagi.lua">
+      <Filter>Asset\Script\Talk\Boss1TalkEnd</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss1TalkEnd\Misato.lua">
+      <Filter>Asset\Script\Talk\Boss1TalkEnd</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss4\at0.lua">
+      <Filter>Asset\Script\Bullet\Boss4</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss4\at1.lua">
+      <Filter>Asset\Script\Bullet\Boss4</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss4\at2.lua">
+      <Filter>Asset\Script\Bullet\Boss4</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss4\at3.lua">
+      <Filter>Asset\Script\Bullet\Boss4</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss4\atN0.lua">
+      <Filter>Asset\Script\Bullet\Boss4</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss5\at0.lua">
+      <Filter>Asset\Script\Bullet\Boss5</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss5\at1.lua">
+      <Filter>Asset\Script\Bullet\Boss5</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss5\at2.lua">
+      <Filter>Asset\Script\Bullet\Boss5</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss5\at3.lua">
+      <Filter>Asset\Script\Bullet\Boss5</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss5\at4.lua">
+      <Filter>Asset\Script\Bullet\Boss5</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss5\at5.lua">
+      <Filter>Asset\Script\Bullet\Boss5</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss5\at6.lua">
+      <Filter>Asset\Script\Bullet\Boss5</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss5\atN0.lua">
+      <Filter>Asset\Script\Bullet\Boss5</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss6\at0.lua">
+      <Filter>Asset\Script\Bullet\Boss6</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss6\at1.lua">
+      <Filter>Asset\Script\Bullet\Boss6</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss6\at2.lua">
+      <Filter>Asset\Script\Bullet\Boss6</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss6\at3.lua">
+      <Filter>Asset\Script\Bullet\Boss6</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss6\at4.lua">
+      <Filter>Asset\Script\Bullet\Boss6</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss6\at5.lua">
+      <Filter>Asset\Script\Bullet\Boss6</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss6\at6.lua">
+      <Filter>Asset\Script\Bullet\Boss6</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss4\atN1.lua">
+      <Filter>Asset\Script\Bullet\Boss4</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss4\atN2.lua">
+      <Filter>Asset\Script\Bullet\Boss4</Filter>
+    </None>
+    <None Include="dat\Script\Talk\10.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\11.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\12.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss4Talk\Akagi.lua">
+      <Filter>Asset\Script\Talk\Boss4Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss4Talk\Ayano.lua">
+      <Filter>Asset\Script\Talk\Boss4Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss4Talk\Hime.lua">
+      <Filter>Asset\Script\Talk\Boss4Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss4Talk\Ioriko.lua">
+      <Filter>Asset\Script\Talk\Boss4Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss4Talk\Misato.lua">
+      <Filter>Asset\Script\Talk\Boss4Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\13.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\14.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss4TalkEnd\AkagiHime.lua">
+      <Filter>Asset\Script\Talk\Boss4TalkEnd</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss4TalkEnd\AyanoMisato.lua">
+      <Filter>Asset\Script\Talk\Boss4TalkEnd</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss4TalkEnd\Ioriko.lua">
+      <Filter>Asset\Script\Talk\Boss4TalkEnd</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss5Talk\Akagi.lua">
+      <Filter>Asset\Script\Talk\Boss5Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss5Talk\Ayano.lua">
+      <Filter>Asset\Script\Talk\Boss5Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss5Talk\Hime.lua">
+      <Filter>Asset\Script\Talk\Boss5Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss5Talk\Ioriko.lua">
+      <Filter>Asset\Script\Talk\Boss5Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss5Talk\Misato.lua">
+      <Filter>Asset\Script\Talk\Boss5Talk</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss5\at7.lua">
+      <Filter>Asset\Script\Bullet\Boss5</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss5\at8.lua">
+      <Filter>Asset\Script\Bullet\Boss5</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss5\at9.lua">
+      <Filter>Asset\Script\Bullet\Boss5</Filter>
+    </None>
+    <None Include="dat\Script\Talk\ending.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss6Talk\StoryMode.lua">
+      <Filter>Asset\Script\Talk\Boss6Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\15.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\16.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\17.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\18.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\19.lua">
+      <Filter>Asset\Script\Talk</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\at0.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\at1.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\at2.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\at3.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\at4.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\at5.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\at6.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\atN0.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\atN1.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at5.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at6.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\MinionProp\Move\stage7\Pattern\at7.lua">
+      <Filter>Asset\Script\MinionProp\Move\Stage7\Pattern</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\at7.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\at8.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\at9.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Bullet\Boss7\at10.lua">
+      <Filter>Asset\Script\Bullet\Boss7 - %28EX%29</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss7Talk\Ayano.lua">
+      <Filter>Asset\Script\Talk\Boss7Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss7Talk\Misato.lua">
+      <Filter>Asset\Script\Talk\Boss7Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss7Talk\Akagi.lua">
+      <Filter>Asset\Script\Talk\Boss7Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss7Talk\Hime.lua">
+      <Filter>Asset\Script\Talk\Boss7Talk</Filter>
+    </None>
+    <None Include="dat\Script\Talk\Boss7Talk\Ioriko.lua">
+      <Filter>Asset\Script\Talk\Boss7Talk</Filter>
+    </None>
+    <None Include="dat\Script\Library\BossBullet\BossBullet.lua">
+      <Filter>Asset\Script\Library\BossBullet</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="dat\Script\スクリプト説明書\タイムラインのリファレンス.txt">
+      <Filter>Asset\Script\説明書</Filter>
+    </Text>
+    <Text Include="dat\Script\スクリプト説明書\会話スクリプトのリファレンス.txt">
+      <Filter>Asset\Script\説明書</Filter>
+    </Text>
+    <Text Include="dat\Script\スクリプト説明書\雑魚敵のリファレンス.txt">
+      <Filter>Asset\Script\説明書</Filter>
+    </Text>
+    <Text Include="dat\Script\スクリプト説明書\弾幕基本的な関数.txt">
+      <Filter>Asset\Script\説明書</Filter>
+    </Text>
+    <Text Include="dat\Script\スクリプト説明書\弾幕便利系の関数.txt">
+      <Filter>Asset\Script\説明書</Filter>
+    </Text>
+    <Text Include="dat\Script\スクリプト説明書\弾の種類リスト.txt">
+      <Filter>Asset\Script\説明書</Filter>
+    </Text>
+    <Text Include="dat\Script\スクリプト説明書\敵種類リスト.txt">
+      <Filter>Asset\Script\説明書</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

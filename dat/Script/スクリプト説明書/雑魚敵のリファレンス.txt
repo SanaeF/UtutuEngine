@@ -1,0 +1,30 @@
+基本的な使い方は弾幕スクリプトと同じである。
+
+<・MinionProp>
+・Bullet	:雑魚敵の弾幕フォルダです(タイムラインでのみ使用)。
+・Move	:雑魚敵の移動種類フォルダです(タイムラインでのみ使用)。
+
+#クラス
+Minion	:雑魚敵/サブのボス敵クラス
+
+<基本設定>
+・setHP(num)	:雑魚敵の体力を設定する(値が99999999以上で無敵)
+・setLastHP(num):残りの体力を設定する
+・setBoss()	:雑魚敵がボスであることを錯覚させる
+・setNotBoss()	:雑魚敵がボスであることを諦めさせる
+・setMoverID(num)	:移動パターンを指定する(使わない場合は-1)
+・setBulletID(num)	:弾幕パターンを指定する(使わない場合は-1)
+
+<弾幕編成>
+・setBulletObjType(num)	:持っている弾幕の種類を指定する
+・setBulletObjColor(num)	:持っている弾幕の色を指定する
+・en_bullet(type, color)	:持っている弾幕の種類と色を指定する
+
+<主な召喚方法>
+・en_spawn(x, y, type, hp, bullet_id, move_id)	:雑魚敵を召喚する
+・boss_spawn(id, x, y, type, hp, item_id)	:ボスっぽい雑魚敵を召喚する
+・deadMinionInfo(rayer)	:どの雑魚敵かは分からないが取り敢えず誰かが死んだかどうかを取得
+
+Minion.setMove(x,y,time)
+
+Minion.setRandMove(x0,y0,x1,y1,dist,time)

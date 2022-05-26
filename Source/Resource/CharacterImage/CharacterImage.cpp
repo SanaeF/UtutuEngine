@@ -10,19 +10,19 @@ namespace res {
 		no_image= lib::Graphics2D::load("./dat/image/CharaModel/NoImage.png");
 		char m_File[128];
 		for (int num_c = 0; num_c < CHARA_PL; num_c++) {
-			sprintf(m_File, "./dat/image/CharaModel/%d/本体.png", num_c);
+			sprintf(m_File, "./dat/image/CharaModel/%d/body.png", num_c);
 			TalkChara[num_c].body[0] = lib::Graphics2D::load(m_File);
 			//顔パーツのロード
 			for (int num_type = 0; num_type < CharacterImage::EYE_TYPE::EYE_MAX; num_type++) {
-				sprintf(m_File, "./dat/image/CharaModel/%d/顔/目/%d.png", num_c, num_type);
+				sprintf(m_File, "./dat/image/CharaModel/%d/face/eye/%d.png", num_c, num_type);
 				TalkChara[num_c].eye[num_type] = lib::Graphics2D::load(m_File);
 			}
 			for (int num_type = 0; num_type < CharacterImage::MOUTH_TYPE::MOUTH_MAX; num_type++) {
-				sprintf(m_File, "./dat/image/CharaModel/%d/顔/口/%d.png", num_c, num_type);
+				sprintf(m_File, "./dat/image/CharaModel/%d/face/mouth/%d.png", num_c, num_type);
 				TalkChara[num_c].mouth[num_type] = lib::Graphics2D::load(m_File);
 			}
 			for (int num_type = 0; num_type < CharacterImage::BROW_TYPE::BROW_MAX; num_type++) {
-				sprintf(m_File, "./dat/image/CharaModel/%d/顔/眉/%d.png", num_c, num_type);
+				sprintf(m_File, "./dat/image/CharaModel/%d/face/eyebrow/%d.png", num_c, num_type);
 				TalkChara[num_c].eyebrow[num_type] = lib::Graphics2D::load(m_File);
 			}
 			////衣装のロード
@@ -85,27 +85,27 @@ namespace res {
 		if (type >= CHARA_BS)return;
 		if (m_loaded[type])return;
 		char m_File[40];
-		sprintf(m_File, "./dat/image/CharaModel/b%d/本体.png", type);
+		sprintf(m_File, "./dat/image/CharaModel/b%d/body.png", type);
 		TalkChara[CHARA_PL + type].body[0] = lib::Graphics2D::load(m_File);
 		if (damaged) {
-			sprintf(m_File, "./dat/image/CharaModel/b%d/ボロ.png", type);
+			sprintf(m_File, "./dat/image/CharaModel/b%d/damage.png", type);
 			TalkChara[CHARA_PL + type].body[POSE_TYPE::DAMAGE] = lib::Graphics2D::load(m_File);
 		}
 		if (pose) {
-			sprintf(m_File, "./dat/image/CharaModel/b%d/ポーズ.png", type);
+			sprintf(m_File, "./dat/image/CharaModel/b%d/pose.png", type);
 			TalkChara[CHARA_PL + type].body[POSE_TYPE::SPECIAL] = lib::Graphics2D::load(m_File);
 		}
 		//顔パーツのロード
 		for (int num_type = 0; num_type < eye_num; num_type++) {
-			sprintf(m_File, "./dat/image/CharaModel/b%d/顔/目/%d.png", type, num_type);
+			sprintf(m_File, "./dat/image/CharaModel/b%d/face/eye/%d.png", type, num_type);
 			TalkChara[CHARA_PL + type].eye[num_type] = lib::Graphics2D::load(m_File);
 		}
 		for (int num_type = 0; num_type < mouth_num; num_type++) {
-			sprintf(m_File, "./dat/image/CharaModel/b%d/顔/口/%d.png", type, num_type);
+			sprintf(m_File, "./dat/image/CharaModel/b%d/face/mouth/%d.png", type, num_type);
 			TalkChara[CHARA_PL + type].mouth[num_type] = lib::Graphics2D::load(m_File);
 		}
 		for (int num_type = 0; num_type < brow_num; num_type++) {
-			sprintf(m_File, "./dat/image/CharaModel/b%d/顔/眉/%d.png", type, num_type);
+			sprintf(m_File, "./dat/image/CharaModel/b%d/face/eyebrow/%d.png", type, num_type);
 			TalkChara[CHARA_PL + type].eyebrow[num_type] = lib::Graphics2D::load(m_File);
 		}
 		m_loaded[type] = true;

@@ -43,13 +43,13 @@ namespace app {
 			lib::AppManager::setWindowSize(640, 480);
 			break;
 		case 1:
-			lib::AppManager::setWindowSize(960, 720);
+			lib::AppManager::setWindowSize(960, 480);
 			break;
 		case 2:
-			lib::AppManager::setWindowSize(1280, 960);
+			lib::AppManager::setWindowSize(1280, 720);
 			break;
 		case 3:
-			lib::AppManager::setWindowSize(1920, 1440);
+			lib::AppManager::setWindowSize(1920, 1080);
 			break;
 		case 4:
 			lib::AppManager::setWindowMode(false);
@@ -63,7 +63,7 @@ namespace app {
 		lib::AppManager::setBackGroundProcess(true);
 		//lib::AppManager::setVerticalSync(true);
 		lib::AppManager::setWindowTitle(mFrame_text);
-		lib::AppManager::setPixelSize(1920, 1440, 32);
+		lib::AppManager::setPixelSize(2560, 1440, 32);
 		lib::AppManager::setWindowMode(true);
 		//セーブデータに保存されているウィンドウサイズの代入
 		m_Screen_type = res::SaveData::save_data.config.winType;

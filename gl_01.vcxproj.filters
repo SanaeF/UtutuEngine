@@ -629,9 +629,6 @@
     <Filter Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect">
       <UniqueIdentifier>{563daa93-0fc3-4cdc-aaaa-7e2992ac5784}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Application\DebugLog">
-      <UniqueIdentifier>{f0aa485f-f45a-4ef8-a3a2-5170fe763c24}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\Object\Bullet\Shot">
       <UniqueIdentifier>{33b6a98a-04bd-49ab-b8ae-c62fcc25694e}</UniqueIdentifier>
     </Filter>
@@ -718,6 +715,9 @@
     </Filter>
     <Filter Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile">
       <UniqueIdentifier>{647b66d5-f0c4-4883-bf3f-7d182860fced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\Debug">
+      <UniqueIdentifier>{f0aa485f-f45a-4ef8-a3a2-5170fe763c24}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -1094,9 +1094,6 @@
     <ClCompile Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect\WeaponSelect.cpp">
       <Filter>Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Application\DebugLog\DebugLog.cpp">
-      <Filter>Source\Application\DebugLog</Filter>
-    </ClCompile>
     <ClCompile Include="Source\SystemProp\GameSceneProp\GameSceneProp.cpp">
       <Filter>Source\SystemProp\GameSceneProp</Filter>
     </ClCompile>
@@ -1156,6 +1153,9 @@
     </ClCompile>
     <ClCompile Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile\CharaProfile.cpp">
       <Filter>Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\Debug\Debug.cpp">
+      <Filter>Source\Application\Debug</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1549,9 +1549,6 @@
     <ClInclude Include="Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect\WeaponSelect.h">
       <Filter>Source\Application\GameFlow\MenuScene\AliceSelect\WeaponSelect</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Application\DebugLog\DebugLog.h">
-      <Filter>Source\Application\DebugLog</Filter>
-    </ClInclude>
     <ClInclude Include="Source\SystemProp\GameSceneProp\GameSceneProp.h">
       <Filter>Source\SystemProp\GameSceneProp</Filter>
     </ClInclude>
@@ -1611,6 +1608,9 @@
     </ClInclude>
     <ClInclude Include="Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile\CharaProfile.h">
       <Filter>Source\Application\GameFlow\MenuScene\CharaSelect\CharaProfile</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\Debug\Debug.h">
+      <Filter>Source\Application\Debug</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

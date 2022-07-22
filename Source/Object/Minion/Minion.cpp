@@ -38,7 +38,7 @@ namespace obj {
 				res::EnemyImage::enemy.minion[getType()][m_Image_state],
 				true
 			);
-			lib::Graphics2D::setArea(0, 0, 1920, 1440);
+			lib::Graphics2D::setArea(0, 0, lib::ScreenSize::width, lib::ScreenSize::height);
 			lib::Graphics2D::setBright(255, 255, 255);
 		}
 	}

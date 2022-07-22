@@ -11,6 +11,7 @@ namespace lib {
 		static LONGLONG readArchiveSize(const TCHAR* file_path);
 		static int readArchive(void* buffer, int read_size, int handle) ;
 		static void closeArchive(int handle);
+		static void reloadImageFile();
 		//int openRead(char* FilePath);
 		//int close(int FileHandle);
 

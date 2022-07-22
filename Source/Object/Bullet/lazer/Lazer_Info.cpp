@@ -56,7 +56,7 @@ namespace obj {
 			lib::Graphics2D::setBlend(lib::BLEND_MODE::NONE, 0);
 			lib::Graphics2D::drawMode(lib::DRAW_MODE::NEAREST);
 			if (isShine() == true)lib::Graphics2D::setBlend(lib::BLEND_MODE::NONE, 0);
-			lib::Graphics2D::setArea(0, 0, 1920, 1440);
+			lib::Graphics2D::setArea(0, 0, lib::ScreenSize::width, lib::ScreenSize::height);
 		}
 	}
 	void Lazer_Info::mover() {

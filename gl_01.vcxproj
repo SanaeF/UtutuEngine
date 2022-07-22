@@ -223,7 +223,7 @@
   <ItemGroup>
     <ClCompile Include="Source\Application\Application\Application.cpp" />
     <ClCompile Include="Source\Application\Application\LoadScene\LoadScene.cpp" />
-    <ClCompile Include="Source\Application\DebugLog\DebugLog.cpp" />
+    <ClCompile Include="Source\Application\Debug\Debug.cpp" />
     <ClCompile Include="Source\Application\GameFlow\EndingScene\EndingScene.cpp" />
     <ClCompile Include="Source\Application\GameFlow\GameScene\EndingTalk\EndingTalk.cpp" />
     <ClCompile Include="Source\Application\GameFlow\GameScene\GameMode\DuelMode\DuelMode.cpp" />
@@ -371,7 +371,7 @@
   <ItemGroup>
     <ClInclude Include="Source\Application\Application\Application.h" />
     <ClInclude Include="Source\Application\Application\LoadScene\LoadScene.h" />
-    <ClInclude Include="Source\Application\DebugLog\DebugLog.h" />
+    <ClInclude Include="Source\Application\Debug\Debug.h" />
     <ClInclude Include="Source\Application\GameFlow\EndingScene\EndingScene.h" />
     <ClInclude Include="Source\Application\GameFlow\GameScene\EndingTalk\EndingTalk.h" />
     <ClInclude Include="Source\Application\GameFlow\GameScene\GameMode\DuelMode\DuelMode.h" />

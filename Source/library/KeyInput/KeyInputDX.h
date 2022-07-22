@@ -69,3 +69,16 @@ namespace lib {
 #define KEY_INPUT_7									(0x08)			// ÇVÉLÅ[			D_DIK_7
 #define KEY_INPUT_8									(0x09)			// ÇWÉLÅ[			D_DIK_8
 #define KEY_INPUT_9									(0x0A)			// ÇXÉLÅ[			D_DIK_9
+
+#define KEY_INPUT_F1								(0x3B)			// ÇeÇPÉLÅ[			D_DIK_F1
+#define KEY_INPUT_F2								(0x3C)			// ÇeÇQÉLÅ[			D_DIK_F2
+#define KEY_INPUT_F3								(0x3D)			// ÇeÇRÉLÅ[			D_DIK_F3
+#define KEY_INPUT_F4								(0x3E)			// ÇeÇSÉLÅ[			D_DIK_F4
+#define KEY_INPUT_F5								(0x3F)			// ÇeÇTÉLÅ[			D_DIK_F5
+#define KEY_INPUT_F6								(0x40)			// ÇeÇUÉLÅ[			D_DIK_F6
+#define KEY_INPUT_F7								(0x41)			// ÇeÇVÉLÅ[			D_DIK_F7
+#define KEY_INPUT_F8								(0x42)			// ÇeÇWÉLÅ[			D_DIK_F8
+#define KEY_INPUT_F9								(0x43)			// ÇeÇXÉLÅ[			D_DIK_F9
+#define KEY_INPUT_F10								(0x44)			// ÇeÇPÇOÉLÅ[		D_DIK_F10
+#define KEY_INPUT_F11								(0x57)			// ÇeÇPÇPÉLÅ[		D_DIK_F11
+#define KEY_INPUT_F12								(0x58)			// ÇeÇPÇQÉLÅ[		D_DIK_F12

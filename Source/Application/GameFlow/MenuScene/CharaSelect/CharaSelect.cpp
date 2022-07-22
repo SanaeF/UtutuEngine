@@ -24,7 +24,7 @@ namespace app {
 		m_Profile.reset(new CharaProfile());
 	}
 	void CharaSelect::draw() {
-		lib::Graphics2D::drawRota(480 * 2, 360 * 2, 1.0, 0.0, res::MenuUIImage::menu_ui.title.back, true);
+		lib::Graphics2D::drawRota(lib::ScreenSize::width/2, lib::ScreenSize::height/2, 1.0, 0.0, res::MenuUIImage::menu_ui.title.back, true);
 		m_Profile->draw();
 		//lib::Graphics2D::drawRota(standard_x + m_Add_x, 360 * 2, 1.0, 0.0, res::SelectUIImage::select_ui.chara[1], true);
 		//lib::Graphics2D::drawRota(standard_x + m_Add_x, 360 * 2, 1.0, 0.0, res::SelectUIImage::select_ui.frame[m_Select_num], true);
@@ -71,7 +71,7 @@ namespace app {
 						if (GameSceneProp::is_alice)id = 3;
 						if (!GameSceneProp::is_use_camp)res::SaveData::save_data.clear.camp_data[id].initialize();
 						m_Change_type = CHANGE_TYPE::SELECT;
-						m_Fade_out.start(10, 1920);
+						m_Fade_out.start(10, lib::ScreenSize::width);
 					}
 				}
 			}
@@ -85,19 +85,19 @@ namespace app {
 			setSceneState(SCENE_TYPE::SELECT_CHARA);
 			m_Select_YN.initialize(SELECT_LR::RIGHT_STATE);
 			if (!m_Fade_in.isFlag())m_Add_x = 0;//UIを画面外へ移動
-			m_Fade_in.start(10, 1920);//UIのフェードインを開始
+			m_Fade_in.start(10, lib::ScreenSize::width);//UIのフェードインを開始
 		}
 		//フェーダークラスによる値の代入
 		if (m_Fade_in.isFlag())m_Add_x = m_Fade_in.getSize();
-		if (m_Fade_back.isFlag())m_Add_x = 1920 - m_Fade_back.getSize();
-		if (m_Fade_out.isFlag())m_Add_x = 1920 + m_Fade_out.getSize();
+		if (m_Fade_back.isFlag())m_Add_x = lib::ScreenSize::width - m_Fade_back.getSize();
+		if (m_Fade_out.isFlag())m_Add_x = lib::ScreenSize::width + m_Fade_out.getSize();
 		m_Fade_in.update();
 		m_Fade_back.update();
 		m_Fade_out.update();
 		//キャラプロフィールのクラス設定
 		m_Profile->update();
 		m_Profile->setType(m_Select_num);
-		const int standard_x = -1920 / 2;
+		const int standard_x = -lib::ScreenSize::width / 2;
 		m_Profile->setFadeX(standard_x + m_Add_x);
 		return getSceneState();
 	}
@@ -120,7 +120,7 @@ namespace app {
 				if (!GameSceneProp::is_alice && !GameSceneProp::is_extra) {
 					Sound::sound.playSE(res::SE::SELECT_CANCEL);
 					m_Change_type = CHANGE_TYPE::BACK;
-					m_Fade_back.start(10, 1920);
+					m_Fade_back.start(10, lib::ScreenSize::width);
 				}
 			}
 			resetCoolDown();
@@ -134,7 +134,7 @@ namespace app {
 				return;
 			}
 			m_Change_type = CHANGE_TYPE::BACK;
-			m_Fade_back.start(10, 1920);
+			m_Fade_back.start(10, lib::ScreenSize::width);
 		}
 	}
 	void CharaSelect::sceneChanger() {

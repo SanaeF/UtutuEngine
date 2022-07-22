@@ -1,5 +1,4 @@
 #include "AppManager.h"
-
 #include "DxLib.h"
  
 namespace lib {
@@ -7,8 +6,9 @@ namespace lib {
 		SetWindowIconID(333);
 		return DxLib_Init();
 	}
-	int AppManager::setWindowSize(int width, int heigth) {
-		return SetWindowSize(width, heigth);
+	int AppManager::setWindowSize(int width, int height) {
+		SetWindowStyleMode(7);
+		return SetWindowSize(width, height);
 	}
 	int AppManager::setPixelSize(int width, int heigth, int bit) {
 		return SetGraphMode(width, heigth, bit);

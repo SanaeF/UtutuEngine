@@ -1,7 +1,11 @@
 #pragma once
 #include <tchar.h>
-
 namespace lib {
+	class ScreenSize {
+	public:
+		static const int width = 2560;
+		static const int height = 1440;
+	};
 	enum BLEND_MODE {
 		NONE = 0,// ノーブレンド
 		ALPHA = 1,// αブレンド(知人の名前ではない)

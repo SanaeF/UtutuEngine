@@ -16,4 +16,7 @@ namespace lib {
 	void FileManager::closeArchive(int handle) {
 		FileRead_close(handle);
 	}
+	void FileManager::reloadImageFile() {
+		ReloadFileGraphAll();
+	}
 }

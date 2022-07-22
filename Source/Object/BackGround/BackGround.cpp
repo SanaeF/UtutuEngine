@@ -56,7 +56,7 @@ namespace obj {
 
 	void BackGraph::draw(double crush_x, double crush_y) {
 		if (isFlag()) {
-			lib::Graphics2D::setArea(0, 0, 1920, 1440);
+			lib::Graphics2D::setArea(0, 0, lib::ScreenSize::width, lib::ScreenSize::height);
 			switch (pattern) {
 			case ROOD_2D_SCROLL:
 				draw2Dscroll(crush_x, crush_y);
@@ -71,7 +71,7 @@ namespace obj {
 				draw2Dstay(crush_x, crush_y);
 				break;
 			}
-			lib::Graphics2D::setArea(0, 0, 1920, 1440);
+			lib::Graphics2D::setArea(0, 0, lib::ScreenSize::width, lib::ScreenSize::height);
 		}
 	}
 	void BackGraph::draw2Dscroll(double cx, double cy) {

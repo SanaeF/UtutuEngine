@@ -22,7 +22,7 @@ namespace lib {
 	public:
 		static int initialize();
 
-		static int setWindowSize(int width, int heigth);
+		static int setWindowSize(int width, int height);
 		static int setPixelSize(int width, int heigth, int bit);
 		static int setWindowTitle(const TCHAR* text);
 		static int setWindowMode(bool flag);

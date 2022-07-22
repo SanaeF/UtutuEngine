@@ -21,6 +21,7 @@ namespace app {
 		void text(
 			int type,
 			int x,
+			int y,
 			std::string text0,
 			std::string text1, 
 			std::string text2,

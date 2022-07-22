@@ -65,7 +65,7 @@ namespace obj {
 			if (isShine() == true)lib::Graphics2D::setBlend(lib::BLEND_MODE::NONE, 0);
 		}
 		if (m_Effect->isFlag())m_Effect->draw(m_Field);
-		lib::Graphics2D::setArea(0, 0, 1920, 1440);
+		lib::Graphics2D::setArea(0, 0, lib::ScreenSize::width, lib::ScreenSize::height);
 	}
 	
 	void Shot_Info::mover() {

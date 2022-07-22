@@ -12,6 +12,7 @@
 #include "../../Source/Application/Key/Key.h"
 #include "../../Source/Manager/SaveDataManager/SaveDataManager.h"
 #include "../../Source/Helper/Helper.h"
+#include "../../Source/Application/Debug/Debug.h"
 
 namespace app {
 	Application::Application():
@@ -109,6 +110,9 @@ namespace app {
 			//‘S‚Ä‚ÌXV
 			if (m_State == STATE::MAINLOOP) {
 				update();
+				if (USE_DEBUGLOG) {
+					Debug::reloadImage();
+				}
 			}
 		}
 	}
@@ -139,7 +143,7 @@ namespace app {
 		m_FPS->update();
 		m_Scene->update();
 		m_Scene->draw();
-		if (!LoadScene::isDraw())m_FPS->draw(1850, 1400);
+		if (!LoadScene::isDraw())m_FPS->draw(lib::ScreenSize::width-70, lib::ScreenSize::height-40);
 		LoadScene::draw();
 		m_Scene->NoThreadUptdate();
 		lib::AppManager::screenFlip();

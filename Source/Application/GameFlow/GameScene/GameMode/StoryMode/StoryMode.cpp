@@ -19,7 +19,7 @@
 #include "../../Source/Application/ScoreBoard/SubTitle/SubTitle.h"
 #include "../../Source/Application/GameMassage/GameMassage.h"
 #include "../../Source/Application/Sound/Sound.h"
-#include "../../Source/Application/DebugLog/DebugLog.h"
+#include "../../Source/Application/Debug/Debug.h"
 #include "../../Source/Application/Replayer/Replayer.h"
 #include "../../Source/Manager/TalkSceneManager/TalkSceneManager.h"
 #include "../../Source/Manager/SaveDataManager/SaveDataManager.h"
@@ -112,7 +112,7 @@ namespace app {
 		//Sound::sound.drawDebugString();
 		ScreenFade::Screen.draw();
 		m_GameMassage->draw();
-		if (USE_DEBUGLOG)DebugLog::draw(m_Count);
+		if (USE_DEBUGLOG)Debug::drawCounter(m_Count);
 	}
 	void StoryMode::update() {
 		int id = GameSceneProp::difficulty;

@@ -76,7 +76,7 @@ namespace app {
 				lib::Graphics2D::drawRota((1120 - 22 * i), 260, 0.65f, 0.0f, res::TextUIImage::text_ui.number[0][time_Max % 10], true);
 				time_Max /= 10;
 			}
-			lib::Graphics2D::drawRota(1920 / 2, 1440 / 2 - 50, 0.65f, 0.0f, res::GameUIImage::game_ui.score_board[res::BOARD_TYPE::DFF], true);
+			lib::Graphics2D::drawRota(1920 / 2, 1440 / 2 - 50, 0.65f, 0.0f, res::GameUIImage::game_ui.score_board[res::BOARD_TYPE::FRAME], true);
 			lib::Graphics2D::drawRota(1920 / 2, 1440 / 2 - 50, 0.65f, 0.0f, res::GameUIImage::game_ui.score_board[res::BOARD_TYPE::SCORE_UI], true);
 			lib::Graphics2D::drawRota(480 * 2, 360 * 2, 1.0, 0.0, res::MenuUIImage::menu_ui.help[4], true);
 			break;

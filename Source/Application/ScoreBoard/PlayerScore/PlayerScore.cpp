@@ -21,7 +21,7 @@ namespace app {
 	};
 	void PlayerScore::drawLevel(int diff) {
 		lib::Graphics2D::draw(
-			FMAX_X,
+			AreaProp::max_x,
 			0,
 			res::GameUIImage::game_ui.diff[diff],
 			true
@@ -174,9 +174,9 @@ namespace app {
 		lib::Graphics2D::circleGauge(1350, 1170, 100.f - ((100.f * camp_num) / camp_max), res::GameUIImage::game_ui.special.camp[1], 0);
 	}
 	void PlayerScore::drawCrush(obj::Player player) {
-		lib::Graphics2D::drawRota(FMIN_X - 200, FMAX_Y - 250, 1.f, 0.0f, res::GameUIImage::game_ui.special.crush_back, true);
+		lib::Graphics2D::drawRota(AreaProp::min_x - 200, AreaProp::max_y - 250, 1.f, 0.0f, res::GameUIImage::game_ui.special.crush_back, true);
 		const float bomMax = 140;
 		float bomNum = player.getItemStack().graze;
-		lib::Graphics2D::circleGauge(FMIN_X - 200, FMAX_Y - 250, 100.f - ((100.f * bomNum) / bomMax), res::GameUIImage::game_ui.special.crush_front, 0);
+		lib::Graphics2D::circleGauge(AreaProp::min_x - 200, AreaProp::max_y - 250, 100.f - ((100.f * bomNum) / bomMax), res::GameUIImage::game_ui.special.crush_front, 0);
 	}
 }

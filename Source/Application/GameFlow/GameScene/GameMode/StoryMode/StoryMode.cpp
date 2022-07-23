@@ -60,7 +60,7 @@ namespace app {
 		else sharedReset();
 		m_Load_time = 30;
 		//ƒvƒŒƒCƒ„[‚Ì‰Šú‰»
-		if (is_first)obj::Player::PlayerObj.initialize(player_type, AREA::FMAX_X, AREA::FMIN_X);
+		if (is_first)obj::Player::PlayerObj.initialize(player_type, AreaProp::max_x, AreaProp::min_x);
 		else obj::Player::PlayerObj.loadState(player_type);
 		obj::Player::PlayerObj.initOption();
 		//ˆß‘•‚Ì•Ï”Ý’è
@@ -88,6 +88,7 @@ namespace app {
 		load.loadTalkBossImg(GameSceneProp::stage);
 		m_MapObj->create(false, GameSceneProp::stage);
 		m_TL->initialize();
+		m_Board->initialize();
 		ScreenFade::Screen.reset();
 	}
 	void StoryMode::draw() {

@@ -1,9 +1,11 @@
 #include "GameUIImage.h"
 #include "../../Source/library/Graphics/Graphics2D/Graphics2D.h"
+#include "../../Source/library/Graphics/Mask/Mask.h"
 namespace res {
 	GameUIImage GameUIImage::game_ui;
 	void GameUIImage::load() {
-		game_ui.score_board[BOARD_TYPE::DFF] = lib::Graphics2D::load("./dat/image/GUI/Board/board.png");
+		game_ui.score_board[BOARD_TYPE::FRAME] = lib::Graphics2D::load("./dat/image/GUI/Board/frame_main.png");
+		game_ui.score_board[BOARD_TYPE::FRAME_MASK] = lib::Mask::load("./dat/image/GUI/Board/frame_mask.png");
 		game_ui.score_board[BOARD_TYPE::SINGLE] = lib::Graphics2D::load("./dat/image/GUI/Board/board_single.png");
 		game_ui.score_board[BOARD_TYPE::DOUBLES] = lib::Graphics2D::load("./dat/image/GUI/Board/board_double.png");
 		game_ui.score_board[BOARD_TYPE::SCORE_UI] = lib::Graphics2D::load("./dat/image/GUI/Board/score.png");

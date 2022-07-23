@@ -22,8 +22,8 @@ namespace obj {
 	void BossHP::draw(float boss_x, float boss_y, float cx, float cy, int hp_max, int hp) {
 		if (!m_Is_flag)return;
 		lib::Graphics2D::drawRota(
-			boss_x + FMIN_X + cx,
-			boss_y + FMIN_Y + cy,
+			boss_x + AreaProp::min_x + cx,
+			boss_y + AreaProp::min_y + cy,
 			1.3f,
 			0.0f,
 			res::BossUIImage::boss_ui.hp_back,
@@ -33,8 +33,8 @@ namespace obj {
 		if(m_Fade_guage->isFlag())percent = (100 * m_Fade_guage->getSize(hp_max)) / hp_max;
 		if (hp > 0) {
 			lib::Graphics2D::circleGauge(
-				boss_x + FMIN_X + cx,
-				boss_y + FMIN_Y + cy,
+				boss_x + AreaProp::min_x + cx,
+				boss_y + AreaProp::min_y + cy,
 				percent,
 				res::BossUIImage::boss_ui.hp,
 				0

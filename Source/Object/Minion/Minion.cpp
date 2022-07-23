@@ -26,13 +26,13 @@ namespace obj {
 	}
 	void Minion::draw(double crush_x, double crush_y) {
 		if (isFlag()) {
-			lib::Graphics2D::setArea(m_Field.m_Min_x, AREA::FMIN_Y, m_Field.m_Max_x, AREA::FMAX_Y);
+			lib::Graphics2D::setArea(m_Field.m_Min_x, AreaProp::min_y, m_Field.m_Max_x, AreaProp::max_y);
 			float size = getSize();
 			if (AliceProp::flag)size = size + AliceProp::add_size;
 			lib::Graphics2D::setBright(200 + m_Fade_size.getSize(55), m_Fade_size.getSize(255), 55 + m_Fade_size.getSize(200));
 			lib::Graphics2D::drawRota(
 				getX() + m_Field.m_Min_x + crush_x,
-				getY() + AREA::FMIN_Y + crush_y,
+				getY() + AreaProp::min_y + crush_y,
 				m_Fade_size.getSize(size),
 				m_Image_rotation,
 				res::EnemyImage::enemy.minion[getType()][m_Image_state],
@@ -48,16 +48,16 @@ namespace obj {
 				m_Fade_size.setParam(30);
 			}
 			if (getRayer() == 0) {
-				m_Field.m_Min_x = AREA::FMIN_X;
-				m_Field.m_Max_x = AREA::FMAX_X;
+				m_Field.m_Min_x = AreaProp::min_x;
+				m_Field.m_Max_x = AreaProp::max_x;
 			}
 			if (getRayer() == 1) {
-				m_Field.m_Min_x = AREA::P1_MIN_X;
-				m_Field.m_Max_x = AREA::P1_MAX_X;
+				m_Field.m_Min_x = AreaProp::p1_min_x;
+				m_Field.m_Max_x = AreaProp::p1_max_x;
 			}
 			if (getRayer() == 2) {
-				m_Field.m_Min_x = AREA::P2_MIN_X;
-				m_Field.m_Max_x = AREA::P2_MAX_X;
+				m_Field.m_Min_x = AreaProp::p2_min_x;
+				m_Field.m_Max_x = AreaProp::p2_max_x;
 			}
 			if (m_Transform->isMove()) {
 				m_Transform->update();
@@ -86,7 +86,7 @@ namespace obj {
 		if (getX() < -60 ||
 			getX() > double(m_Field.m_Max_x - m_Field.m_Min_x + 60) || 
 			getY() < -60 || 
-			getY() > double(FMAX_Y - FMIN_Y + 60)) {
+			getY() > double(AreaProp::max_y - AreaProp::min_y + 60)) {
 			this->setFlag(false);
 			this->kill();
 		}

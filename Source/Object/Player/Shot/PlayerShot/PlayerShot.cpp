@@ -32,7 +32,7 @@ namespace obj {
 			if(is_shine)lib::Graphics2D::setBlend(lib::BLEND_MODE::ADD, 255);
 			lib::Graphics2D::drawRota(
 				getX() + m_Field.m_Min_x + crush_x,//x座標
-				getY() + AREA::FMIN_Y + crush_y,//y座標
+				getY() + AreaProp::min_y + crush_y,//y座標
 				getSize(),//サイズ
 				angle + PI / 2 + img_ang,//角度
 				res::BulletImage::Bullet.player_shot[getType()],//画像種類
@@ -49,7 +49,7 @@ namespace obj {
 	}
 	void PlayerShot::outOfBoaderUpdate() {
 		if (pattern == PATTERN::STOP)return;
-		if (getX() < AREA::FMIN_X - 120 || getX() > AREA::FMAX_X + 120 || getY() < -120 || getY() > double(FMAX_Y - FMIN_Y + 120)) {
+		if (getX() < AreaProp::min_x - 120 || getX() > AreaProp::max_x + 120 || getY() < -120 || getY() > double(AreaProp::max_y - AreaProp::min_y + 120)) {
 			this->setFlag(false);
 		}
 	}

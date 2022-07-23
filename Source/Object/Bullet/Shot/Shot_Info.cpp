@@ -33,7 +33,7 @@ namespace obj {
 	void Shot_Info::draw(double crush_x, double crush_y) {
 		if (isFlag()) {
 			if (is_hide)return;
-			lib::Graphics2D::setArea(m_Field.m_Min_x, AREA::FMIN_Y, m_Field.m_Max_x, AREA::FMAX_Y);
+			lib::Graphics2D::setArea(m_Field.m_Min_x, AreaProp::min_y, m_Field.m_Max_x, AreaProp::max_y);
 			int color = getColor();
 			int kind = getType();
 			double rotaAngle;
@@ -43,7 +43,7 @@ namespace obj {
 			if (getCount() <= EFFECT::CREATE_COUNT) {
 				lib::Graphics2D::drawRota(
 					getX() + m_Field.m_Min_x + crush_x,//x座標
-					getY() + AREA::FMIN_Y + crush_y,//y座標
+					getY() + AreaProp::min_y + crush_y,//y座標
 					1.0,//サイズ
 					getCount(),//角度
 					res::BulletImage::Bullet.shot[res::BULLET_TYPE::EFFECT][0],//画像種類
@@ -55,7 +55,7 @@ namespace obj {
 				if (AliceProp::flag)size = size + AliceProp::add_size;
 				lib::Graphics2D::drawRota(
 					getX() + m_Field.m_Min_x + crush_x + G_Effect.getX(),//x座標
-					getY() + AREA::FMIN_Y + crush_y + G_Effect.getY(),//y座標
+					getY() + AreaProp::min_y + crush_y + G_Effect.getY(),//y座標
 					size,//サイズ
 					rotaAngle,//角度
 					res::BulletImage::Bullet.shot[kind][color],//画像種類
@@ -70,16 +70,16 @@ namespace obj {
 	
 	void Shot_Info::mover() {
 		if (getRayer() == 0) {
-			m_Field.m_Min_x=AREA::FMIN_X;
-			m_Field.m_Max_x=AREA::FMAX_X;
+			m_Field.m_Min_x = AreaProp::min_x;
+			m_Field.m_Max_x = AreaProp::max_x;
 		}
 		if (getRayer() == 1) {
-			m_Field.m_Min_x = AREA::P1_MIN_X;
-			m_Field.m_Max_x = AREA::P1_MAX_X;
+			m_Field.m_Min_x = AreaProp::p1_min_x;
+			m_Field.m_Max_x = AreaProp::p1_max_x;
 		}
 		if (getRayer() == 2) {
-			m_Field.m_Min_x = AREA::P2_MIN_X;
-			m_Field.m_Max_x = AREA::P2_MAX_X;
+			m_Field.m_Min_x = AreaProp::p2_min_x;
+			m_Field.m_Max_x = AreaProp::p2_max_x;
 		}
 		this->setX(getX() + cos(getAngle()) * getSpeed());
 		this->setY(getY() + sin(getAngle()) * getSpeed());
@@ -110,19 +110,19 @@ namespace obj {
 				setBoundArea(AREA_RIGHT);
 				bound_count++;
 			}
-			if (getY() < double(FMIN_Y - 40)) {
+			if (getY() < double(AreaProp::min_y - 40)) {
 				setAngle(PI2 - getAngle());
 				setBoundArea(AREA_UP);
 				bound_count++;
 			}
-			if (getY() > double(FMAX_Y - FMIN_Y + 40)) {
+			if (getY() > double(AreaProp::max_y - AreaProp::min_y + 40)) {
 				setAngle(PI2 - getAngle());
 				setBoundArea(AREA_DOWN);
 				bound_count++;
 			}
 		}
 		else {
-			if (getX() < -120 || getX() > double(m_Field.m_Max_x - m_Field.m_Min_x + 120) || getY() < -120 || getY() > double(FMAX_Y - FMIN_Y + 120)) {
+			if (getX() < -120 || getX() > double(m_Field.m_Max_x - m_Field.m_Min_x + 120) || getY() < -120 || getY() > double(AreaProp::max_y - AreaProp::min_y + 120)) {
 				this->setFlag(false);
 			}
 		}

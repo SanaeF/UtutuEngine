@@ -27,7 +27,7 @@ namespace app {
 	}
 	void Camp::draw() {
 		if (m_Is_saving) {
-			lib::Graphics2D::setBlend(lib::BLEND_MODE::ALPHA, 255 - ((255.f / 40.f) * m_Count));
+			/*lib::Graphics2D::setBlend(lib::BLEND_MODE::ALPHA, 255 - ((255.f / 40.f) * m_Count));
 			lib::Graphics2D::drawRota(
 				(AREA::FMAX_X - AREA::FMIN_X) / 2 + AREA::FMIN_X,
 				(AREA::FMAX_Y - AREA::FMIN_Y) / 2,
@@ -43,7 +43,7 @@ namespace app {
 				"Pin!",
 				lib::StringDX::color(255, 255, 255),
 				res::TextUIImage::text_ui.font[res::FONT::FONT_SERIF]
-			);
+			);*/
 		}
 	}
 	void Camp::output(int time, int map_time) {

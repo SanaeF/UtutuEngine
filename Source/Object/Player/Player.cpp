@@ -43,8 +43,8 @@ namespace obj {
 		m_Item.chapterInit();
 		setState(STATE::NONE);
 		setStateSub(STATE::NONE);
-		setX(DEF_PLAYER_X);
-		setY(DEF_PLAYER_Y);
+		setX(AreaProp::def_player_x);
+		setY(AreaProp::def_player_y);
 		setType(type);
 		if (app::Replayer::GameRecorder.isReplayMode()) {
 			setType(app::Replayer::GameRecorder.getPlayerData(0));
@@ -68,7 +68,7 @@ namespace obj {
 		if (m_Invincible_count % 2 == 0) {
 			lib::Graphics2D::drawRota(
 				getX() + m_Field.m_Min_x + crush_x,
-				getY() + FMIN_Y + crush_y + 30,
+				getY() + AreaProp::min_y + crush_y + 30,
 				1.0f,
 				0.0f,
 				res::PlayerImage::Player.type[getType()][m_Image_state],
@@ -105,7 +105,7 @@ namespace obj {
 		if (m_Mover.isSlow()) {
 			lib::Graphics2D::drawRota(
 				getX() + m_Field.m_Min_x,
-				getY() + FMIN_Y,
+				getY() + AreaProp::min_y,
 				2.0f,
 				2.0 * PI * (getCount() % 120) / 120,
 				res::PlayerImage::Player.hitbox,
@@ -140,8 +140,8 @@ namespace obj {
 			if (m_Item.bom < PLAYER_STATES::BOM)m_Item.bom = PLAYER_STATES::BOM;
 			m_Item.life = m_After_life;
 			m_Item.power = m_After_power;
-			setX(DEF_PLAYER_X);
-			setY(FMAX_Y - FMIN_Y - 60);
+			setX(AreaProp::def_player_x);
+			setY(AreaProp::max_y - AreaProp::min_y - 60);
 			setCount(0);
 			m_Draw_bright = 255;
 			setState(STATE::DAMAGE);

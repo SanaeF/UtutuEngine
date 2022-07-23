@@ -29,10 +29,10 @@ namespace obj {
 	}
 	void SideOption::draw(double crush_x, double crush_y) {
 		lib::Graphics2D::drawModi(//ÉåÅ[ÉUÅ[Çï`âÊ
-			crush_x + m_Pos_x[0] + FMIN_X, m_Pos_y[0] + crush_y + FMIN_Y,
-			crush_x + m_Pos_x[1] + FMIN_X, m_Pos_y[1] + crush_y + FMIN_Y,
-			crush_x + m_Pos_x[2] + FMIN_X, m_Pos_y[2] + crush_y + FMIN_Y,
-			crush_x + m_Pos_x[3] + FMIN_X, m_Pos_y[3] + crush_y + FMIN_Y,
+			crush_x + m_Pos_x[0] + AreaProp::min_x, m_Pos_y[0] + crush_y + AreaProp::min_y,
+			crush_x + m_Pos_x[1] + AreaProp::min_x, m_Pos_y[1] + crush_y + AreaProp::min_y,
+			crush_x + m_Pos_x[2] + AreaProp::min_x, m_Pos_y[2] + crush_y + AreaProp::min_y,
+			crush_x + m_Pos_x[3] + AreaProp::min_x, m_Pos_y[3] + crush_y + AreaProp::min_y,
 			res::BulletImage::Bullet.shot[0][0], true
 		);
 	}

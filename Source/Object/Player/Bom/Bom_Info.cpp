@@ -31,8 +31,8 @@ namespace obj {
 		if (type == res::PLAYER_TYPE::EREMIRA)patternA();
 		if (type == res::PLAYER_TYPE::MAI)patternB();
 		if (type == res::PLAYER_TYPE::MEGU)patternC();
-		if (type == res::PLAYER_TYPE::HIME)patternD();
-		if (type == res::PLAYER_TYPE::IORIKO)patternE();
+		if (type == res::PLAYER_TYPE::SARA)patternD();
+		if (type == res::PLAYER_TYPE::KANA)patternE();
 		m_Count++;
 		if (is_damage) {
 			clear();

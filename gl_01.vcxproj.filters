@@ -64,9 +64,6 @@
     <Filter Include="Source\Helper">
       <UniqueIdentifier>{f0992716-4462-4451-bada-334c9fc1ef0b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="library\String">
-      <UniqueIdentifier>{7213433f-0004-4f1e-b944-0759cbcdfaa9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\Application">
       <UniqueIdentifier>{5fd24df4-4aeb-42a5-a6c9-eda74094bc10}</UniqueIdentifier>
     </Filter>
@@ -719,6 +716,15 @@
     <Filter Include="Source\Application\Debug">
       <UniqueIdentifier>{f0aa485f-f45a-4ef8-a3a2-5170fe763c24}</UniqueIdentifier>
     </Filter>
+    <Filter Include="library\Graphics\String">
+      <UniqueIdentifier>{7213433f-0004-4f1e-b944-0759cbcdfaa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="library\Graphics\Mask">
+      <UniqueIdentifier>{03001c82-297c-43d6-931c-56297bf87463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Application\ScoreBoard\FrameMask">
+      <UniqueIdentifier>{8d079238-8b30-45a4-8cb7-11e4256ffef9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\object\Bullet\Shot\Shot_Info.cpp">
@@ -758,7 +764,7 @@
       <Filter>Source\Helper</Filter>
     </ClCompile>
     <ClCompile Include="Source\library\Graphics\String\StringDX.cpp">
-      <Filter>library\String</Filter>
+      <Filter>library\Graphics\String</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Source\Application\GameFlow\MenuScene\Title\Title.cpp">
@@ -1157,6 +1163,12 @@
     <ClCompile Include="Source\Application\Debug\Debug.cpp">
       <Filter>Source\Application\Debug</Filter>
     </ClCompile>
+    <ClCompile Include="Source\library\Graphics\Mask\Mask.cpp">
+      <Filter>library\Graphics\Mask</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application\ScoreBoard\FrameMask\FrameMask.cpp">
+      <Filter>Source\Application\ScoreBoard\FrameMask</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\object\Bullet\Shot\Shot_Info.h">
@@ -1202,7 +1214,7 @@
       <Filter>Source\Helper</Filter>
     </ClInclude>
     <ClInclude Include="Source\library\Graphics\String\StringDX.h">
-      <Filter>library\String</Filter>
+      <Filter>library\Graphics\String</Filter>
     </ClInclude>
     <ClInclude Include="Source\Application\GameFlow\GameScene\GameScene.h">
       <Filter>Source\Application\GameFlow\GameScene</Filter>
@@ -1611,6 +1623,12 @@
     </ClInclude>
     <ClInclude Include="Source\Application\Debug\Debug.h">
       <Filter>Source\Application\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\library\Graphics\Mask\Mask.h">
+      <Filter>library\Graphics\Mask</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Application\ScoreBoard\FrameMask\FrameMask.h">
+      <Filter>Source\Application\ScoreBoard\FrameMask</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

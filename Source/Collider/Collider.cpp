@@ -53,7 +53,7 @@ namespace obj {
 		m_Is_inv_bom = flag;
 	}
 	int Collider::hitPlayerShot(float x, float y, float obj_size, int who) {
-		if ((Player::PlayerObj.isBom()&& Player::PlayerObj.getType()!=res::PLAYER_TYPE::IORIKO) && m_Is_inv_bom)return HIT_TYPE::NONE;
+		if ((Player::PlayerObj.isBom()&& Player::PlayerObj.getType()!=res::PLAYER_TYPE::KANA) && m_Is_inv_bom)return HIT_TYPE::NONE;
 		for (int num = 0; num < PLAYER_SHOT_MAX; num++) {
 			PlayerShot* shot;
 			shot = &Player::PlayerObj.getShot(num);

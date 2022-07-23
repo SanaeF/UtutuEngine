@@ -33,7 +33,7 @@ namespace app {
 	{
 	}
 	void ItemRoulette::draw() {
-		if (!m_Flag)return;
+		/*if (!m_Flag)return;
 		int x = (AREA::FMIN_X + AREA::FMAX_X) / 2;
 		int y = AREA::FMIN_Y + 171;
 		int blend = 255;
@@ -57,10 +57,10 @@ namespace app {
 			res::TextUIImage::text_ui.number[0][m_Bounus],
 			true
 		);
-		lib::Graphics2D::setBlend(lib::BLEND_MODE::NONE, 0);
+		lib::Graphics2D::setBlend(lib::BLEND_MODE::NONE, 0);*/
 	}
 	void ItemRoulette::update(obj::Player& player, std::shared_ptr<obj::ItemManager> item) {
-		if (!m_Flag && player.isRoulette()) {
+		/*if (!m_Flag && player.isRoulette()) {
 			spawn();
 		}
 		if (!m_Flag)return;
@@ -96,7 +96,7 @@ namespace app {
 			);
 			m_Flag = false;
 			m_State = BOX_STATE::ROATION;
-		}
+		}*/
 	}
 	void ItemRoulette::spawn() {
 		Replayer::GameRecorder.callSeedProcess(50);

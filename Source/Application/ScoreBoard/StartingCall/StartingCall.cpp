@@ -48,12 +48,12 @@ namespace app {
 		int addX[2] = { 0,0 };
 		if (m_State == RESULT_SHOUT) {
 			if (player1.getItemStack().life < 0) {
-				addX[0] = P1_MIN_X;
-				addX[1] = P2_MIN_X;
+				addX[0] = AreaProp::p1_min_x;
+				addX[1] = AreaProp::p2_min_x;
 			}
 			if (player2.getItemStack().life < 0) {
-				addX[1] = P1_MIN_X;
-				addX[0] = P2_MIN_X;
+				addX[1] = AreaProp::p1_min_x;
+				addX[0] = AreaProp::p2_min_x;
 			}
 			lib::Graphics2D::draw(addX[1], 0, res::TextUIImage::text_ui.fight_massage[res::WIN_TEXT], true);
 			lib::Graphics2D::draw(addX[0], 0, res::TextUIImage::text_ui.fight_massage[res::LOSE_TEXT], true);

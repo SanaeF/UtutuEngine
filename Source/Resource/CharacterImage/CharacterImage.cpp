@@ -84,7 +84,7 @@ namespace res {
 	void CharacterImage::loadBossType(bool damaged, bool pose, int brow_num, int eye_num, int mouth_num, int type) {
 		if (type >= CHARA_BS)return;
 		if (m_loaded[type])return;
-		char m_File[40];
+		char m_File[50];
 		sprintf(m_File, "./dat/image/CharaModel/b%d/body.png", type);
 		TalkChara[CHARA_PL + type].body[0] = lib::Graphics2D::load(m_File);
 		if (damaged) {

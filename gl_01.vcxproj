@@ -259,6 +259,7 @@
     <ClCompile Include="Source\Application\Replayer\KeyCapture\KeyCapture.cpp" />
     <ClCompile Include="Source\Application\Replayer\Replayer.cpp" />
     <ClCompile Include="Source\Application\ScoreBoard\DuelScore\DuelScore.cpp" />
+    <ClCompile Include="Source\Application\ScoreBoard\FrameMask\FrameMask.cpp" />
     <ClCompile Include="Source\Application\ScoreBoard\ItemRoulette\ItemRoulette.cpp" />
     <ClCompile Include="Source\Application\ScoreBoard\PlayerScore\PlayerScore.cpp" />
     <ClCompile Include="Source\Application\ScoreBoard\ScoreBoard.cpp" />
@@ -276,6 +277,7 @@
     <ClCompile Include="Source\library\FileManager\FileManager.cpp" />
     <ClCompile Include="Source\library\Graphics\Graphics2D\Graphics2D.cpp" />
     <ClCompile Include="Source\library\Graphics\Graphics3D\Graphics3D.cpp" />
+    <ClCompile Include="Source\library\Graphics\Mask\Mask.cpp" />
     <ClCompile Include="Source\library\Graphics\Movie\MovieDX.cpp" />
     <ClCompile Include="Source\library\Graphics\String\StringDX.cpp" />
     <ClCompile Include="Source\library\KeyInput\KeyInputDX.cpp" />
@@ -407,6 +409,7 @@
     <ClInclude Include="Source\Application\Replayer\KeyCapture\KeyCapture.h" />
     <ClInclude Include="Source\Application\Replayer\Replayer.h" />
     <ClInclude Include="Source\Application\ScoreBoard\DuelScore\DuelScore.h" />
+    <ClInclude Include="Source\Application\ScoreBoard\FrameMask\FrameMask.h" />
     <ClInclude Include="Source\Application\ScoreBoard\ItemRoulette\ItemRoulette.h" />
     <ClInclude Include="Source\Application\ScoreBoard\PlayerScore\PlayerScore.h" />
     <ClInclude Include="Source\Application\ScoreBoard\ScoreBoard.h" />
@@ -424,6 +427,7 @@
     <ClInclude Include="Source\library\FileManager\FileManager.h" />
     <ClInclude Include="Source\library\Graphics\Graphics2D\Graphics2D.h" />
     <ClInclude Include="Source\library\Graphics\Graphics3D\Graphics3D.h" />
+    <ClInclude Include="Source\library\Graphics\Mask\Mask.h" />
     <ClInclude Include="Source\library\Graphics\Movie\MovieDX.h" />
     <ClInclude Include="Source\library\Graphics\String\StringDX.h" />
     <ClInclude Include="Source\library\KeyInput\KeyInputDX.h" />

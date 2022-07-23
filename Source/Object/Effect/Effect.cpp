@@ -32,7 +32,7 @@ namespace obj {
 			lib::Graphics2D::setBlend(lib::BLEND_MODE::ALPHA, m_Bright);
 			lib::Graphics2D::drawRota(getX() + field.m_Min_x, getY(), getSize(), getCount() * PI / 2.f / 12.f, res::ParticleImage::effect.m_Boss.kill[0], true);
 			lib::Graphics2D::setBlend(lib::BLEND_MODE::ALPHA, m_Bright);
-			lib::Graphics2D::box(field.m_Min_x - 80, FMIN_Y - 80, field.m_Min_x + field.m_Max_x + 80, FMIN_Y + FMAX_Y + 80, lib::StringDX::color(173, 73, 119), true);
+			lib::Graphics2D::box(field.m_Min_x - 80, AreaProp::min_y - 80, field.m_Min_x + field.m_Max_x + 80, AreaProp::min_y + AreaProp::max_y + 80, lib::StringDX::color(173, 73, 119), true);
 			lib::Graphics2D::setBlend(lib::BLEND_MODE::NONE, 0);
 			setSize(getSize() + 0.3);
 			if (BEDWEEN(getCount(), 10, 20)) m_Bright -= 150 / 10;

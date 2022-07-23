@@ -36,10 +36,10 @@ namespace obj {
 				double pal = cutPal(m_Last_info[num].number[1], length);
 				cutThick(m_Last_info[num], pal);
 				lib::Graphics2D::drawModi(//レーザーを描画
-					crush_x + disp_x[0] + m_Field.m_Min_x, disp_y[0] + AREA::FMIN_Y + crush_y,
-					crush_x + disp_x[1] + m_Field.m_Min_x, disp_y[1] + AREA::FMIN_Y + crush_y,
-					crush_x + disp_x[2] + m_Field.m_Min_x, disp_y[2] + AREA::FMIN_Y + crush_y,
-					crush_x + disp_x[3] + m_Field.m_Min_x, disp_y[3] + AREA::FMIN_Y + crush_y,
+					crush_x + disp_x[0] + m_Field.m_Min_x, disp_y[0] + AreaProp::min_y + crush_y,
+					crush_x + disp_x[1] + m_Field.m_Min_x, disp_y[1] + AreaProp::min_y + crush_y,
+					crush_x + disp_x[2] + m_Field.m_Min_x, disp_y[2] + AreaProp::min_y + crush_y,
+					crush_x + disp_x[3] + m_Field.m_Min_x, disp_y[3] + AreaProp::min_y + crush_y,
 					res::BulletImage::Bullet.shot[res::BULLET_TYPE::TURN_LAZ][res::BULLET_COLOR::BLACKBACK], true
 				);
 			}
@@ -56,10 +56,10 @@ namespace obj {
 				lib::Graphics2D::setBlend(lib::BLEND_MODE::ADD , 200);
 				cutThick(m_Last_info[num], pal);
 				lib::Graphics2D::drawModi(//レーザーを描画
-					crush_x + disp_x[0] + m_Field.m_Min_x, disp_y[0] + AREA::FMIN_Y + crush_y,
-					crush_x + disp_x[1] + m_Field.m_Min_x, disp_y[1] + AREA::FMIN_Y + crush_y,
-					crush_x + disp_x[2] + m_Field.m_Min_x, disp_y[2] + AREA::FMIN_Y + crush_y,
-					crush_x + disp_x[3] + m_Field.m_Min_x, disp_y[3] + AREA::FMIN_Y + crush_y,
+					crush_x + disp_x[0] + m_Field.m_Min_x, disp_y[0] + AreaProp::min_y + crush_y,
+					crush_x + disp_x[1] + m_Field.m_Min_x, disp_y[1] + AreaProp::min_y + crush_y,
+					crush_x + disp_x[2] + m_Field.m_Min_x, disp_y[2] + AreaProp::min_y + crush_y,
+					crush_x + disp_x[3] + m_Field.m_Min_x, disp_y[3] + AreaProp::min_y + crush_y,
 					res::BulletImage::Bullet.shot[res::BULLET_TYPE::TURN_LAZ][color], true
 				);
 				if(!pause_tail && length > 0)m_Last_info[num].number[0] = (m_Last_info[num].number[0] + 1) % length;
@@ -69,10 +69,10 @@ namespace obj {
 				lib::Graphics2D::setBlend(lib::BLEND_MODE::ADD, 150);
 				cutThick(m_Last_info[num], pal);
 				lib::Graphics2D::drawModi(//レーザーを描画
-					crush_x + disp_x[0] + m_Field.m_Min_x, disp_y[0] + AREA::FMIN_Y + crush_y,
-					crush_x + disp_x[1] + m_Field.m_Min_x, disp_y[1] + AREA::FMIN_Y + crush_y,
-					crush_x + disp_x[2] + m_Field.m_Min_x, disp_y[2] + AREA::FMIN_Y + crush_y,
-					crush_x + disp_x[3] + m_Field.m_Min_x, disp_y[3] + AREA::FMIN_Y + crush_y,
+					crush_x + disp_x[0] + m_Field.m_Min_x, disp_y[0] + AreaProp::min_y + crush_y,
+					crush_x + disp_x[1] + m_Field.m_Min_x, disp_y[1] + AreaProp::min_y + crush_y,
+					crush_x + disp_x[2] + m_Field.m_Min_x, disp_y[2] + AreaProp::min_y + crush_y,
+					crush_x + disp_x[3] + m_Field.m_Min_x, disp_y[3] + AreaProp::min_y + crush_y,
 					res::BulletImage::Bullet.shot[res::BULLET_TYPE::TURN_LAZ][res::BULLET_COLOR::ORIGINAL], true
 				);
 				if (!pause_tail) {
@@ -87,16 +87,16 @@ namespace obj {
 
 	void TurnLazer_Info::mover() {
 		if (getRayer() == 0) {
-			m_Field.m_Min_x = AREA::FMIN_X;
-			m_Field.m_Max_x = AREA::FMAX_X;
+			m_Field.m_Min_x = AreaProp::min_x;
+			m_Field.m_Max_x = AreaProp::max_x;
 		}
 		if (getRayer() == 1) {
-			m_Field.m_Min_x = AREA::P1_MIN_X;
-			m_Field.m_Max_x = AREA::P1_MAX_X;
+			m_Field.m_Min_x = AreaProp::p1_min_x;
+			m_Field.m_Max_x = AreaProp::p1_max_x;
 		}
 		if (getRayer() == 2) {
-			m_Field.m_Min_x = AREA::P2_MIN_X;
-			m_Field.m_Max_x = AREA::P2_MAX_X;
+			m_Field.m_Min_x = AreaProp::p2_min_x;
+			m_Field.m_Max_x = AreaProp::p2_max_x;
 		}
 		this->setX(getX() + cos(getAngle()) * getSpeed());
 		this->setY(getY() + sin(getAngle()) * getSpeed());
@@ -155,7 +155,7 @@ namespace obj {
 				bount_area = 3;
 				bound_count++;
 			}
-			if (getY() > double(FMAX_Y - FMIN_Y)) {
+			if (getY() > double(AreaProp::max_y - AreaProp::min_y)) {
 				setAngle(PI2 - getAngle());
 				bount_area = 4;
 				bound_count++;
@@ -165,7 +165,7 @@ namespace obj {
 			if (getX() < -20 * length || 
 				getX() > double(m_Field.m_Max_x - m_Field.m_Min_x + (20 * length))  ||
 				getY() < -20 * length || 
-				getY() > double(FMAX_Y - FMIN_Y + (20 * length))
+				getY() > double(AreaProp::max_y - AreaProp::min_y + (20 * length))
 				) {
 				this->setFlag(false);
 				cleaLastInfo();
@@ -184,8 +184,8 @@ namespace obj {
 		disp_y[3] = data.y + sin(data.m_Angle + PI / 2) * thick + sin(data.m_Angle) * 40 + G_Effect.getY();
 		float max_x = -m_Field.m_Min_x;
 		float mini_x = m_Field.m_Max_x + m_Field.m_Min_x;
-		float max_y = -FMIN_Y;
-		float mini_y = FMAX_Y + FMIN_Y;
+		float max_y = -AreaProp::min_y;
+		float mini_y = AreaProp::max_y + AreaProp::min_y;
 		for (int ite = 0; ite < 4; ite++) {
 			if (max_x < disp_x[ite])max_x = disp_x[ite];
 			if (mini_x > disp_x[ite])mini_x = disp_x[ite];

@@ -67,9 +67,8 @@ namespace obj {
 		if (type == res::PLAYER_TYPE::EREMIRA && !is_bom)patternA(isSlow);
 		else if (type == res::PLAYER_TYPE::MAI && !is_bom)patternB(isSlow);
 		else if (type == res::PLAYER_TYPE::MEGU)patternC(isSlow);
-		else if (type == res::PLAYER_TYPE::HIME && !is_bom)patternD(isSlow);
-		else if (type == res::PLAYER_TYPE::IORIKO)patternE(isSlow);
-		else if (type == res::PLAYER_TYPE::UZUKI)patternOrg(isSlow);
+		else if (type == res::PLAYER_TYPE::SARA && !is_bom)patternD(isSlow);
+		else if (type == res::PLAYER_TYPE::KANA)patternE(isSlow);//else if (type == res::PLAYER_TYPE::UZUKI)patternOrg(isSlow);
 		else patternDef(isSlow);
 	}
 	void OptionManager::patternA(bool isSlow) {//ˆ»”T
@@ -311,7 +310,7 @@ namespace obj {
 		}
 	}
 	void OptionManager::patternD(bool isSlow) {
-		auto cloth_type = SaveData::save_data.chara_custom[res::HIME].outer_wear_type;
+		auto cloth_type = SaveData::save_data.chara_custom[res::SARA].outer_wear_type;
 		m_Shot_type = 0;
 		int k;
 		if (m_Shot_type == 0) {
@@ -374,7 +373,7 @@ namespace obj {
 		}
 	}
 	void OptionManager::patternE(bool isSlow) {
-		auto cloth_type = SaveData::save_data.chara_custom[res::IORIKO].outer_wear_type;
+		auto cloth_type = SaveData::save_data.chara_custom[res::KANA].outer_wear_type;
 		m_Shot_type = 0;
 		int k;
 		if (m_Shot_type == 0) {

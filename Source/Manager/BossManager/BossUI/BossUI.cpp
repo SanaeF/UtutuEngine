@@ -29,7 +29,7 @@ namespace obj {
 				lib::Graphics2D::setBright(255, 255, 255);
 				lib::Graphics2D::drawRota(
 					(1200 - 36 * i) + 300,
-					FMIN_Y + 50,
+					AreaProp::min_y + 50,
 					1.0f,
 					0.0f,
 					res::TextUIImage::text_ui.number[0][time_Max % 10],
@@ -41,8 +41,8 @@ namespace obj {
 		else {
 			for (int i = 0; i < 2; i++) {
 				lib::Graphics2D::drawRota(
-					FMAX_X - 50 - (36 * i),
-					FMIN_Y + 50,
+					AreaProp::max_x - 50 - (36 * i),
+					AreaProp::min_y + 50,
 					1.0f,
 					0.0f,
 					res::TextUIImage::text_ui.number[0][Timer % 10],
@@ -54,8 +54,8 @@ namespace obj {
 		int last_bullet = bullet_num - bullet_type;
 		for (int i = 0; i < last_bullet; i++) {
 			lib::Graphics2D::drawRota(
-				FMIN_X + 30 + i * 50,
-				FMIN_Y + 50,
+				AreaProp::min_x + 30 + i * 50,
+				AreaProp::min_y + 50,
 				1.0f,
 				0.0f,
 				res::BossUIImage::boss_ui.bullet_num,
@@ -68,8 +68,8 @@ namespace obj {
 	void BossUI::drawSerifBox() {
 		if (!m_Is_serif)return;
 		lib::Graphics2D::drawRota(
-			m_Serif_x + FMIN_X,
-			m_Serif_y + FMIN_Y,
+			m_Serif_x + AreaProp::min_x,
+			m_Serif_y + AreaProp::min_y,
 			1.f,
 			0.f,
 			res::BossUIImage::boss_ui.serif_box,
@@ -77,8 +77,8 @@ namespace obj {
 		);
 		auto font = res::TextUIImage::text_ui.font[res::FONT::FONT_SERIF_BULLET];
 		lib::StringDX::draw(
-			m_Serif_x + FMIN_X - (lib::StringDX::getFontTextWidth(m_Serif_text.data(), m_Serif_text.length(), font) / 2),
-			m_Serif_y + FMIN_Y - 5,
+			m_Serif_x + AreaProp::min_x - (lib::StringDX::getFontTextWidth(m_Serif_text.data(), m_Serif_text.length(), font) / 2),
+			m_Serif_y + AreaProp::min_y - 5,
 			m_Serif_text.data(),
 			lib::StringDX::color(255, 255, 255),
 			font

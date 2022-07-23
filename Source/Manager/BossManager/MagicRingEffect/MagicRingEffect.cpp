@@ -17,8 +17,8 @@ namespace obj {
 	void MagicRingEffect::draw(double x, double y, double crush_x, double crush_y) {
 		if (!m_Is_flag)return;
 		lib::Graphics2D::drawRota(
-			x + AREA::FMIN_X + crush_x,
-			y + AREA::FMIN_Y + crush_x,
+			x + AreaProp::min_x + crush_x,
+			y + AreaProp::min_y + crush_x,
 			1,
 			m_Magicring_count * 0.024,
 			res::BossUIImage::boss_ui.magic_ring,

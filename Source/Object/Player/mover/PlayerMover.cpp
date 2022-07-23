@@ -25,13 +25,13 @@ namespace obj {
 		case res::PLAYER_TYPE::MEGU:
 			movePattern(1.3f, 1.2f, 1.3f, 1.1f);
 			break;
-		case res::PLAYER_TYPE::HIME:
+		case res::PLAYER_TYPE::SARA:
 			movePattern(1.4f, 1.2f, 2.8f, 1.4f);
 			break;
-		case res::PLAYER_TYPE::IORIKO:
+		case res::PLAYER_TYPE::KANA:
 			movePattern(1.3f, 1.1f, 1.2, 1.2f);
 			break;
-		case res::PLAYER_TYPE::UZUKI:
+		/*case res::PLAYER_TYPE::UZUKI:
 			movePattern(1.2, 0.8, 1.7f, 1.8f);
 			break;
 		case res::PLAYER_TYPE::MANIWA:
@@ -39,7 +39,7 @@ namespace obj {
 			break;
 		case res::PLAYER_TYPE::URANA:
 			movePattern(1.2, 0.8, 1.7f, 1.8f);
-			break;
+			break;*/
 		}
 		return m_Pos;
 	}
@@ -113,7 +113,7 @@ namespace obj {
 					}
 				}
 				x += mx * 1.5 / naname, y += my * 1.5 / naname;
-				if (!(x<30 || x>m_Max_x - m_Min_x - 30 || y< 60 || y>FMAX_Y - FMIN_Y - 60)) {
+				if (!(x<30 || x>m_Max_x - m_Min_x - 30 || y< 60 || y>AreaProp::max_y - AreaProp::min_y - 60)) {
 					m_Pos.x = x;
 					m_Pos.y = y;
 				}
@@ -127,7 +127,7 @@ namespace obj {
 			getKey(app::Key::KEY_TYPE::UP) +
 			getKey(app::Key::KEY_TYPE::DOWN);
 		m_Pos.y -= 1.5;
-		if (m_Count > 60 || (m_Pos.y < FMAX_Y - FMIN_Y - 40 && push)) {
+		if (m_Count > 60 || (m_Pos.y < AreaProp::max_y - AreaProp::min_y - 40 && push)) {
 			m_Count = 0;
 			return false;
 		}

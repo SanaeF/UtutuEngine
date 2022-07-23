@@ -33,8 +33,8 @@ namespace obj {
 		float size = getSize();
 		if (AliceProp::flag)size = size + AliceProp::add_size;
 		lib::Graphics2D::drawRota(
-			getX() + AREA::FMIN_X + crush_x,
-			getY() + AREA::FMIN_Y + crush_y,
+			getX() + AreaProp::min_x + crush_x,
+			getY() + AreaProp::min_y + crush_y,
 			m_Fade_size.getSize(size),
 			m_Img_rotation,
 			res::EnemyImage::enemy.boss[getType()][m_Img_state],
@@ -42,8 +42,8 @@ namespace obj {
 		);
 		lib::Graphics2D::setBright(255, 255, 255);
 		Field field;
-		field.m_Min_x = AREA::FMIN_X;
-		field.m_Max_x = AREA::FMAX_X;
+		field.m_Min_x = AreaProp::min_x;
+		field.m_Max_x = AreaProp::max_x;
 		if (m_KillEffect->isFlag())m_KillEffect->draw(field);
 		if (m_ChargeEffect->isFlag()) {
 			m_ChargeEffect->setX(getX());
@@ -150,8 +150,8 @@ namespace obj {
 		m_Is_motion(false),
 		m_Is_death_effect(false)
 	{
-		setX(-FMIN_X);
-		setY(-FMIN_Y);
+		setX(-AreaProp::min_x);
+		setY(-AreaProp::min_y);
 		m_KillEffect.reset(new Effect());
 		m_ChargeEffect.reset(new Effect());
 		m_Transform.reset(new Transform());

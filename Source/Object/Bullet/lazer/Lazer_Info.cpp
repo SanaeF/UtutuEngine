@@ -35,22 +35,22 @@ namespace obj {
 			int laz_type = getMainType();
 
 			double rotaAngle = getAngle() + PI / 2;
-			lib::Graphics2D::setArea(m_Field.m_Min_x, AREA::FMIN_Y, m_Field.m_Max_x, AREA::FMAX_Y);
+			lib::Graphics2D::setArea(m_Field.m_Min_x, AreaProp::min_y, m_Field.m_Max_x, AreaProp::max_y);
 			lib::Graphics2D::drawMode(lib::DRAW_MODE::BILINEAR);
 			lib::Graphics2D::setBlend(lib::BLEND_MODE::ADD, 255);
 			lib::Graphics2D::drawRota(
 				getX() + m_Field.m_Min_x + crush_x + G_Effect.getX(),//x座標
-				getY() + AREA::FMIN_Y + crush_y + G_Effect.getY(),//y座標
+				getY() + AreaProp::min_y + crush_y + G_Effect.getY(),//y座標
 				1,//サイズ
 				rotaAngle,//角度
 				res::BulletImage::Bullet.shot[kind][color],//画像種類
 				true
 			);
 			lib::Graphics2D::drawModi(//レーザーを描画
-				crush_x + disp_x[0] + m_Field.m_Min_x, disp_y[0] + FMIN_Y + crush_y,
-				crush_x + disp_x[1] + m_Field.m_Min_x, disp_y[1] + FMIN_Y + crush_y,
-				crush_x + disp_x[2] + m_Field.m_Min_x, disp_y[2] + FMIN_Y + crush_y,
-				crush_x + disp_x[3] + m_Field.m_Min_x, disp_y[3] + FMIN_Y + crush_y,
+				crush_x + disp_x[0] + m_Field.m_Min_x, disp_y[0] + AreaProp::min_y + crush_y,
+				crush_x + disp_x[1] + m_Field.m_Min_x, disp_y[1] + AreaProp::min_y + crush_y,
+				crush_x + disp_x[2] + m_Field.m_Min_x, disp_y[2] + AreaProp::min_y + crush_y,
+				crush_x + disp_x[3] + m_Field.m_Min_x, disp_y[3] + AreaProp::min_y + crush_y,
 				res::BulletImage::Bullet.shot[laz_type][laz_col], true
 			);
 			lib::Graphics2D::setBlend(lib::BLEND_MODE::NONE, 0);
@@ -61,16 +61,16 @@ namespace obj {
 	}
 	void Lazer_Info::mover() {
 		if (getRayer() == 0) {
-			m_Field.m_Min_x = AREA::FMIN_X;
-			m_Field.m_Max_x = AREA::FMAX_X;
+			m_Field.m_Min_x = AreaProp::min_x;
+			m_Field.m_Max_x = AreaProp::max_x;
 		}
 		if (getRayer() == 1) {
-			m_Field.m_Min_x = AREA::P1_MIN_X;
-			m_Field.m_Max_x = AREA::P1_MAX_X;
+			m_Field.m_Min_x = AreaProp::p1_min_x;
+			m_Field.m_Max_x = AreaProp::p1_max_x;
 		}
 		if (getRayer() == 2) {
-			m_Field.m_Min_x = AREA::P2_MIN_X;
-			m_Field.m_Max_x = AREA::P2_MAX_X;
+			m_Field.m_Min_x = AreaProp::p2_min_x;
+			m_Field.m_Max_x = AreaProp::p2_max_x;
 		}
 		this->setX(getX() + cos(getAngle()) * getSpeed());
 		this->setY(getY() + sin(getAngle()) * getSpeed());
@@ -127,14 +127,14 @@ namespace obj {
 				setBoundArea(3);
 				bound_count++;
 			}
-			if (getY() > double(FMAX_Y - FMIN_Y)) {
+			if (getY() > double(AreaProp::max_y - AreaProp::min_y)) {
 				if (!is_bount_no_angle)setAngle(PI2 - getAngle());
 				setBoundArea(4);
 				bound_count++;
 			}
 		}
 		else {
-			if (getX() < -(20 * length) || getX() > double(m_Field.m_Max_x - m_Field.m_Min_x + (20 * length)) || getY() < -(20 * length) || getY() > double(FMAX_Y - FMIN_Y + (20 * length))) {
+			if (getX() < -(20 * length) || getX() > double(m_Field.m_Max_x - m_Field.m_Min_x + (20 * length)) || getY() < -(20 * length) || getY() > double(AreaProp::max_y - AreaProp::min_y + (20 * length))) {
 				this->setFlag(false);
 			}
 		}

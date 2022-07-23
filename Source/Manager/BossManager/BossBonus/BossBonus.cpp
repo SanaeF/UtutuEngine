@@ -61,7 +61,7 @@ namespace obj {
 			for (int i = 0; i < 7; i++) {
 				//ハイスコア表示
 				lib::Graphics2D::drawRota(
-					AREA::FMIN_X + 240 - i * 20, AREA::FMIN_Y + 85,
+					AreaProp::min_x + 240 - i * 20, AreaProp::min_y + 85,
 					0.6f,
 					0.0f,
 					res::TextUIImage::text_ui.number[0][score % 10],
@@ -70,7 +70,7 @@ namespace obj {
 				score /= 10;
 			}
 			lib::StringDX::draw(
-				AREA::FMIN_X + 10, AREA::FMIN_Y + 74,
+				AreaProp::min_x + 10, AreaProp::min_y + 74,
 				"BONUS:",
 				lib::StringDX::color(255, 255, 255),
 				res::TextUIImage::text_ui.font[res::FONT::FONT_SB_BOUNS_SCORE]
@@ -78,12 +78,12 @@ namespace obj {
 		}
 		if (m_Is_call) {
 			if (!m_Is_failed) {
-				const float mid_x = ((AREA::FMAX_X - AREA::FMIN_X) / 2);
+				const float mid_x = ((AreaProp::max_x - AreaProp::min_x) / 2);
 				int score = m_Bounus_score;
 				for (int i = 0; i < 7; i++) {
 					//ハイスコア表示
 					lib::Graphics2D::drawRota(
-						mid_x + 290 - i * 70, AREA::FMIN_Y + 90,
+						mid_x + 290 - i * 70, AreaProp::min_y + 90,
 						2.5f,
 						0.0f,
 						res::TextUIImage::text_ui.number[0][score % 10],
@@ -94,7 +94,7 @@ namespace obj {
 			}
 			else {
 				lib::StringDX::draw(
-					AREA::FMIN_X + 250, AREA::FMIN_Y + 30,
+					AreaProp::min_x + 250, AreaProp::min_y + 30,
 					"Lost Bullet...",
 					lib::StringDX::color(255, 155, 155),
 					res::TextUIImage::text_ui.font[res::FONT::FONT_SB_BOUNS_CALL]

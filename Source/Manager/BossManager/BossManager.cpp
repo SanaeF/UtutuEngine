@@ -42,7 +42,7 @@ namespace manager {
 	}
 	//ƒ{ƒX‚Ì¢Š«
 	void BossManager::summon(int type, int index) {
-		summon(AREA::DEF_BOSS_X, AREA::DEF_BOSS_Y, type, index);
+		summon(AreaProp::deff_boss_x, AreaProp::deff_boss_y, type, index);
 	}
 	void BossManager::summon(double x, double y, int type, int index) {
 		int resize = index + 1;
@@ -73,26 +73,26 @@ namespace manager {
 	void BossManager::changePosition() {
 		auto size = m_Boss_obj.size();
 		if (size == 1) {
-			m_Boss_obj[0].boss.movePos(AREA::DEF_BOSS_X, AREA::DEF_BOSS_Y, 50);
+			m_Boss_obj[0].boss.movePos(AreaProp::deff_boss_x, AreaProp::deff_boss_y, 50);
 		}
 		if (size == 2) {
-			m_Boss_obj[0].boss.movePos(AREA::DEF_BOSS_X - 200, AREA::DEF_BOSS_Y, 50);
-			m_Boss_obj[1].boss.movePos(AREA::DEF_BOSS_X + 200, AREA::DEF_BOSS_Y, 50);
+			m_Boss_obj[0].boss.movePos(AreaProp::deff_boss_x - 200, AreaProp::deff_boss_y, 50);
+			m_Boss_obj[1].boss.movePos(AreaProp::deff_boss_x + 200, AreaProp::deff_boss_y, 50);
 		}
 		if (size == 3) {
-			m_Boss_obj[0].boss.movePos(AREA::DEF_BOSS_X, AREA::DEF_BOSS_Y, 50);
-			m_Boss_obj[2].boss.movePos(AREA::DEF_BOSS_X - 200, AREA::DEF_BOSS_Y + 200, 50);
-			m_Boss_obj[3].boss.movePos(AREA::DEF_BOSS_X + 200, AREA::DEF_BOSS_Y + 200, 50);
+			m_Boss_obj[0].boss.movePos(AreaProp::deff_boss_x, AreaProp::deff_boss_y, 50);
+			m_Boss_obj[2].boss.movePos(AreaProp::deff_boss_x - 200, AreaProp::deff_boss_y + 200, 50);
+			m_Boss_obj[3].boss.movePos(AreaProp::deff_boss_x + 200, AreaProp::deff_boss_y + 200, 50);
 		}
 		if (size > 3) {
 			size = size - 1;
-			m_Boss_obj[0].boss.movePos(AREA::DEF_BOSS_X, AREA::DEF_BOSS_Y, 50);
+			m_Boss_obj[0].boss.movePos(AreaProp::deff_boss_x, AreaProp::deff_boss_y, 50);
 			int dist = 80;
 			float add_x = dist * size;
 			for (int i = 1; i < size; i++) {
 				m_Boss_obj[i].boss.movePos(
-					AREA::DEF_BOSS_X - add_x + i + dist,
-					AREA::DEF_BOSS_Y + 200,
+					AreaProp::deff_boss_x - add_x + i + dist,
+					AreaProp::deff_boss_y + 200,
 					40
 				);
 			}
@@ -105,12 +105,12 @@ namespace manager {
 		}
 		if (size == 2) {
 			m_Boss_obj[0].boss.movePos(-350, -120, 120);
-			m_Boss_obj[1].boss.movePos(AREA::FMAX_X+250, -120, 120);
+			m_Boss_obj[1].boss.movePos(AreaProp::max_x + 250, -120, 120);
 		}
 		if (size == 3) {
-			m_Boss_obj[0].boss.movePos((AREA::FMAX_X - AREA::FMIN_X) / 2, -120, 120);
+			m_Boss_obj[0].boss.movePos((AreaProp::max_x - AreaProp::min_x) / 2, -120, 120);
 			m_Boss_obj[1].boss.movePos(-350, -120, 120);
-			m_Boss_obj[2].boss.movePos(AREA::FMAX_X + 350, -120, 120);
+			m_Boss_obj[2].boss.movePos(AreaProp::max_x + 350, -120, 120);
 		}
 		if (size > 3) {
 			for (auto& obj : m_Boss_obj)obj.boss.movePos(-350, -120, 120);
@@ -161,7 +161,7 @@ namespace manager {
 				countTimer();
 				if (isOverParam()) {
 					m_State = PHASE::END;
-					m_Boss_obj[0].boss.movePos(AREA::DEF_BOSS_X, AREA::DEF_BOSS_Y, 40);
+					m_Boss_obj[0].boss.movePos(AreaProp::deff_boss_x, AreaProp::deff_boss_y, 40);
 					for (auto& obj : m_Boss_obj) {
 						obj.boss.statsReset();
 						obj.hp.stop();

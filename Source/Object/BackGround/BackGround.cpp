@@ -14,7 +14,7 @@ namespace obj {
 				update2Dscroll();
 				break;
 			case ROOD_3D_SCROLL:
-				lib::Graphics3D::cameraCenter(AREA::FMAX_X / 2 + 50, AREA::FMAX_Y / 1.8);
+				lib::Graphics3D::cameraCenter(AreaProp::max_x / 2 + 50, AreaProp::max_y / 1.8);
 				update3Dscroll();
 				break;
 			case BACK_DIST_2D:
@@ -44,8 +44,8 @@ namespace obj {
 		if (x_max >= y_max)dist_size = x_max;
 		if (x_max < y_max)dist_size = y_max;
 		//画面サイズから、端を計算
-		dist_max = getX() + FMIN_X + (dist_size / 2);
-		dist_min = getX() + FMIN_X - (dist_size / 2);
+		dist_max = getX() + AreaProp::min_x + (dist_size / 2);
+		dist_min = getX() + AreaProp::min_x - (dist_size / 2);
 	}
 	void BackGraph::update2Dstay() {
 
@@ -100,7 +100,7 @@ namespace obj {
 			float distX = distParam(ii, DISTORT_X);
 			float distY = distParam(ii, DISTORT_Y);
 			lib::Graphics2D::setArea(dist_min, ii, dist_max, ii + 1);
-			lib::Graphics2D::drawRota(cx + getX() + FMIN_X + distX, cy + getY() + FMIN_Y + distY, getSize(), m_Angle, handle, true);
+			lib::Graphics2D::drawRota(cx + getX() + AreaProp::min_x + distX, cy + getY() + AreaProp::min_y + distY, getSize(), m_Angle, handle, true);
 		}
 	}
 	void BackGraph::draw2Dstay(double cx, double cy) {

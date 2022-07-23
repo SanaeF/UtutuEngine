@@ -3,7 +3,8 @@
 namespace res {
 	//ƒCƒ“ƒQ[ƒ€˜g‚ÌŽí—Þ
 	enum BOARD_TYPE {
-		DFF,
+		FRAME,
+		FRAME_MASK,
 		SINGLE,
 		DOUBLES,
 		SCORE_UI,

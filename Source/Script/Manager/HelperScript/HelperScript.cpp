@@ -4,12 +4,16 @@
 #include "../../Source/Script/ScriptLoader/ScriptLoader.h"
 #include "../../Source/EffectTools/Shake/Shake.h"
 #include "../../Source/SystemProp/GameStatsProp.h"
-
+#include "../../Source/SystemProp/AreaProp.h"
 namespace script {
 	std::vector<HelperScript::ScriptFile> HelperScript::m_Script_file;
 	HelperScript::HelperScript() {
 	}
 	void HelperScript::createScript(lua_State* L) {
+		lua_pushnumber(L, AreaProp::frame_width);
+		lua_setglobal(L, "FRAME_WIDTH");
+		lua_pushnumber(L, AreaProp::frame_hight);
+		lua_setglobal(L, "FRAME_HIGHT");
 		lua_register(L, "HelperFunc", callFunction);
 		if(!USE_DEBUGLOG)lua_register(L, "dofile", l_Include);
 	}

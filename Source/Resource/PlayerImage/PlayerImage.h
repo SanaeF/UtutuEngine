@@ -4,11 +4,8 @@ namespace res {
 		EREMIRA,
 		MAI,
 		MEGU,
-		HIME,
-		IORIKO,
-		MANIWA,
-		URANA,
-		UZUKI,
+		SARA,
+		KANA,
 		NUM_MAX
 	};
 	class PlayerImage {

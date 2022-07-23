@@ -97,8 +97,8 @@ namespace app {
 		std::string stage_text = stage_name;
 		auto font1 = res::TextUIImage::text_ui.font[res::FONT::FONT_SELECT];
 		auto font2 = res::TextUIImage::text_ui.font[res::FONT::FONT_TITLE_NEWS];
-		float title_x = FMIN_X + (FMAX_X - FMIN_X) / 2 - lib::StringDX::getFontTextWidth(title_text.data(), title_text.length(), font1) / 2;
-		float stage_x = FMAX_X - 50 - lib::StringDX::getFontTextWidth(stage_text.data(), stage_text.length(), font2);
+		float title_x = AreaProp::min_x + (AreaProp::max_x - AreaProp::min_x) / 2 - lib::StringDX::getFontTextWidth(title_text.data(), title_text.length(), font1) / 2;
+		float stage_x = AreaProp::max_x - 50 - lib::StringDX::getFontTextWidth(stage_text.data(), stage_text.length(), font2);
 		lib::StringDX::draw(title_x + x1, 680, title, lib::StringDX::color(255, 200, 250), font1);
 		lib::StringDX::draw(stage_x - x2, 780, stage_name, lib::StringDX::color(255, 255, 255), font2);
 	}

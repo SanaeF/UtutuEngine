@@ -155,9 +155,9 @@ namespace app {
 		int result = 0;
 		if (m_Select_num == 0)result = res::PLAYER_TYPE::EREMIRA;
 		if (m_Select_num == 1)result = res::PLAYER_TYPE::MEGU;
-		if (m_Select_num == 2)result = res::PLAYER_TYPE::HIME;
+		if (m_Select_num == 2)result = res::PLAYER_TYPE::SARA;
 		if (m_Select_num == 3)result = res::PLAYER_TYPE::MAI;
-		if (m_Select_num == 4)result = res::PLAYER_TYPE::IORIKO;
+		if (m_Select_num == 4)result = res::PLAYER_TYPE::KANA;
 		return result;
 	}
 }

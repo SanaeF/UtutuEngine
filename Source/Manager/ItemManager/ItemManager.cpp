@@ -27,7 +27,7 @@ namespace obj {
 		}
 	}
 	void ItemManager::dropBoss(int num, int type, int layer) {
-		drop(AREA::DEF_BOSS_X, AREA::DEF_BOSS_Y, num, type, layer);
+		drop(AreaProp::deff_boss_x, AreaProp::deff_boss_y, num, type, layer);
 	}
 	void ItemManager::drop(float x, float y, int num, int type, int layer) {
 		if (GameSceneProp::under_wear==1) {
